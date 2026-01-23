@@ -1,0 +1,301 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1988708935691783894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5592897523176194854}
+  m_Layer: 0
+  m_Name: Pot_bones_smal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5592897523176194854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988708935691783894}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1010843766764857239}
+  - {fileID: 1010843766764856863}
+  - {fileID: 1010843766764856883}
+  - {fileID: 1010843766764857799}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1010843766943941901
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5592897523176194854}
+    m_Modifications:
+    - target: {fileID: 1030972221, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_Name
+      value: BP_pot_smal_bones_C_3_SM_bones_femur_2_69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.009670258
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4633026
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.022216797
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.81946236
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.05653006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.022080157
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5699107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972223, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000006723679758268543181, type: 3}
+--- !u!4 &1010843766764856883 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+  m_PrefabInstance: {fileID: 1010843766943941901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1010843766943941921
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5592897523176194854}
+    m_Modifications:
+    - target: {fileID: 1030972221, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_Name
+      value: BP_pot_smal_bones_C_3_SM_bones_femur_3_70
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.81249905
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8124993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.028740883
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4705429
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.03403473
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.43466288
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.38838404
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.61145836
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.53511184
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972223, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000006723679758268543181, type: 3}
+--- !u!4 &1010843766764856863 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+  m_PrefabInstance: {fileID: 1010843766943941921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1010843766943941941
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5592897523176194854}
+    m_Modifications:
+    - target: {fileID: 1030972065, guid: abc00000000014782046408433944068, type: 3}
+      propertyPath: m_Name
+      value: BP_pot_smal_bones_C_3_SM_pot_sml_4_71
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972066, guid: abc00000000014782046408433944068, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972066, guid: abc00000000014782046408433944068, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972066, guid: abc00000000014782046408433944068, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972066, guid: abc00000000014782046408433944068, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972066, guid: abc00000000014782046408433944068, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972066, guid: abc00000000014782046408433944068, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972066, guid: abc00000000014782046408433944068, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972066, guid: abc00000000014782046408433944068, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972066, guid: abc00000000014782046408433944068, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972066, guid: abc00000000014782046408433944068, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972066, guid: abc00000000014782046408433944068, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972067, guid: abc00000000014782046408433944068, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000014782046408433944068, type: 3}
+--- !u!4 &1010843766764857239 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972066, guid: abc00000000014782046408433944068, type: 3}
+  m_PrefabInstance: {fileID: 1010843766943941941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1010843766943943417
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5592897523176194854}
+    m_Modifications:
+    - target: {fileID: 1030972221, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_Name
+      value: BP_pot_smal_bones_C_3_SM_bones_femur_1_68
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8124999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8125001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.81250024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.04310608
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.39212036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.010604858
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.66067624
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.18927006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.2847097
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6682995
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972223, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000006723679758268543181, type: 3}
+--- !u!4 &1010843766764857799 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+  m_PrefabInstance: {fileID: 1010843766943943417}
+  m_PrefabAsset: {fileID: 0}

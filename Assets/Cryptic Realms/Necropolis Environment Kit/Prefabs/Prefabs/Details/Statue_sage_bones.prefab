@@ -1,0 +1,435 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8859123944626183398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8296466055318495780}
+  m_Layer: 0
+  m_Name: Statue_sage_bones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8296466055318495780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8859123944626183398}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7257741713582162196}
+  - {fileID: 7257741713582162270}
+  - {fileID: 7257741713582163706}
+  - {fileID: 7257741713582162288}
+  - {fileID: 7257741713582162290}
+  - {fileID: 7257741713582162212}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7257741713369391642
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8296466055318495780}
+    m_Modifications:
+    - target: {fileID: 1030972265, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_Name
+      value: BP_statue_sage_bones_C_3_SM_bones_skull_01_5_25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.51453495
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9358597
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.057540894
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9648031
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.017356498
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.16593765
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.20326947
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972267, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000015951966877088958703, type: 3}
+--- !u!4 &7257741713582162288 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+  m_PrefabInstance: {fileID: 7257741713369391642}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7257741713369391654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8296466055318495780}
+    m_Modifications:
+    - target: {fileID: 1030972243, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_Name
+      value: BP_statue_sage_bones_C_3_SM_bones_jaw_4_24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.49264336
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8944397
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.06665039
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9838597
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0063023428
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.16672349
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.06468143
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972245, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011947674418258740946, type: 3}
+--- !u!4 &7257741713582162290 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+  m_PrefabInstance: {fileID: 7257741713369391654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7257741713369391694
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8296466055318495780}
+    m_Modifications:
+    - target: {fileID: 1030972265, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_Name
+      value: BP_statue_sage_bones_C_3_SM_bones_skull_01_3_23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8750001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.87499994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8750003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3673706
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9105835
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.19122314
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7820058
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.15810582
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5784843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.16978039
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972267, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000015951966877088958703, type: 3}
+--- !u!4 &7257741713582162212 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+  m_PrefabInstance: {fileID: 7257741713369391694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7257741713369391834
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8296466055318495780}
+    m_Modifications:
+    - target: {fileID: 1030972291, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_Name
+      value: BP_statue_sage_bones_C_3_SM_bones_ribs_8_28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.74999905
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.74999845
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.75000036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.43168354
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.886589
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.07266998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.026692165
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.804258
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.08533211
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5875161
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972293, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000002460393301088735022, type: 3}
+--- !u!4 &7257741713582162270 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+  m_PrefabInstance: {fileID: 7257741713369391834}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7257741713369391846
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8296466055318495780}
+    m_Modifications:
+    - target: {fileID: 1030972401, guid: abc00000000004393838867022254901, type: 3}
+      propertyPath: m_Name
+      value: BP_statue_sage_bones_C_3_SM_statue_wiseman_7_27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972402, guid: abc00000000004393838867022254901, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972402, guid: abc00000000004393838867022254901, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972402, guid: abc00000000004393838867022254901, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972402, guid: abc00000000004393838867022254901, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972402, guid: abc00000000004393838867022254901, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972402, guid: abc00000000004393838867022254901, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972402, guid: abc00000000004393838867022254901, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972402, guid: abc00000000004393838867022254901, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972402, guid: abc00000000004393838867022254901, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972402, guid: abc00000000004393838867022254901, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972402, guid: abc00000000004393838867022254901, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972403, guid: abc00000000004393838867022254901, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000004393838867022254901, type: 3}
+--- !u!4 &7257741713582162196 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972402, guid: abc00000000004393838867022254901, type: 3}
+  m_PrefabInstance: {fileID: 7257741713369391846}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7257741713369391858
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8296466055318495780}
+    m_Modifications:
+    - target: {fileID: 1030972423, guid: abc00000000009611630268536489791, type: 3}
+      propertyPath: m_Name
+      value: BP_statue_sage_bones_C_3_SM_statue_bowl_6_26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972424, guid: abc00000000009611630268536489791, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972424, guid: abc00000000009611630268536489791, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972424, guid: abc00000000009611630268536489791, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.022341
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972424, guid: abc00000000009611630268536489791, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972424, guid: abc00000000009611630268536489791, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.36380768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972424, guid: abc00000000009611630268536489791, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.7432251
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972424, guid: abc00000000009611630268536489791, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.016311646
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972424, guid: abc00000000009611630268536489791, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99902105
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972424, guid: abc00000000009611630268536489791, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000010058282
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972424, guid: abc00000000009611630268536489791, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0000003874301
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972424, guid: abc00000000009611630268536489791, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.044237994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972425, guid: abc00000000009611630268536489791, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000009611630268536489791, type: 3}
+--- !u!4 &7257741713582163706 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972424, guid: abc00000000009611630268536489791, type: 3}
+  m_PrefabInstance: {fileID: 7257741713369391858}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,234 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8377662005720547539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2869241878344493708}
+  m_Layer: 0
+  m_Name: Ornamental_spike_03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2869241878344493708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8377662005720547539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7514070544114714498}
+  - {fileID: 7514070544114712763}
+  - {fileID: 7514070544114712817}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7514070543094277029
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2869241878344493708}
+    m_Modifications:
+    - target: {fileID: 1030972243, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_Name
+      value: BP_ornamental_spike_03_C_2_SM_bones_jaw_1_584
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.04137039
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.34213257
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.026245117
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9704184
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.23710342
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.031076813
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.03323281
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972245, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011947674418258740946, type: 3}
+--- !u!4 &7514070544114712817 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+  m_PrefabInstance: {fileID: 7514070543094277029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7514070543094277073
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2869241878344493708}
+    m_Modifications:
+    - target: {fileID: 1030972265, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_Name
+      value: BP_ornamental_spike_03_C_2_SM_bones_skull_01_2_585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.055675507
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.39187622
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0012512207
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.93100494
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.17811234
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.03174914
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.317014
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972267, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000015951966877088958703, type: 3}
+--- !u!4 &7514070544114712763 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+  m_PrefabInstance: {fileID: 7514070543094277073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7514070543094277113
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2869241878344493708}
+    m_Modifications:
+    - target: {fileID: 1030972538, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Name
+      value: BP_ornamental_spike_03_C_2_SM_metal_ornamental_spike_01_3_586
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972540, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000002870711877371820262, type: 3}
+--- !u!4 &7514070544114714498 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+  m_PrefabInstance: {fileID: 7514070543094277113}
+  m_PrefabAsset: {fileID: 0}
