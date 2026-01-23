@@ -1,0 +1,291 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3447170821648662258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7009177660265896681}
+  m_Layer: 0
+  m_Name: Wood_fence 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7009177660265896681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3447170821648662258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7400634228153211055}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7400634228877570257
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7400634228153211055}
+    m_Modifications:
+    - target: {fileID: 1030973881, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_Name
+      value: SM_wood_fence_C_1_SM_wood_beam_02_1_433
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0005773902
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.1185222
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0028916188
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.67559034
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.73727727
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973883, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000004998018715616485588, type: 3}
+--- !u!1001 &7400634228877570325
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7009177660265896681}
+    m_Modifications:
+    - target: {fileID: 1030973881, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_Name
+      value: SM_wood_fence_C_1_SM_wood_beam_02_4_436
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5857361
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.124
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973883, guid: abc00000000004998018715616485588, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000004998018715616485588, type: 3}
+--- !u!4 &7400634228153211055 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973882, guid: abc00000000004998018715616485588, type: 3}
+  m_PrefabInstance: {fileID: 7400634228877570325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7400634228877570345
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7400634228153211055}
+    m_Modifications:
+    - target: {fileID: 1030973859, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_Name
+      value: SM_wood_fence_C_1_SM_wood_beam_01_3_435
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.62616897
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8211024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0001438
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.016532779
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.044859
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.19328
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.023526672
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.02397162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70007783
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7132762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973861, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011959188964767558511, type: 3}
+--- !u!1001 &7400634228877570365
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7400634228153211055}
+    m_Modifications:
+    - target: {fileID: 1030973859, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_Name
+      value: SM_wood_fence_C_1_SM_wood_beam_01_2_434
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.62513226
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7066238
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0133093
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.0534523
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.8051465
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.705816
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7082478
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.001599513
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.014367306
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973861, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011959188964767558511, type: 3}

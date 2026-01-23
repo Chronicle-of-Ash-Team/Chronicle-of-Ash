@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1001340057393656928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9059628135071467442}
+  m_Layer: 0
+  m_Name: Tomb_mortcage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9059628135071467442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001340057393656928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5928542103539993568}
+  - {fileID: 5928542103539992856}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5928542103314473614
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9059628135071467442}
+    m_Modifications:
+    - target: {fileID: 1030974357, guid: abc00000000007506964340747387992, type: 3}
+      propertyPath: m_Name
+      value: BP_tomb_mortcage_C_3_SM_mortcage_01_2_365
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974358, guid: abc00000000007506964340747387992, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974358, guid: abc00000000007506964340747387992, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974358, guid: abc00000000007506964340747387992, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974358, guid: abc00000000007506964340747387992, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974358, guid: abc00000000007506964340747387992, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974358, guid: abc00000000007506964340747387992, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974358, guid: abc00000000007506964340747387992, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974358, guid: abc00000000007506964340747387992, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974358, guid: abc00000000007506964340747387992, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974358, guid: abc00000000007506964340747387992, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974358, guid: abc00000000007506964340747387992, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974359, guid: abc00000000007506964340747387992, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000007506964340747387992, type: 3}
+--- !u!4 &5928542103539992856 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030974358, guid: abc00000000007506964340747387992, type: 3}
+  m_PrefabInstance: {fileID: 5928542103314473614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5928542103314473650
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9059628135071467442}
+    m_Modifications:
+    - target: {fileID: 1030973777, guid: abc00000000010793601555051917284, type: 3}
+      propertyPath: m_Name
+      value: BP_tomb_mortcage_C_3_SM_tomb_01_1_364
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973778, guid: abc00000000010793601555051917284, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973778, guid: abc00000000010793601555051917284, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973778, guid: abc00000000010793601555051917284, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973778, guid: abc00000000010793601555051917284, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973778, guid: abc00000000010793601555051917284, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973778, guid: abc00000000010793601555051917284, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973778, guid: abc00000000010793601555051917284, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973778, guid: abc00000000010793601555051917284, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973778, guid: abc00000000010793601555051917284, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973778, guid: abc00000000010793601555051917284, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973778, guid: abc00000000010793601555051917284, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973779, guid: abc00000000010793601555051917284, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000010793601555051917284, type: 3}
+--- !u!4 &5928542103539993568 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973778, guid: abc00000000010793601555051917284, type: 3}
+  m_PrefabInstance: {fileID: 5928542103314473650}
+  m_PrefabAsset: {fileID: 0}

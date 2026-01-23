@@ -1,0 +1,297 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3640285540393102310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8602501936957783599}
+  m_Layer: 0
+  m_Name: Pillar_small_03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8602501936957783599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3640285540393102310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4745115736365376696}
+  - {fileID: 4745115736365376655}
+  - {fileID: 4745115736365376686}
+  - {fileID: 4745115736365376690}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4745115736452612297
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8602501936957783599}
+    m_Modifications:
+    - target: {fileID: 1030972538, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Name
+      value: BP_pillar_small_03_C_873_SM_metal_ornamental_spike_01_2_260
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.9518762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.50681
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.9518754
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0012245178
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5558472
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00340271
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972540, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000002870711877371820262, type: 3}
+--- !u!4 &4745115736365376690 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+  m_PrefabInstance: {fileID: 4745115736452612297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4745115736452612309
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8602501936957783599}
+    m_Modifications:
+    - target: {fileID: 1030972538, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Name
+      value: BP_pillar_small_03_C_873_SM_metal_ornamental_spike_01_1_259
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.350655
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.187666
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.350655
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5468979
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972540, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000002870711877371820262, type: 3}
+--- !u!4 &4745115736365376686 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+  m_PrefabInstance: {fileID: 4745115736452612309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4745115736452612324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8602501936957783599}
+    m_Modifications:
+    - target: {fileID: 1030972507, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Name
+      value: BP_pillar_small_03_C_873_SM_pillar_small_01_4_262
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972509, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000017449533066940031206, type: 3}
+--- !u!4 &4745115736365376696 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+  m_PrefabInstance: {fileID: 4745115736452612324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4745115736452612349
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8602501936957783599}
+    m_Modifications:
+    - target: {fileID: 1030972529, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_Name
+      value: BP_pillar_small_03_C_873_SM_pillar_cap_3_261
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.90541404
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.905414
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.90541404
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000012598167998310548869, type: 3}
+--- !u!4 &4745115736365376655 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+  m_PrefabInstance: {fileID: 4745115736452612349}
+  m_PrefabAsset: {fileID: 0}

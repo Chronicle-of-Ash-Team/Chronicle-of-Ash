@@ -1,0 +1,2065 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2066709739083821759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6743144762439285229}
+  m_Layer: 0
+  m_Name: Gargoyle_alcove_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6743144762439285229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066709739083821759}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6582407629431438621}
+  - {fileID: 6582407629431438637}
+  - {fileID: 6582407629431438745}
+  - {fileID: 6582407629431439280}
+  - {fileID: 6582407629431439260}
+  - {fileID: 6582407629431437330}
+  - {fileID: 6582407629431438889}
+  - {fileID: 6582407629431438401}
+  - {fileID: 6582407629431438916}
+  - {fileID: 6582407629431438902}
+  - {fileID: 6582407629431438352}
+  - {fileID: 6582407629431438349}
+  - {fileID: 6582407629431438385}
+  - {fileID: 6582407629431438338}
+  - {fileID: 6582407629431439229}
+  - {fileID: 6582407629431438144}
+  - {fileID: 6582407629431438534}
+  - {fileID: 6582407629431438514}
+  - {fileID: 6582407629431438521}
+  - {fileID: 6582407629431438509}
+  - {fileID: 6582407629431439057}
+  - {fileID: 6582407629431437988}
+  - {fileID: 6582407629431435573}
+  - {fileID: 6582407629431435585}
+  - {fileID: 6582407629431435613}
+  - {fileID: 6582407629431438610}
+  - {fileID: 6582407629431438846}
+  - {fileID: 6582407629431439287}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &6582407629218748423
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972994, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_wall_small_broken_02_21_147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972995, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972995, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972995, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972995, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972995, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.6896019
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972995, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.032730103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972995, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.0999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972995, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972995, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972995, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972995, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972995, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972996, guid: abc00000000018300565900719684981, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000018300565900719684981, type: 3}
+--- !u!4 &6582407629431438916 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972995, guid: abc00000000018300565900719684981, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748443
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972972, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_wall_small_broken_01_20_146
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972973, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972973, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972973, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972973, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972973, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.68959427
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972973, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.032730103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972973, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.100006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972973, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972973, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972973, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972973, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972973, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972974, guid: abc00000000008213899840380900718, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000008213899840380900718, type: 3}
+--- !u!4 &6582407629431438902 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972973, guid: abc00000000008213899840380900718, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748443}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748456
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972928, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_wall_short_fence_23_149
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.610403
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.032730103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7999954
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071056
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707108
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972930, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000004947371831394232649, type: 3}
+--- !u!4 &6582407629431438889 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748467
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972529, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_pillar_cap_22_148
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.651585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.651585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.651585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9103947
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4402466
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.8000107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000012598167998310548869, type: 3}
+--- !u!4 &6582407629431438401 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748490
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972538, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_metal_ornamental_spike_01_16_143
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.972004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.854709
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.972004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9104214
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.545967
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7999878
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972540, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000002870711877371820262, type: 3}
+--- !u!4 &6582407629431438385 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748510
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972507, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_pillar_small_01_15_142
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.719654
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.719654
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.719654
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9104214
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4327316
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7999878
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972509, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000017449533066940031206, type: 3}
+--- !u!4 &6582407629431438338 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748514
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972529, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_pillar_cap_19_145
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.651585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.651585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.651585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9104214
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4402466
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7999878
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000012598167998310548869, type: 3}
+--- !u!4 &6582407629431438352 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972530, guid: abc00000000012598167998310548869, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748534
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972538, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_metal_ornamental_spike_01_17_144
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.404675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.084383
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.404675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9112988
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5524063
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7975388
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972540, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000002870711877371820262, type: 3}
+--- !u!4 &6582407629431438349 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748550
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972357, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_statue_raven_13_140
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.601371
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.601371
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.601371
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.74167824
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2026291
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.800003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972359, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000006370440402080412599, type: 3}
+--- !u!4 &6582407629431438144 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748550}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748570
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972507, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_pillar_small_01_12_139
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.33997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.789993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.200838
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5104141
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.032730103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972509, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000017449533066940031206, type: 3}
+--- !u!4 &6582407629431438534 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748594
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030973390, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_grave_01_14_141
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9638151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8537878
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8537881
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.3824635
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.22142029
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1087341
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.878629
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.017151166
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.46763623
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.09504388
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -3.368
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 145.735
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 10.566
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973392, guid: abc00000000010310420353365111103, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000010310420353365111103, type: 3}
+--- !u!4 &6582407629431439229 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973391, guid: abc00000000010310420353365111103, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748594}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748610
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972538, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_metal_ornamental_spike_01_9_137
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.972004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.854709
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.972004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9103947
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.545967
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.8000107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972540, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000002870711877371820262, type: 3}
+--- !u!4 &6582407629431438521 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748610}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748630
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972538, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_metal_ornamental_spike_01_8_136
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.404675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.084383
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.404675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9112797
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5524063
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.8024597
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972540, guid: abc00000000002870711877371820262, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000002870711877371820262, type: 3}
+--- !u!4 &6582407629431438509 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972539, guid: abc00000000002870711877371820262, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748630}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972507, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_pillar_small_01_10_138
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.719654
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.719654
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.719654
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9103947
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4327316
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.8000107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972509, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000017449533066940031206, type: 3}
+--- !u!4 &6582407629431438514 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748690
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030973478, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_grave_05_5_133
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0546641
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.71155405
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalScale.z
+      value: -0.76945794
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8858051
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.03904724
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.7922287
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9774232
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0055491626
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.093251735
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.18951865
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -1.404
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 100.629
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 21.816
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973480, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000003717343521485638595, type: 3}
+--- !u!4 &6582407629431435573 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748714
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030973434, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_grave_03_7_135
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1781743
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7709152
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.77091503
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8797054
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.108314514
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.69638824
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99011916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.020943707
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.021847606
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.13692427
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 2.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 87.847
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 15.696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973436, guid: abc00000000000940882719559114061, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000000940882719559114061, type: 3}
+--- !u!4 &6582407629431439057 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973435, guid: abc00000000000940882719559114061, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748734
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972313, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_statue_gargoyle_6_134
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1600001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.250023
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1511459
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.029159546
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9990483
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000048428774
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000001847744
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.043619383
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972315, guid: abc00000000017692327951467478603, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000017692327951467478603, type: 3}
+--- !u!4 &6582407629431437988 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972314, guid: abc00000000017692327951467478603, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748750
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972507, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_pillar_small_01_2_130
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.803872
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.6896038
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.032730103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7999954
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972509, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000017449533066940031206, type: 3}
+--- !u!4 &6582407629431438610 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748750}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748774
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030973478, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_grave_05_4_132
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.97794443
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.94717824
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9471781
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.1013584
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.03905487
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.97605896
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.94971097
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.048273675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.2691006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.15265532
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.546
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 121.729
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 18.418
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973480, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000003717343521485638595, type: 3}
+--- !u!4 &6582407629431435585 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748774}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748794
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030973478, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_grave_05_3_131
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1476799
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8323451
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalScale.z
+      value: -0.89024913
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.0206127
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.03904724
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.0340347
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.90825105
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.08124106
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.36989337
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.17792946
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.914
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 22.542
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973480, guid: abc00000000003717343521485638595, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000003717343521485638595, type: 3}
+--- !u!4 &6582407629431435613 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973479, guid: abc00000000003717343521485638595, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748834
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972507, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_pillar_small_01_1_129
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.803872
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.6896
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.032730103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.800003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972509, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000017449533066940031206, type: 3}
+--- !u!4 &6582407629431438846 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748834}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218748854
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972928, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_wall_short_fence_0_128
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.6103992
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.032730103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.8000107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071056
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.707108
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972930, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000004947371831394232649, type: 3}
+--- !u!4 &6582407629431439287 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218748854}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218749316
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030973096, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_stone_tile_02_28_154
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9803619
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.040138245
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.707108
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071056
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973098, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000018220574268115305327, type: 3}
+--- !u!4 &6582407629431438637 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218749316}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218749336
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972928, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_wall_short_fence_27_153
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9104214
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.032730103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.4999924
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972930, guid: abc00000000004947371831394232649, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000004947371831394232649, type: 3}
+--- !u!4 &6582407629431438745 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972929, guid: abc00000000004947371831394232649, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218749336}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218749364
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030973096, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_stone_tile_02_29_155
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.707108
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071056
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973098, guid: abc00000000018220574268115305327, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000018220574268115305327, type: 3}
+--- !u!4 &6582407629431438621 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973097, guid: abc00000000018220574268115305327, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218749364}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218749376
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972507, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_pillar_small_01_25_151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9103947
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.032730103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.8000107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972509, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000017449533066940031206, type: 3}
+--- !u!4 &6582407629431439260 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218749376}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218749396
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972357, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_statue_raven_24_150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.601371
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.601371
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.601371
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7045574
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2026291
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7999954
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972359, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000006370440402080412599, type: 3}
+--- !u!4 &6582407629431437330 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218749396}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6582407629218749420
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6743144762439285229}
+    m_Modifications:
+    - target: {fileID: 1030972507, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Name
+      value: BP_gargoyle_alcove_02_C_1_SM_pillar_small_01_26_152
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9104214
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.032730103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7999878
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000002592802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972509, guid: abc00000000017449533066940031206, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000017449533066940031206, type: 3}
+--- !u!4 &6582407629431439280 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972508, guid: abc00000000017449533066940031206, type: 3}
+  m_PrefabInstance: {fileID: 6582407629218749420}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,1022 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7482113052485498685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7043347460832135615}
+  m_Layer: 0
+  m_Name: Coffin_skeleton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7043347460832135615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482113052485498685}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6590116781107755708}
+  - {fileID: 6590116781107753767}
+  - {fileID: 6590116781107753755}
+  - {fileID: 6590116781107756127}
+  - {fileID: 6590116781107755993}
+  - {fileID: 6590116781107755863}
+  - {fileID: 6590116781107755937}
+  - {fileID: 6590116781107755922}
+  - {fileID: 6590116781107751729}
+  - {fileID: 6590116781107751886}
+  - {fileID: 6590116781107754125}
+  - {fileID: 6590116781107754081}
+  - {fileID: 6590116781107755887}
+  - {fileID: 6590116781107751680}
+  - {fileID: 6590116781107751697}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &6590116780922361937
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030972221, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_bones_femur_3_10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9626895
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8146736
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8146744
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.44750023
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.057235718
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.118637085
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.031095428
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.99238044
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.003734612
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.119164824
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972223, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000006723679758268543181, type: 3}
+--- !u!4 &6590116781107755887 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922361937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922361939
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030976338, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_cobweb_02_2_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5996418
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5996419
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.59964186
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5213528
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.28746796
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.48324585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.56012416
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.21469508
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.33799016
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7252101
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000017568565926410361627, type: 3}
+--- !u!4 &6590116781107751680 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922361939}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922361946
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030976330, guid: abc00000000007407238716676463442, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_cobweb_03_1_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976331, guid: abc00000000007407238716676463442, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976331, guid: abc00000000007407238716676463442, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.42988887
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976331, guid: abc00000000007407238716676463442, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.39333996
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976331, guid: abc00000000007407238716676463442, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3368179
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976331, guid: abc00000000007407238716676463442, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.09196472
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976331, guid: abc00000000007407238716676463442, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3100586
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976331, guid: abc00000000007407238716676463442, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.19412231
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976331, guid: abc00000000007407238716676463442, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.16004668
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976331, guid: abc00000000007407238716676463442, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.526116
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976331, guid: abc00000000007407238716676463442, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.83511835
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976331, guid: abc00000000007407238716676463442, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.012822961
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000007407238716676463442, type: 3}
+--- !u!4 &6590116781107751697 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030976331, guid: abc00000000007407238716676463442, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922361946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922361957
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030974467, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_chain_staple_4_11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6197514
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.61975205
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.61975145
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.3744488
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17295074
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.41687012
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7557375
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0000005308541
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.65487474
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000042840855
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974469, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000007178215106207639229, type: 3}
+--- !u!4 &6590116781107754081 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922361957}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922361993
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030974467, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_chain_staple_5_12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.61975205
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.61975205
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.61975205
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.26140404
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17295074
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.24920654
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.75620025
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000005215407
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.65434027
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00000039488083
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974469, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000007178215106207639229, type: 3}
+--- !u!4 &6590116781107754125 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922361993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922362013
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030976338, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_cobweb_02_6_13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.33800626
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.33800638
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5256821
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.80945015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.20607758
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.25965118
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.043184914
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7176505
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.65277225
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.23874953
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000017568565926410361627, type: 3}
+--- !u!4 &6590116781107751886 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030976339, guid: abc00000000017568565926410361627, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922362013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922362028
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030972221, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_bones_femur_8_15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.788595
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6405793
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.64057946
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5781441
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05722809
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.12010193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.031106614
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.9927421
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.003637319
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.11611289
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972223, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000006723679758268543181, type: 3}
+--- !u!4 &6590116781107755922 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922362028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922362030
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030976414, guid: abc00000000003986778531007347344, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_cobweb_01_7_14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976415, guid: abc00000000003986778531007347344, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976415, guid: abc00000000003986778531007347344, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.41034734
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976415, guid: abc00000000003986778531007347344, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.41034728
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976415, guid: abc00000000003986778531007347344, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.41034722
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976415, guid: abc00000000003986778531007347344, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0349483
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976415, guid: abc00000000003986778531007347344, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.15208435
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976415, guid: abc00000000003986778531007347344, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.3781128
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976415, guid: abc00000000003986778531007347344, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.743812
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976415, guid: abc00000000003986778531007347344, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.10929498
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976415, guid: abc00000000003986778531007347344, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.050760645
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030976415, guid: abc00000000003986778531007347344, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6574357
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000003986778531007347344, type: 3}
+--- !u!4 &6590116781107751729 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030976415, guid: abc00000000003986778531007347344, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922362030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922362032
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030971915, guid: abc00000000011513085626025663231, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_Coffin_01_9_16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030971916, guid: abc00000000011513085626025663231, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030971916, guid: abc00000000011513085626025663231, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030971916, guid: abc00000000011513085626025663231, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030971916, guid: abc00000000011513085626025663231, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030971916, guid: abc00000000011513085626025663231, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030971916, guid: abc00000000011513085626025663231, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030971916, guid: abc00000000011513085626025663231, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030971916, guid: abc00000000011513085626025663231, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030971916, guid: abc00000000011513085626025663231, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030971916, guid: abc00000000011513085626025663231, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030971916, guid: abc00000000011513085626025663231, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030971916, guid: abc00000000011513085626025663231, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011513085626025663231, type: 3}
+--- !u!4 &6590116781107755708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030971916, guid: abc00000000011513085626025663231, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922362032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922362059
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030972265, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_bones_skull_01_10_17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.7897358
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.039138794
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0055007935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.88489366
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.41748938
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.1868098
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.08813594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972267, guid: abc00000000015951966877088958703, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000015951966877088958703, type: 3}
+--- !u!4 &6590116781107755937 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972266, guid: abc00000000015951966877088958703, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922362059}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922362067
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030972291, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_bones_ribs_11_18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.699573
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6995729
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.699573
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2342129
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1390152
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.17158508
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9951713
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000029802325
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.09815325
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000043213373
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972293, guid: abc00000000002460393301088735022, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000002460393301088735022, type: 3}
+--- !u!4 &6590116781107755863 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972292, guid: abc00000000002460393301088735022, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922362067}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922362087
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030972221, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_bones_femur_12_19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.78859496
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.64057994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.64058
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.7121887
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05080414
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.20983887
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.0016047733
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.18051249
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.031277943
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.98307395
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972223, guid: abc00000000006723679758268543181, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000006723679758268543181, type: 3}
+--- !u!4 &6590116781107755993 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972222, guid: abc00000000006723679758268543181, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922362087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922363659
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030972243, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_bones_jaw_13_20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.7329941
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.039100647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.13562775
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9797901
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0000004731118
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.20002845
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000016763805
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972245, guid: abc00000000011947674418258740946, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011947674418258740946, type: 3}
+--- !u!4 &6590116781107756127 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972244, guid: abc00000000011947674418258740946, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922363659}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922363679
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030974467, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_chain_staple_14_21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.61975205
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.61975205
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.61975193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.21344566
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17294312
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.2423935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7576118
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000027939674
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6527055
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0000004465691
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974469, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000007178215106207639229, type: 3}
+--- !u!4 &6590116781107753755 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922363679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6590116780922363683
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7043347460832135615}
+    m_Modifications:
+    - target: {fileID: 1030974467, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_Name
+      value: BP_coffin_skeleton_C_1_SM_chain_staple_15_22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.619752
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.61975193
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.61975205
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.3265476
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17295074
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.40950775
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7580729
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000004358592
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6521698
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00000039534663
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974469, guid: abc00000000007178215106207639229, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000007178215106207639229, type: 3}
+--- !u!4 &6590116781107753767 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030974468, guid: abc00000000007178215106207639229, type: 3}
+  m_PrefabInstance: {fileID: 6590116780922363683}
+  m_PrefabAsset: {fileID: 0}

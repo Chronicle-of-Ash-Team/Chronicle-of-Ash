@@ -1,0 +1,569 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5541641596492813879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5612076899615256282}
+  m_Layer: 0
+  m_Name: Grave_comp_05
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5612076899615256282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5541641596492813879}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3139135249103159441}
+  - {fileID: 3139135249103159916}
+  - {fileID: 3139135249103159892}
+  - {fileID: 3139135249103159906}
+  - {fileID: 3139135249103160802}
+  - {fileID: 3139135249103160772}
+  - {fileID: 3139135249103160740}
+  - {fileID: 3139135249103160804}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3139135249590577280
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5612076899615256282}
+    m_Modifications:
+    - target: {fileID: 1030973456, guid: abc00000000012342700129686334586, type: 3}
+      propertyPath: m_Name
+      value: BP_grave_comp_05_C_1_SM_grave_04_7_338
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973457, guid: abc00000000012342700129686334586, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973457, guid: abc00000000012342700129686334586, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973457, guid: abc00000000012342700129686334586, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973457, guid: abc00000000012342700129686334586, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973457, guid: abc00000000012342700129686334586, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973457, guid: abc00000000012342700129686334586, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973457, guid: abc00000000012342700129686334586, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973457, guid: abc00000000012342700129686334586, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973457, guid: abc00000000012342700129686334586, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973457, guid: abc00000000012342700129686334586, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973457, guid: abc00000000012342700129686334586, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973458, guid: abc00000000012342700129686334586, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000012342700129686334586, type: 3}
+--- !u!4 &3139135249103159441 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973457, guid: abc00000000012342700129686334586, type: 3}
+  m_PrefabInstance: {fileID: 3139135249590577280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3139135249590577348
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5612076899615256282}
+    m_Modifications:
+    - target: {fileID: 1030974117, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_Name
+      value: BP_grave_comp_05_C_1_SM_candle_02_4_335
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.015634
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0156338
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0156342
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.2356286
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06290436
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.13856506
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.72309947
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.01861638
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6880763
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.057719868
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974119, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000001833029746077444960, type: 3}
+--- !u!4 &3139135249103159906 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
+  m_PrefabInstance: {fileID: 3139135249590577348}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3139135249590577384
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5612076899615256282}
+    m_Modifications:
+    - target: {fileID: 1030974139, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_Name
+      value: BP_grave_comp_05_C_1_SM_candle_03_5_336
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2615368
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.261537
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2615368
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.15770292
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05995941
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.30485535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9954381
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.09540978
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974141, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000002070806389736705641, type: 3}
+--- !u!4 &3139135249103159892 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+  m_PrefabInstance: {fileID: 3139135249590577384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3139135249590577404
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5612076899615256282}
+    m_Modifications:
+    - target: {fileID: 1030974095, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_Name
+      value: BP_grave_comp_05_C_1_SM_candle_01_6_337
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8812359
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.881236
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8812359
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.12471008
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.07912445
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.24233246
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9954381
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.09540978
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974097, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000000489225338623424107, type: 3}
+--- !u!4 &3139135249103159916 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+  m_PrefabInstance: {fileID: 3139135249590577404}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3139135249590578968
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5612076899615256282}
+    m_Modifications:
+    - target: {fileID: 1030974139, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_Name
+      value: BP_grave_comp_05_C_1_SM_candle_03_1_332
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1670053
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4725542
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1670051
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.28473043
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06838989
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.27036285
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9534159
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.008530695
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.3011347
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.015600762
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974141, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000002070806389736705641, type: 3}
+--- !u!4 &3139135249103160740 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
+  m_PrefabInstance: {fileID: 3139135249590578968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3139135249590578988
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5612076899615256282}
+    m_Modifications:
+    - target: {fileID: 1030974183, guid: abc00000000014911421909876589774, type: 3}
+      propertyPath: m_Name
+      value: BP_grave_comp_05_C_1_SM_candle_base_02_2_333
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974184, guid: abc00000000014911421909876589774, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974184, guid: abc00000000014911421909876589774, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6368725
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974184, guid: abc00000000014911421909876589774, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.131406
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974184, guid: abc00000000014911421909876589774, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.73264647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974184, guid: abc00000000014911421909876589774, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.22206545
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974184, guid: abc00000000014911421909876589774, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.034324646
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974184, guid: abc00000000014911421909876589774, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.21983337
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974184, guid: abc00000000014911421909876589774, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.043618493
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974184, guid: abc00000000014911421909876589774, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974184, guid: abc00000000014911421909876589774, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9990483
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974184, guid: abc00000000014911421909876589774, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974185, guid: abc00000000014911421909876589774, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000014911421909876589774, type: 3}
+--- !u!4 &3139135249103160772 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030974184, guid: abc00000000014911421909876589774, type: 3}
+  m_PrefabInstance: {fileID: 3139135249590578988}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3139135249590578992
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5612076899615256282}
+    m_Modifications:
+    - target: {fileID: 1030974161, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_Name
+      value: BP_grave_comp_05_C_1_SM_candle_base_01_3_334
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974162, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974162, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.48975694
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974162, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.489757
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974162, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.48975694
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974162, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.18543863
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974162, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.059631348
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974162, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.21424103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974162, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9954381
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974162, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974162, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.09540978
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974162, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974163, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000001809851061607989973, type: 3}
+--- !u!4 &3139135249103160802 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030974162, guid: abc00000000001809851061607989973, type: 3}
+  m_PrefabInstance: {fileID: 3139135249590578992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3139135249590579060
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5612076899615256282}
+    m_Modifications:
+    - target: {fileID: 1030974095, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_Name
+      value: BP_grave_comp_05_C_1_SM_candle_01_0_331
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9912594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.991259
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9912594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.20112562
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.078201294
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.17635345
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99985474
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.01704684
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974097, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000000489225338623424107, type: 3}
+--- !u!4 &3139135249103160804 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
+  m_PrefabInstance: {fileID: 3139135249590579060}
+  m_PrefabAsset: {fileID: 0}

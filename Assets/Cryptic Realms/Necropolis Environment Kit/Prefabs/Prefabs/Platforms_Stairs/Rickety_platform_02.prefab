@@ -1,0 +1,376 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4387882192725883811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9092361430780830724}
+  m_Layer: 0
+  m_Name: Rickety_platform_02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9092361430780830724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4387882192725883811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9158467906332163352}
+  - {fileID: 9158467906332163798}
+  - {fileID: 9158467906332163770}
+  - {fileID: 9158467906332163364}
+  - {fileID: 9158467906332163376}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &9158467907322976010
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9092361430780830724}
+    m_Modifications:
+    - target: {fileID: 1030973969, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_Name
+      value: BP_rickety_platform_02_C_1_SM_wood_plank_01_3_520
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5045449
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.42089203
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.59744686
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9997114
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00023549692
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0000056587696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.024022125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.027
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 2.753
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973971, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000007713802480782945828, type: 3}
+--- !u!4 &9158467906332163352 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+  m_PrefabInstance: {fileID: 9158467907322976010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9158467907322976030
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9092361430780830724}
+    m_Modifications:
+    - target: {fileID: 1030973859, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_Name
+      value: BP_rickety_platform_02_C_1_SM_wood_beam_01_4_521
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.53236187
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.28466603
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.38752288
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.39441872
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.07862854
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7164612
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.6996359
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000023805624
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7144996
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000014131074
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973861, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011959188964767558511, type: 3}
+--- !u!4 &9158467906332163770 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+  m_PrefabInstance: {fileID: 9158467907322976030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9158467907322976034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9092361430780830724}
+    m_Modifications:
+    - target: {fileID: 1030973969, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_Name
+      value: BP_rickety_platform_02_C_1_SM_wood_plank_01_1_518
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6985476
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4208921
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6768838
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.24253082
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0006942749
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03829956
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.007924755
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.072874844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99730945
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0005782251
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973971, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000007713802480782945828, type: 3}
+--- !u!4 &9158467906332163376 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+  m_PrefabInstance: {fileID: 9158467907322976034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9158467907322976054
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9092361430780830724}
+    m_Modifications:
+    - target: {fileID: 1030973969, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_Name
+      value: BP_rickety_platform_02_C_1_SM_wood_plank_01_2_519
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.53068864
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.42089355
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6768844
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.29380035
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0070877075
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.044403076
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.025747372
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.022009982
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00056638167
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.99942607
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973971, guid: abc00000000007713802480782945828, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000007713802480782945828, type: 3}
+--- !u!4 &9158467906332163364 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973970, guid: abc00000000007713802480782945828, type: 3}
+  m_PrefabInstance: {fileID: 9158467907322976054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9158467907322976114
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9092361430780830724}
+    m_Modifications:
+    - target: {fileID: 1030973859, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_Name
+      value: BP_rickety_platform_02_C_1_SM_wood_beam_01_5_522
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5451706
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.28466627
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.38752288
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3665619
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06565094
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.60871124
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.0041549043
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.71448684
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0042472375
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.69962376
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973861, guid: abc00000000011959188964767558511, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000011959188964767558511, type: 3}
+--- !u!4 &9158467906332163798 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973860, guid: abc00000000011959188964767558511, type: 3}
+  m_PrefabInstance: {fileID: 9158467907322976114}
+  m_PrefabAsset: {fileID: 0}

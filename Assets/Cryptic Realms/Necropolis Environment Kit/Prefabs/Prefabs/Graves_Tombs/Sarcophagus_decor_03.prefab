@@ -1,0 +1,681 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &966892164714656371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6364837805910470538}
+  m_Layer: 0
+  m_Name: Sarcophagus_decor_03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6364837805910470538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966892164714656371}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6752968174574458361}
+  - {fileID: 6752968174574457866}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6752968174574457867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6752968174574457866}
+  - component: {fileID: 6752968174574457865}
+  - component: {fileID: 6752968174574457864}
+  m_Layer: 0
+  m_Name: BP_sarcophagus_decor_03_C_1_SM_sarcophagus_lid_02_2_361
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6752968174574457866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457867}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.01774472, y: 1.1714401, z: 0.018486023}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6752968174574457878}
+  - {fileID: 6752968174574457874}
+  - {fileID: 6752968174574457886}
+  - {fileID: 6752968174574457882}
+  - {fileID: 6752968174574460793}
+  - {fileID: 6752968174574460693}
+  m_Father: {fileID: 6364837805910470538}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &6752968174574457865
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457867}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.014595, y: 0.204207, z: -0.001848}
+  m_Size: 3.099659
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.3495523
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6752968174574457877}
+  - screenRelativeHeight: 0.14
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6752968174574457873}
+  - screenRelativeHeight: 0.043011937
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6752968174574457885}
+  - screenRelativeHeight: 0.0042216624
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6752968174574457881}
+  m_Enabled: 1
+--- !u!64 &6752968174574457864
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457867}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300008, guid: abc00000000009567085374796102634, type: 3}
+--- !u!1 &6752968174574457875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6752968174574457874}
+  - component: {fileID: 6752968174574457873}
+  - component: {fileID: 6752968174574457872}
+  m_Layer: 0
+  m_Name: SM_sarcophagus_lid_02_LOD1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6752968174574457874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457875}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6752968174574457866}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &6752968174574457873
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457875}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 1
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: abc00000000001958718275361972095, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &6752968174574457872
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457875}
+  m_Mesh: {fileID: 4300002, guid: abc00000000009567085374796102634, type: 3}
+--- !u!1 &6752968174574457879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6752968174574457878}
+  - component: {fileID: 6752968174574457877}
+  - component: {fileID: 6752968174574457876}
+  m_Layer: 0
+  m_Name: SM_sarcophagus_lid_02_LOD0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6752968174574457878
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457879}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6752968174574457866}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &6752968174574457877
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457879}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 1
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: abc00000000001958718275361972095, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &6752968174574457876
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457879}
+  m_Mesh: {fileID: 4300000, guid: abc00000000009567085374796102634, type: 3}
+--- !u!1 &6752968174574457883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6752968174574457882}
+  - component: {fileID: 6752968174574457881}
+  - component: {fileID: 6752968174574457880}
+  m_Layer: 0
+  m_Name: SM_sarcophagus_lid_02_LOD3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6752968174574457882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457883}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6752968174574457866}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &6752968174574457881
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457883}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 1
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: abc00000000001958718275361972095, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &6752968174574457880
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457883}
+  m_Mesh: {fileID: 4300006, guid: abc00000000009567085374796102634, type: 3}
+--- !u!1 &6752968174574457887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6752968174574457886}
+  - component: {fileID: 6752968174574457885}
+  - component: {fileID: 6752968174574457884}
+  m_Layer: 0
+  m_Name: SM_sarcophagus_lid_02_LOD2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6752968174574457886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457887}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6752968174574457866}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &6752968174574457885
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457887}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 1
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: abc00000000001958718275361972095, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &6752968174574457884
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6752968174574457887}
+  m_Mesh: {fileID: 4300004, guid: abc00000000009567085374796102634, type: 3}
+--- !u!1001 &6752968174229273791
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6752968174574457866}
+    m_Modifications:
+    - target: {fileID: 1030972357, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_Name
+      value: BP_sarcophagus_decor_03_C_1_SM_statue_raven_4_363
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6500011
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.65000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6500011
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.018074512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.41053772
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.8003082
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.710614
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0003076312
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7035819
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00030793494
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972359, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000006370440402080412599, type: 3}
+--- !u!4 &6752968174574460793 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+  m_PrefabInstance: {fileID: 6752968174229273791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6752968174229273811
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6752968174574457866}
+    m_Modifications:
+    - target: {fileID: 1030972357, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_Name
+      value: BP_sarcophagus_decor_03_C_1_SM_statue_raven_3_362
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6500004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.65000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6500005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.017988145
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.41053772
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.797081
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7035819
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00030793494
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.710614
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0003076312
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972359, guid: abc00000000006370440402080412599, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000006370440402080412599, type: 3}
+--- !u!4 &6752968174574460693 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972358, guid: abc00000000006370440402080412599, type: 3}
+  m_PrefabInstance: {fileID: 6752968174229273811}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6752968174229273850
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6364837805910470538}
+    m_Modifications:
+    - target: {fileID: 1030973698, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_Name
+      value: BP_sarcophagus_decor_03_C_1_SM_sarcophagus_base_0_360
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973700, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000017708257309010189240, type: 3}
+--- !u!4 &6752968174574458361 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+  m_PrefabInstance: {fileID: 6752968174229273850}
+  m_PrefabAsset: {fileID: 0}

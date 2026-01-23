@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6958680251455603792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7433576567758730868}
+  m_Layer: 0
+  m_Name: Sarcophagus_altar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7433576567758730868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958680251455603792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6393574141405004507}
+  - {fileID: 6393574141405004477}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &6393574141729106853
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7433576567758730868}
+    m_Modifications:
+    - target: {fileID: 1030973821, guid: abc00000000000204538985434904286, type: 3}
+      propertyPath: m_Name
+      value: BP_sarcophagus_altar_C_1_SM_tomb_slab_02_1_350
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973822, guid: abc00000000000204538985434904286, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973822, guid: abc00000000000204538985434904286, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973822, guid: abc00000000000204538985434904286, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973822, guid: abc00000000000204538985434904286, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973822, guid: abc00000000000204538985434904286, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.017751694
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973822, guid: abc00000000000204538985434904286, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1714401
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973822, guid: abc00000000000204538985434904286, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.018478394
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973822, guid: abc00000000000204538985434904286, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071061
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973822, guid: abc00000000000204538985434904286, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973822, guid: abc00000000000204538985434904286, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071075
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973822, guid: abc00000000000204538985434904286, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973823, guid: abc00000000000204538985434904286, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000000204538985434904286, type: 3}
+--- !u!4 &6393574141405004507 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973822, guid: abc00000000000204538985434904286, type: 3}
+  m_PrefabInstance: {fileID: 6393574141729106853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6393574141729106878
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7433576567758730868}
+    m_Modifications:
+    - target: {fileID: 1030973698, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_Name
+      value: BP_sarcophagus_altar_C_1_SM_sarcophagus_base_0_349
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973700, guid: abc00000000017708257309010189240, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000017708257309010189240, type: 3}
+--- !u!4 &6393574141405004477 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030973699, guid: abc00000000017708257309010189240, type: 3}
+  m_PrefabInstance: {fileID: 6393574141729106878}
+  m_PrefabAsset: {fileID: 0}
