@@ -1,0 +1,301 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3089925162177146597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2883835585488558976}
+  m_Layer: 0
+  m_Name: Fence_03_4m
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2883835585488558976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3089925162177146597}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3253865039482517731}
+  - {fileID: 3253865039482517799}
+  - {fileID: 3253865039482517845}
+  - {fileID: 3253865039482517825}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3253865040467041364
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2883835585488558976}
+    m_Modifications:
+    - target: {fileID: 1030972598, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_Name
+      value: BP_fence_03_4m_C_1_SM_curb_02_1_295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972600, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000000287624057976434965, type: 3}
+--- !u!4 &3253865039482517731 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+  m_PrefabInstance: {fileID: 3253865040467041364}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3253865040467041680
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2883835585488558976}
+    m_Modifications:
+    - target: {fileID: 1030972598, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_Name
+      value: BP_fence_03_4m_C_1_SM_curb_02_4_298
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972600, guid: abc00000000000287624057976434965, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000000287624057976434965, type: 3}
+--- !u!4 &3253865039482517799 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972599, guid: abc00000000000287624057976434965, type: 3}
+  m_PrefabInstance: {fileID: 3253865040467041680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3253865040467041708
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2883835585488558976}
+    m_Modifications:
+    - target: {fileID: 1030972664, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_Name
+      value: BP_fence_03_4m_C_1_SM_fence_simple_small_3_297
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972666, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000013851787692751627700, type: 3}
+--- !u!4 &3253865039482517845 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+  m_PrefabInstance: {fileID: 3253865040467041708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3253865040467041720
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2883835585488558976}
+    m_Modifications:
+    - target: {fileID: 1030972664, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_Name
+      value: BP_fence_03_4m_C_1_SM_fence_simple_small_2_296
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030972666, guid: abc00000000013851787692751627700, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abc00000000013851787692751627700, type: 3}
+--- !u!4 &3253865039482517825 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1030972665, guid: abc00000000013851787692751627700, type: 3}
+  m_PrefabInstance: {fileID: 3253865040467041720}
+  m_PrefabAsset: {fileID: 0}
