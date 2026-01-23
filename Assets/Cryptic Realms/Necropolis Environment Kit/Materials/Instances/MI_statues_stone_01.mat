@@ -1,0 +1,234 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2160605060994234726
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0
+--- !u!114 &-826333074992752391
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 13
+  hdPluginSubTargetMaterialVersions:
+    m_Keys: []
+    m_Values: 
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MI_statues_stone_01
+  m_Shader: {fileID: -6465566751694194690, guid: 4b8cd4f11db369f46a0562891a745a34, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _DISABLE_SSR_TRANSPARENT
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2225
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - TransparentDepthPrepass
+  - TransparentDepthPostpass
+  - TransparentBackface
+  - RayTracingPrepass
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Material_Texture2D_0:
+        m_Texture: {fileID: 2800000, guid: abc00000000011460644288148843233, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Material_Texture2D_1:
+        m_Texture: {fileID: 2800000, guid: abc00000000012185821326792525524, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Material_Texture2D_2:
+        m_Texture: {fileID: 2800000, guid: abc00000000009226617947650456546, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Material_Texture2D_3:
+        m_Texture: {fileID: 2800000, guid: abc00000000012665151644316703912, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Material_Texture2D_4:
+        m_Texture: {fileID: 2800000, guid: abc00000000006510892052448791821, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BakedNormalmap:
+        m_Texture: {fileID: 2800000, guid: abc00000000011460644288148843233, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Masks:
+        m_Texture: {fileID: 2800000, guid: abc00000000012665151644316703912, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TiledAlbedo:
+        m_Texture: {fileID: 2800000, guid: abc00000000009226617947650456546, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TiledMasks:
+        m_Texture: {fileID: 2800000, guid: abc00000000006510892052448791821, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TiledNormalmap:
+        m_Texture: {fileID: 2800000, guid: abc00000000012185821326792525524, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _AlbedoStrength: 1.730422
+    - _AlphaCutoffEnable: 0
+    - _AlphaDstBlend: 0
+    - _AlphaSrcBlend: 1
+    - _AlphaToMask: 0
+    - _AlphaToMaskInspectorValue: 0
+    - _BMaskIntensity: 0.957933
+    - _BUILTIN_QueueControl: -1
+    - _BUILTIN_QueueOffset: 0
+    - _B_ColorIntensity: 1.84836
+    - _B_MetallicContrast: 1
+    - _B_MetallicStrength: 0.8
+    - _B_RoughnessContrast: 1
+    - _B_RoughnessStrength: 1
+    - _BakedNormalmapStrength: 1
+    - _BaseMetallic: 0
+    - _BaseRoughness: 1.1
+    - _BlendMode: 0
+    - _ConservativeDepthOffsetEnable: 0
+    - _CullMode: 2
+    - _CullModeForward: 2
+    - _DepthOffsetEnable: 0
+    - _DoubleSidedEnable: 0
+    - _DoubleSidedGIMode: 0
+    - _DoubleSidedNormalMode: 2
+    - _DstBlend: 0
+    - _DstBlend2: 0
+    - _EnableBlendModePreserveSpecularLighting: 1
+    - _EnableFogOnTransparent: 1
+    - _ExcludeFromTUAndAA: 0
+    - _FliNormalmapGreenChannel: 1
+    - _GMaskIntensity: 0.92
+    - _G_ColorIntensity: -0.09
+    - _G_MetallicContrast: 1
+    - _G_MetallicStrength: 0.8
+    - _G_RoughnessContrast: 1
+    - _G_RoughnessStrength: -0.231999
+    - _GeneralMetallicStrength: 0
+    - _GeneralRoughnessStrength: 0.4
+    - _MaterialID: 1
+    - _MaterialTypeMask: 2
+    - _OpaqueCullMode: 2
+    - _PerPixelSorting: 0
+    - _QueueControl: 1
+    - _QueueOffset: 0
+    - _RMaskIntensity: 1.817057
+    - _R_ColorIntensity: 1.22827
+    - _R_MetallicContrast: 1
+    - _R_Metallic_Strength: 1
+    - _R_RoughnessContrast: 1
+    - _R_RoughnessStrength: 0.136
+    - _RayTracing: 0
+    - _ReceivesSSR: 1
+    - _ReceivesSSRTransparent: 0
+    - _RefractionModel: 0
+    - _RenderQueueType: 1
+    - _RequireSplitLighting: 0
+    - _SrcBlend: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 8
+    - _StencilRefDistortionVec: 4
+    - _StencilRefGBuffer: 10
+    - _StencilRefMV: 40
+    - _StencilWriteMask: 6
+    - _StencilWriteMaskDepth: 9
+    - _StencilWriteMaskDistortionVec: 4
+    - _StencilWriteMaskGBuffer: 15
+    - _StencilWriteMaskMV: 41
+    - _SupportDecals: 1
+    - _SurfaceType: 0
+    - _TileableMetallicContrast: 1
+    - _TileableNormalmapStrength: 1.5
+    - _TileableRoughnessContrast: 0.46
+    - _TileableTextureSize: 1.424512
+    - _TransmissionEnable: 1
+    - _TransparentBackfaceEnable: 0
+    - _TransparentCullMode: 2
+    - _TransparentDepthPostpassEnable: 0
+    - _TransparentDepthPrepassEnable: 0
+    - _TransparentSortPriority: 0
+    - _TransparentWritingMotionVec: 0
+    - _TransparentZWrite: 0
+    - _UVSec: 0
+    - _UseOnlyTileableMaterial: 0
+    - _UseShadowThreshold: 0
+    - _Use_Blue_Channel_Grunge02: 1
+    - _Use_Green_Channel_Grunge01: 1
+    - _Use_Red_Channel_Edgewear: 1
+    - _ZTestDepthEqualForOpaque: 3
+    - _ZTestGBuffer: 4
+    - _ZTestTransparent: 4
+    - _ZWrite: 1
+    m_Colors:
+    - LocalObjectBoundsMax: {r: 100, g: 100, b: 100, a: 0}
+    - LocalObjectBoundsMin: {r: 0, g: 0, b: 0, a: 0}
+    - View_BufferSizeAndInvSize: {r: 1920, g: 1080, b: 0.00052, a: 0.00092}
+    - _AlbedoTint: {r: 0.6862745, g: 0.6862745, b: 0.6862745, a: 1}
+    - _B_MaskColor: {r: 0.7372549, g: 0.7372549, b: 0.7372549, a: 1}
+    - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _G_MaskColor: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
+    - _R_MaskColor: {r: 0.7803922, g: 0.7686275, b: 0.7568628, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!114 &4264100063535234354
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 10

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 768276ca3d7c4324b85bdc96e76fc05b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 277388
+  packageName: Necropolis - Fantasy Graveyard Kit
+  packageVersion: 1.2.1
+  assetPath: Assets/Cryptic Realms/Necropolis Environment Kit/Materials/Instances/MI_gates_windows.mat
+  uploadId: 752212
