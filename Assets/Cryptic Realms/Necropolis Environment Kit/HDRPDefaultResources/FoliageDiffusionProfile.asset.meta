@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aa01a83df1ac2b447955d4a91f75dbf5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 277388
+  packageName: Necropolis - Fantasy Graveyard Kit
+  packageVersion: 1.2.1
+  assetPath: Assets/Cryptic Realms/Necropolis Environment Kit/HDRPDefaultResources/FoliageDiffusionProfile.asset
+  uploadId: 752212
