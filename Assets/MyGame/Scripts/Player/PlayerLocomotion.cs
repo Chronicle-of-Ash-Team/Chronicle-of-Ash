@@ -9,12 +9,14 @@ public class PlayerLocomotion : MonoBehaviour
     [SerializeField] private float runSpeed = 7f;
 
     private PlayerAnimation animationHandler;
+    private PlayerTargetLock targetLockHandler;
 
     private bool isRunning = false;
 
     void Start()
     {
         animationHandler = GetComponent<PlayerAnimation>();
+        targetLockHandler = GetComponent<PlayerTargetLock>();
     }
 
     private void OnEnable()
@@ -64,7 +66,13 @@ public class PlayerLocomotion : MonoBehaviour
             targetVelocity.y = rb.linearVelocity.y; // Giữ velocity Y (gravity)
             rb.linearVelocity = targetVelocity;
 
-            if (moveDir != Vector3.zero)
+
+            if (targetLockHandler.IsTargeting())
+            {
+                Vector3 lookPos = targetLockHandler.GetCurrentTarget().position;
+                lookPos.y = 0f;
+                transform.LookAt(lookPos);
+            } else if(moveDir != Vector3.zero)
             {
                 Quaternion targetRotation = Quaternion.LookRotation(moveDir);
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
