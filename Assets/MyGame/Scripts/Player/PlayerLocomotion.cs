@@ -67,17 +67,6 @@ public class PlayerLocomotion : MonoBehaviour
             rb.linearVelocity = targetVelocity;
 
 
-            if (targetLockHandler.GetIsTargeting())
-            {
-                Vector3 lookPos = targetLockHandler.GetCurrentTarget().position;
-                lookPos.y = 0f;
-                transform.LookAt(lookPos);
-            }
-            else if (moveDir != Vector3.zero)
-            {
-                Quaternion targetRotation = Quaternion.LookRotation(moveDir);
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
-            }
         }
         else
         {
@@ -87,9 +76,21 @@ public class PlayerLocomotion : MonoBehaviour
             stopVelocity.z = 0f;
             rb.linearVelocity = stopVelocity;
         }
-        if (PlayerTargetLock.Instance.GetIsTargeting())
+
+
+
+        if (targetLockHandler.GetIsTargeting())
         {
-            UpdateAnimation(inputDir);
+            Vector3 lookPos = targetLockHandler.GetCurrentTarget().position;
+            lookPos.y = 0f;
+            transform.LookAt(lookPos);
+            UpdateAnimation(moveDir);
+        }
+        else if (moveDir != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(moveDir);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
+            UpdateAnimation(currentSpeed);
         }
         else
         {
@@ -97,12 +98,10 @@ public class PlayerLocomotion : MonoBehaviour
         }
     }
 
+
     private void UpdateAnimation(float currentSpeed)
     {
-        // Tính normalized speed (0 = idle, 0.5 = walk, 1 = run)
         float normalizedSpeed = currentSpeed / runSpeed;
-
-        // Gọi AnimationHandler để update animation
         animationHandler.UpdateLocomotionAnimation(normalizedSpeed);
     }
     private void UpdateAnimation(Vector3 moveDir)

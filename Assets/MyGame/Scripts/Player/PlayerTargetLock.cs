@@ -45,23 +45,21 @@ public class PlayerTargetLock : MonoBehaviour
     {
         //ClosestTarget();
         HandleLockOn();
-        if (isTargeting)
-        {
-            cinemachineFreeLook.transform.position = cinemachineLockon.transform.position;
-            cinemachineFreeLook.transform.rotation = cinemachineLockon.transform.rotation;
-        }
     }
 
     private void TryLockOn()
     {
+        CinemachineThirdPersonFollow cinemachineThirdPerson = lockonCinemachineCamera.GetComponent<CinemachineThirdPersonFollow>();
         if (isTargeting)
         {
             // Unlock
+            cinemachineThirdPerson.enabled = false;
             isTargeting = false;
             currentTarget = null;
 
+
             freelookCinemachineCamera.ForceCameraPosition(lockonCinemachineCamera.State.GetFinalPosition(), lockonCinemachineCamera.State.GetFinalOrientation());
-            cinemachineFreeLook.SetActive(true);
+            //cinemachineFreeLook.SetActive(true);
         }
         else
         {
@@ -69,12 +67,14 @@ public class PlayerTargetLock : MonoBehaviour
             GameObject target = ClosestTarget();
             if (target != null)
             {
+                cinemachineThirdPerson.enabled = true;
                 isTargeting = true;
                 currentTarget = target.transform;
 
+
                 lockonCinemachineCamera.ForceCameraPosition(freelookCinemachineCamera.State.GetFinalPosition(), freelookCinemachineCamera.State.GetFinalOrientation());
 
-                cinemachineFreeLook.SetActive(false);
+                //cinemachineFreeLook.SetActive(false);
             }
         }
     }
@@ -121,8 +121,7 @@ public class PlayerTargetLock : MonoBehaviour
 
         if (closestTarget != null)
         {
-            Debug.DrawLine(transform.position, closestTarget.transform.position, Color.green, .1f);
-            Debug.Log($"Closest target: {closestTarget.name} at {closestDistance:F2}m");
+            Debug.DrawLine(transform.position, closestTarget.transform.position, Color.green, 2f);
         }
 
         return closestTarget;
