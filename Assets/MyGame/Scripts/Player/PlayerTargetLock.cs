@@ -1,9 +1,10 @@
 ﻿using Unity.Cinemachine;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerTargetLock : MonoBehaviour
 {
+    public static PlayerTargetLock Instance;
+
     [SerializeField] private float radius = 20f;
     [SerializeField] private Transform cameraTarget;
     [SerializeField] private GameObject cinemachineFreeLook;
@@ -15,9 +16,20 @@ public class PlayerTargetLock : MonoBehaviour
     private float mouseX;
     private float mouseY;
 
+    private CinemachineCamera freelookCinemachineCamera;
+    private CinemachineCamera lockonCinemachineCamera;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     void Start()
     {
         GameInput.Instance.OnLockOnPerformed += GameInput_OnLockOnPerformed;
+
+        freelookCinemachineCamera = cinemachineFreeLook.GetComponent<CinemachineCamera>();
+        lockonCinemachineCamera = cinemachineLockon.GetComponent<CinemachineCamera>();
     }
 
     private void OnEnable()
@@ -33,7 +45,7 @@ public class PlayerTargetLock : MonoBehaviour
     {
         //ClosestTarget();
         HandleLockOn();
-        if(isTargeting)
+        if (isTargeting)
         {
             cinemachineFreeLook.transform.position = cinemachineLockon.transform.position;
             cinemachineFreeLook.transform.rotation = cinemachineLockon.transform.rotation;
@@ -47,6 +59,8 @@ public class PlayerTargetLock : MonoBehaviour
             // Unlock
             isTargeting = false;
             currentTarget = null;
+
+            freelookCinemachineCamera.ForceCameraPosition(lockonCinemachineCamera.State.GetFinalPosition(), lockonCinemachineCamera.State.GetFinalOrientation());
             cinemachineFreeLook.SetActive(true);
         }
         else
@@ -57,6 +71,9 @@ public class PlayerTargetLock : MonoBehaviour
             {
                 isTargeting = true;
                 currentTarget = target.transform;
+
+                lockonCinemachineCamera.ForceCameraPosition(freelookCinemachineCamera.State.GetFinalPosition(), freelookCinemachineCamera.State.GetFinalOrientation());
+
                 cinemachineFreeLook.SetActive(false);
             }
         }
@@ -91,7 +108,7 @@ public class PlayerTargetLock : MonoBehaviour
 
         foreach (Collider collider in colliders)
         {
-            if(collider.TryGetComponent<ILockable>(out var lockable))
+            if (collider.TryGetComponent<ILockable>(out var lockable))
             {
                 float distance = Vector3.Distance(transform.position, collider.transform.position);
                 if (distance < closestDistance)
@@ -118,12 +135,12 @@ public class PlayerTargetLock : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, radius);
     }
 
-    public bool IsTargeting()
+    public bool GetIsTargeting()
     {
         return isTargeting;
     }
     public Transform GetCurrentTarget()
     {
         return currentTarget;
-    }   
+    }
 }

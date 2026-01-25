@@ -67,12 +67,13 @@ public class PlayerLocomotion : MonoBehaviour
             rb.linearVelocity = targetVelocity;
 
 
-            if (targetLockHandler.IsTargeting())
+            if (targetLockHandler.GetIsTargeting())
             {
                 Vector3 lookPos = targetLockHandler.GetCurrentTarget().position;
                 lookPos.y = 0f;
                 transform.LookAt(lookPos);
-            } else if(moveDir != Vector3.zero)
+            }
+            else if (moveDir != Vector3.zero)
             {
                 Quaternion targetRotation = Quaternion.LookRotation(moveDir);
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
@@ -86,8 +87,14 @@ public class PlayerLocomotion : MonoBehaviour
             stopVelocity.z = 0f;
             rb.linearVelocity = stopVelocity;
         }
-
-        UpdateAnimation(currentSpeed);
+        if (PlayerTargetLock.Instance.GetIsTargeting())
+        {
+            UpdateAnimation(inputDir);
+        }
+        else
+        {
+            UpdateAnimation(currentSpeed);
+        }
     }
 
     private void UpdateAnimation(float currentSpeed)
@@ -97,5 +104,9 @@ public class PlayerLocomotion : MonoBehaviour
 
         // Gọi AnimationHandler để update animation
         animationHandler.UpdateLocomotionAnimation(normalizedSpeed);
+    }
+    private void UpdateAnimation(Vector3 moveDir)
+    {
+        animationHandler.UpdateLockOnLocomotion(moveDir);
     }
 }
