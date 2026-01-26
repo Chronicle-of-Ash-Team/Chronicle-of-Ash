@@ -9,17 +9,12 @@ public class PlayerTargetLock : MonoBehaviour
     [SerializeField] private float lockDistance = 10f;
     [SerializeField] private float cancelDistance = 20f;
     [SerializeField] private Transform cameraTarget;
-    [SerializeField] private GameObject cinemachineFreeLook;
-    [SerializeField] private GameObject cinemachineLockon;
+    [SerializeField] private CinemachineCamera freelookCinemachineCamera;
+    [SerializeField] private CinemachineCamera lockonCinemachineCamera;
 
-    public bool isTargeting;
-
+    private bool isTargeting;
     private Transform currentTarget;
-    private float mouseX;
-    private float mouseY;
 
-    private CinemachineCamera freelookCinemachineCamera;
-    private CinemachineCamera lockonCinemachineCamera;
 
     public event Action<Transform> OnTargetLock;
 
@@ -31,9 +26,6 @@ public class PlayerTargetLock : MonoBehaviour
     void Start()
     {
         GameInput.Instance.OnLockOnPerformed += GameInput_OnLockOnPerformed;
-
-        freelookCinemachineCamera = cinemachineFreeLook.GetComponent<CinemachineCamera>();
-        lockonCinemachineCamera = cinemachineLockon.GetComponent<CinemachineCamera>();
 
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -58,9 +50,7 @@ public class PlayerTargetLock : MonoBehaviour
             isTargeting = false;
             currentTarget = null;
 
-
             freelookCinemachineCamera.ForceCameraPosition(lockonCinemachineCamera.State.GetFinalPosition(), lockonCinemachineCamera.State.GetFinalOrientation());
-            //cinemachineFreeLook.SetActive(true);
         }
         else
         {
@@ -72,10 +62,7 @@ public class PlayerTargetLock : MonoBehaviour
                 isTargeting = true;
                 currentTarget = target.transform;
 
-
                 lockonCinemachineCamera.ForceCameraPosition(freelookCinemachineCamera.State.GetFinalPosition(), freelookCinemachineCamera.State.GetFinalOrientation());
-
-                //cinemachineFreeLook.SetActive(false);
             }
         }
         OnTargetLock?.Invoke(currentTarget);

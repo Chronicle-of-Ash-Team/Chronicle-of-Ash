@@ -2463,9 +2463,8 @@ MonoBehaviour:
   lockDistance: 18
   cancelDistance: 20
   cameraTarget: {fileID: 504499695}
-  cinemachineFreeLook: {fileID: 813717293}
-  cinemachineLockon: {fileID: 1298370868}
-  isTargeting: 0
+  freelookCinemachineCamera: {fileID: 813717298}
+  lockonCinemachineCamera: {fileID: 1298370871}
 --- !u!1 &1886011590
 GameObject:
   m_ObjectHideFlags: 0
