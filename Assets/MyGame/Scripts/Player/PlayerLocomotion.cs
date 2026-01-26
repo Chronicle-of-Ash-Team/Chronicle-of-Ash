@@ -9,12 +9,14 @@ public class PlayerLocomotion : MonoBehaviour
     [SerializeField] private float runSpeed = 7f;
 
     private PlayerAnimation animationHandler;
+    private PlayerTargetLock targetLockHandler;
 
     private bool isRunning = false;
 
     void Start()
     {
         animationHandler = GetComponent<PlayerAnimation>();
+        targetLockHandler = GetComponent<PlayerTargetLock>();
     }
 
     private void OnEnable()
@@ -64,11 +66,7 @@ public class PlayerLocomotion : MonoBehaviour
             targetVelocity.y = rb.linearVelocity.y; // Giữ velocity Y (gravity)
             rb.linearVelocity = targetVelocity;
 
-            if (moveDir != Vector3.zero)
-            {
-                Quaternion targetRotation = Quaternion.LookRotation(moveDir);
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
-            }
+
         }
         else
         {
@@ -79,15 +77,35 @@ public class PlayerLocomotion : MonoBehaviour
             rb.linearVelocity = stopVelocity;
         }
 
-        UpdateAnimation(currentSpeed);
+
+
+        if (targetLockHandler.GetIsTargeting())
+        {
+            Vector3 lookPos = targetLockHandler.GetCurrentTarget().position;
+            lookPos.y = 0f;
+            transform.LookAt(lookPos);
+            UpdateAnimation(moveDir);
+        }
+        else if (moveDir != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(moveDir);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
+            UpdateAnimation(currentSpeed);
+        }
+        else
+        {
+            UpdateAnimation(currentSpeed);
+        }
     }
+
 
     private void UpdateAnimation(float currentSpeed)
     {
-        // Tính normalized speed (0 = idle, 0.5 = walk, 1 = run)
         float normalizedSpeed = currentSpeed / runSpeed;
-
-        // Gọi AnimationHandler để update animation
         animationHandler.UpdateLocomotionAnimation(normalizedSpeed);
+    }
+    private void UpdateAnimation(Vector3 moveDir)
+    {
+        animationHandler.UpdateLockOnLocomotion(moveDir);
     }
 }

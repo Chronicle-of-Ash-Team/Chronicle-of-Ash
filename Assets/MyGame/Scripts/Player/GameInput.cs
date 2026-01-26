@@ -8,6 +8,7 @@ public class GameInput : MonoBehaviour
     private PlayerInput playerInputAction;
 
     public event Action<bool> OnRunPerformed;
+    public event Action OnLockOnPerformed;
 
     private void Awake()
     {
@@ -22,6 +23,12 @@ public class GameInput : MonoBehaviour
     {
         playerInputAction.Player.Run.performed += Run_performed;
         playerInputAction.Player.Run.canceled += Run_canceled;
+        playerInputAction.Player.LockOn.performed += LockOn_performed;
+    }
+
+    private void LockOn_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnLockOnPerformed?.Invoke();
     }
 
     private void Run_canceled(UnityEngine.InputSystem.InputAction.CallbackContext obj)
