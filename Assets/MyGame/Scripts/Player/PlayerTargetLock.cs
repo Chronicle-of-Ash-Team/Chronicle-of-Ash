@@ -1,4 +1,5 @@
-﻿using Unity.Cinemachine;
+﻿using System;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class PlayerTargetLock : MonoBehaviour
@@ -18,6 +19,8 @@ public class PlayerTargetLock : MonoBehaviour
 
     private CinemachineCamera freelookCinemachineCamera;
     private CinemachineCamera lockonCinemachineCamera;
+
+    public event Action<Transform> OnTargetLock;
 
     private void Awake()
     {
@@ -77,6 +80,7 @@ public class PlayerTargetLock : MonoBehaviour
                 //cinemachineFreeLook.SetActive(false);
             }
         }
+        OnTargetLock?.Invoke(currentTarget);
     }
 
     private void HandleLockOn()
