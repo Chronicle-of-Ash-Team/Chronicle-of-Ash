@@ -6,7 +6,8 @@ public class PlayerTargetLock : MonoBehaviour
 {
     public static PlayerTargetLock Instance;
 
-    [SerializeField] private float radius = 20f;
+    [SerializeField] private float lockDistance = 10f;
+    [SerializeField] private float cancelDistance = 20f;
     [SerializeField] private Transform cameraTarget;
     [SerializeField] private GameObject cinemachineFreeLook;
     [SerializeField] private GameObject cinemachineLockon;
@@ -33,10 +34,8 @@ public class PlayerTargetLock : MonoBehaviour
 
         freelookCinemachineCamera = cinemachineFreeLook.GetComponent<CinemachineCamera>();
         lockonCinemachineCamera = cinemachineLockon.GetComponent<CinemachineCamera>();
-    }
 
-    private void OnEnable()
-    {
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void GameInput_OnLockOnPerformed()
@@ -46,7 +45,6 @@ public class PlayerTargetLock : MonoBehaviour
 
     void Update()
     {
-        //ClosestTarget();
         HandleLockOn();
     }
 
@@ -67,7 +65,7 @@ public class PlayerTargetLock : MonoBehaviour
         else
         {
             // Lock
-            GameObject target = ClosestTarget();
+            GameObject target = BestTarget();
             if (target != null)
             {
                 cinemachineThirdPerson.enabled = true;
@@ -87,9 +85,15 @@ public class PlayerTargetLock : MonoBehaviour
     {
         if (currentTarget == null || cameraTarget == null) return;
 
+        if (Vector3.Distance(transform.position, currentTarget.position) > cancelDistance)
+        {
+            TryLockOn();
+            return;
+        }
+
         // Tính hướng nhìn vào target
         Vector3 directionToTarget = currentTarget.position - cameraTarget.position;
-        directionToTarget.y = 0; // Giữ camera level
+        directionToTarget.y = 0;
 
         if (directionToTarget.magnitude > 0.1f)
         {
@@ -104,38 +108,56 @@ public class PlayerTargetLock : MonoBehaviour
         }
     }
 
-    private GameObject ClosestTarget()
+    private GameObject BestTarget()
     {
-        GameObject closestTarget = null;
-        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
-        float closestDistance = float.MaxValue;
+        Collider[] colliders = Physics.OverlapSphere(transform.position, lockDistance);
+
+        GameObject bestTarget = null;
+        float bestScore = float.MaxValue;
+
+        Vector3 cameraForward = Camera.main.transform.forward;
+        cameraForward.y = 0;
+        cameraForward.Normalize();
 
         foreach (Collider collider in colliders)
         {
             if (collider.TryGetComponent<ILockable>(out var lockable))
             {
                 float distance = Vector3.Distance(transform.position, collider.transform.position);
-                if (distance < closestDistance)
+
+                // Lấy lock point
+                Transform lockPoint = lockable.lockPos();
+                Vector3 targetPosition = lockPoint != null ? lockPoint.position : collider.transform.position;
+
+                // Tính hướng tới target
+                Vector3 directionToTarget = (targetPosition - transform.position);
+                directionToTarget.y = 0;
+                directionToTarget.Normalize();
+
+                // Tính góc
+                float angle = Vector3.Angle(cameraForward, directionToTarget);
+
+                // Chỉ xét targets trong góc nhìn
+                if (angle > 60f) continue;
+
+                // Score: ưu tiên targets ở giữa màn hình + gần
+                float score = (angle * 2f) + (distance * 1.5f);
+
+                if (score < bestScore)
                 {
-                    closestDistance = distance;
-                    closestTarget = collider.gameObject;
+                    bestScore = score;
+                    bestTarget = collider.gameObject;
                 }
             }
         }
-
-        if (closestTarget != null)
-        {
-            Debug.DrawLine(transform.position, closestTarget.transform.position, Color.green, 2f);
-        }
-
-        return closestTarget;
+        return bestTarget;
     }
 
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.black;
-        Gizmos.DrawWireSphere(transform.position, radius);
+        Gizmos.DrawWireSphere(transform.position, lockDistance);
     }
 
     public bool GetIsTargeting()

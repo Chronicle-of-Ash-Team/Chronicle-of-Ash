@@ -2460,7 +2460,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de083760902f62a41901844cb1e77655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerTargetLock
-  radius: 8
+  lockDistance: 18
+  cancelDistance: 20
   cameraTarget: {fileID: 504499695}
   cinemachineFreeLook: {fileID: 813717293}
   cinemachineLockon: {fileID: 1298370868}
