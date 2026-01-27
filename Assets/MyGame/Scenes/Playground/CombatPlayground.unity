@@ -119,6 +119,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &20988723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3358367231999476843, guid: 018c904245b470244b392139837c1f21,
+    type: 3}
+  m_PrefabInstance: {fileID: 7869204702422543577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &137523148
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +656,7 @@ MonoBehaviour:
       CustomLookAtTarget: 0
   DefaultBlend:
     Style: 1
-    Time: 0.2
+    Time: 0.4
     CustomCurve:
       serializedVersion: 2
       m_Curve: []
@@ -686,8 +692,12 @@ MonoBehaviour:
     HashOfParent: -1434456226
   - Hash: -1537549527
     HashOfParent: -1434456226
-  - Hash: -193052434
+  - Hash: -2043746396
     HashOfParent: -1434456226
+  - Hash: 933949300
+    HashOfParent: -1434456226
+  - Hash: -1476868190
+    HashOfParent: 756556552
   m_LegacyLookAt: {fileID: 0}
   m_LegacyFollow: {fileID: 0}
 --- !u!4 &384234182
@@ -1251,6 +1261,18 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 7869204702422543577}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &810974718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20988723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64d6d3aaac92fff40988dae03dd32ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerVisual
 --- !u!1 &813717293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,59 +1952,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1298370872}
   - component: {fileID: 1298370871}
-  - component: {fileID: 1298370870}
-  - component: {fileID: 1298370869}
+  - component: {fileID: 1298370873}
   m_Layer: 0
-  m_Name: Third Person Aim Camera
+  m_Name: LockOn Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1298370869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298370868}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2588cc5dedbb75e49a44aada63f7b939, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineThirdPersonAim
-  AimCollisionFilter:
-    serializedVersion: 2
-    m_Bits: 1
-  IgnoreTag: 
-  AimDistance: 200
-  NoiseCancellation: 1
---- !u!114 &1298370870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298370868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 625c14eee3ad46c99df7c7c891ef668a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineThirdPersonFollow
-  Damping: {x: 0.1, y: 0.5, z: 0.3}
-  ShoulderOffset: {x: 0.8, y: 0.8, z: 0.8}
-  VerticalArmLength: 1.2
-  CameraSide: 1
-  CameraDistance: 4
-  AvoidObstacles:
-    Enabled: 0
-    CollisionFilter:
-      serializedVersion: 2
-      m_Bits: 1
-    IgnoreTag: 
-    CameraRadius: 0.2
-    DampingIntoCollision: 0
-    DampingFromCollision: 0.5
 --- !u!114 &1298370871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2003,7 +1980,7 @@ MonoBehaviour:
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 2049717107}
+    TrackingTarget: {fileID: 1851503329}
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
@@ -2034,13 +2011,44 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1298370868}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7542996, y: 3.7670999, z: -0.53003}
+  m_LocalRotation: {x: 0.2534014, y: 0, z: 0, w: 0.9673613}
+  m_LocalPosition: {x: -6.3543, y: 5.683015, z: -0.3805437}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 384234182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1298370873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298370868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886251e9a18ece04ea8e61686c173e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachinePositionComposer
+  CameraDistance: 3.5
+  DeadZoneDepth: 0
+  Composition:
+    ScreenPosition: {x: 0, y: 0}
+    DeadZone:
+      Enabled: 0
+      Size: {x: 0.2, y: 0.2}
+    HardLimits:
+      Enabled: 0
+      Size: {x: 0.8, y: 0.8}
+      Offset: {x: 0, y: 0}
+  CenterOnActivate: 1
+  TargetOffset: {x: 0.2, y: 2.2, z: 0}
+  Damping: {x: 1, y: 0, z: 1}
+  Lookahead:
+    Enabled: 0
+    Time: 0.331
+    Smoothing: 21.3
+    IgnoreY: 0
 --- !u!1 &1340625394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2364,11 +2372,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1851503329}
+  - component: {fileID: 1851503334}
   - component: {fileID: 1851503330}
-  - component: {fileID: 1851503331}
   - component: {fileID: 1851503332}
   - component: {fileID: 1851503333}
-  - component: {fileID: 1851503334}
+  - component: {fileID: 1851503331}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2405,10 +2413,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e770eb295d6298c429374399a2d443be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerLocomotion
-  rb: {fileID: 1851503331}
   cameraTransform: {fileID: 504499695}
-  walkSpeed: 3
+  walkSpeed: 2.5
   runSpeed: 6
+  rotationSpeed: 5
 --- !u!54 &1851503331
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2478,6 +2486,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb5d49de083b114480958d7e3548a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
+  CurrentState: 0
+  isRolling: 0
+  rollSpeed: 4
 --- !u!1 &1886011590
 GameObject:
   m_ObjectHideFlags: 0
@@ -3218,7 +3229,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3358367231999476843, guid: 018c904245b470244b392139837c1f21,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 810974718}
   m_SourcePrefab: {fileID: 100100000, guid: 018c904245b470244b392139837c1f21, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

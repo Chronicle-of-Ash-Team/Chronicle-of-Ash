@@ -2,11 +2,12 @@
 
 public class PlayerLocomotion : MonoBehaviour
 {
-    [SerializeField] private Rigidbody rb;
+    private Rigidbody rb;
     [SerializeField] private Transform cameraTransform;
 
     [SerializeField] private float walkSpeed = 5f;
     [SerializeField] private float runSpeed = 7f;
+    [SerializeField] private float rotationSpeed = 10f;
 
     private PlayerAnimation animationHandler;
     private PlayerTargetLock targetLockHandler;
@@ -17,6 +18,7 @@ public class PlayerLocomotion : MonoBehaviour
     {
         animationHandler = GetComponent<PlayerAnimation>();
         targetLockHandler = GetComponent<PlayerTargetLock>();
+        rb = GetComponent<Rigidbody>();
     }
 
     private void OnEnable()
@@ -38,17 +40,10 @@ public class PlayerLocomotion : MonoBehaviour
         HandleMovement();
     }
 
-    private void OnAnimatorMove()
-    {
-        Vector3 deltaPos = animationHandler.GetAnimator().deltaPosition;
-        Quaternion deltaRot = animationHandler.GetAnimator().deltaRotation;
-
-        rb.MovePosition(rb.position + deltaPos);
-        rb.MoveRotation(rb.rotation * deltaRot);
-    }
-
     private void HandleMovement()
     {
+        if (PlayerCombat.Instance.GetIsRolling()) return;
+
         Vector2 inputVector = GameInput.Instance.GetMovementVectorNormalized();
         Vector3 inputDir = new Vector3(inputVector.x, 0f, inputVector.y);
 
@@ -98,7 +93,7 @@ public class PlayerLocomotion : MonoBehaviour
         else if (moveDir != Vector3.zero)
         {
             Quaternion targetRotation = Quaternion.LookRotation(moveDir);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
             UpdateAnimation(currentSpeed);
         }
         else

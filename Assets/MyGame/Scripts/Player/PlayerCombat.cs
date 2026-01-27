@@ -4,6 +4,19 @@ using UnityEngine;
 public class PlayerCombat : MonoBehaviour
 {
     public static PlayerCombat Instance;
+    public enum PlayerState
+    {
+        Idle,
+        Combat,
+    }
+    public PlayerState CurrentState;
+
+    private Rigidbody rb;
+
+    [Header("Roll Settings")]
+    public bool isRolling = false;
+    public float rollSpeed = 8f;
+    Vector3 rollDirection;
 
 
     public event Action OnDodge;
@@ -13,11 +26,67 @@ public class PlayerCombat : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.L))
         {
+            TryDodge();
             OnDodge?.Invoke();
         }
+    }
+
+    private void FixedUpdate()
+    {
+        HandleDodge();
+    }
+
+
+    private void HandleDodge()
+    {
+        if (!isRolling) return;
+        rb.linearVelocity = rollDirection * rollSpeed;
+        transform.forward = rollDirection;
+    }
+
+    private void TryDodge()
+    {
+        if (isRolling) return;
+
+        Vector2 moveInput = GameInput.Instance.GetMovementVectorNormalized();
+
+        Vector3 cameraForward = Camera.main.transform.forward;
+        Vector3 cameraRight = Camera.main.transform.right;
+        cameraForward.y = 0f;
+        cameraRight.y = 0f;
+
+        Vector3 moveDir = (cameraForward * moveInput.y + cameraRight * moveInput.x).normalized;
+
+        if (moveDir.sqrMagnitude < 0.01f)
+        {
+            moveDir = transform.forward;
+        }
+
+        rollDirection = moveDir.normalized;
+        transform.forward = rollDirection;
+    }
+
+    public void StartRoll()
+    {
+        isRolling = true;
+    }
+    public void EndRoll()
+    {
+        isRolling = false;
+        rb.linearVelocity = Vector3.zero;
+    }
+
+    public bool GetIsRolling()
+    {
+        return isRolling;
     }
 }

@@ -9,7 +9,6 @@ public class PlayerAnimation : MonoBehaviour
     private readonly int isLockOnHash = Animator.StringToHash("IsLockOn");
     private readonly int horizontalHash = Animator.StringToHash("Horizontal");
     private readonly int verticalHash = Animator.StringToHash("Vertical");
-    private readonly int rollHash = Animator.StringToHash("Roll");
 
     private void Start()
     {
@@ -18,7 +17,8 @@ public class PlayerAnimation : MonoBehaviour
 
     private void PlayerCombat_OnDodge()
     {
-        animator.SetTrigger(rollHash);
+        //animator.SetTrigger(rollHash);
+        animator.CrossFade("Roll", 0.02f);
     }
 
     public void UpdateLocomotionAnimation(float normalizedSpeed)
