@@ -9,6 +9,17 @@ public class PlayerAnimation : MonoBehaviour
     private readonly int isLockOnHash = Animator.StringToHash("IsLockOn");
     private readonly int horizontalHash = Animator.StringToHash("Horizontal");
     private readonly int verticalHash = Animator.StringToHash("Vertical");
+    private readonly int rollHash = Animator.StringToHash("Roll");
+
+    private void Start()
+    {
+        PlayerCombat.Instance.OnDodge += PlayerCombat_OnDodge;
+    }
+
+    private void PlayerCombat_OnDodge()
+    {
+        animator.SetTrigger(rollHash);
+    }
 
     public void UpdateLocomotionAnimation(float normalizedSpeed)
     {
@@ -31,5 +42,9 @@ public class PlayerAnimation : MonoBehaviour
     public void SetMoveAmountImmediate(float value)
     {
         animator.SetFloat(moveAmountHash, value);
+    }
+    public Animator GetAnimator()
+    {
+        return animator;
     }
 }

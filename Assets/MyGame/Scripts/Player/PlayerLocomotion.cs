@@ -38,6 +38,15 @@ public class PlayerLocomotion : MonoBehaviour
         HandleMovement();
     }
 
+    private void OnAnimatorMove()
+    {
+        Vector3 deltaPos = animationHandler.GetAnimator().deltaPosition;
+        Quaternion deltaRot = animationHandler.GetAnimator().deltaRotation;
+
+        rb.MovePosition(rb.position + deltaPos);
+        rb.MoveRotation(rb.rotation * deltaRot);
+    }
+
     private void HandleMovement()
     {
         Vector2 inputVector = GameInput.Instance.GetMovementVectorNormalized();

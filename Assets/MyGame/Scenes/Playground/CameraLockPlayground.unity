@@ -2368,6 +2368,7 @@ GameObject:
   - component: {fileID: 1851503331}
   - component: {fileID: 1851503332}
   - component: {fileID: 1851503333}
+  - component: {fileID: 1851503334}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2465,6 +2466,18 @@ MonoBehaviour:
   cameraTarget: {fileID: 504499695}
   freelookCinemachineCamera: {fileID: 813717298}
   lockonCinemachineCamera: {fileID: 1298370871}
+--- !u!114 &1851503334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851503328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb5d49de083b114480958d7e3548a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
 --- !u!1 &1886011590
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,6 +3140,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1851503329}
     m_Modifications:
+    - target: {fileID: 149263445684723540, guid: 018c904245b470244b392139837c1f21,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2724820268052930257, guid: 018c904245b470244b392139837c1f21,
         type: 3}
       propertyPath: m_LocalPosition.x
