@@ -4,19 +4,18 @@ public class PlayerLocomotion : MonoBehaviour
 {
     private Rigidbody rb;
     [SerializeField] private Transform cameraTransform;
+    [SerializeField] private PlayerAnimation animationHandler;
 
     [SerializeField] private float walkSpeed = 5f;
     [SerializeField] private float runSpeed = 7f;
     [SerializeField] private float rotationSpeed = 10f;
 
-    private PlayerAnimation animationHandler;
     private PlayerTargetLock targetLockHandler;
 
     private bool isRunning = false;
 
     void Start()
     {
-        animationHandler = GetComponent<PlayerAnimation>();
         targetLockHandler = GetComponent<PlayerTargetLock>();
         rb = GetComponent<Rigidbody>();
     }
@@ -37,12 +36,20 @@ public class PlayerLocomotion : MonoBehaviour
 
     void FixedUpdate()
     {
+
         HandleMovement();
     }
 
     private void HandleMovement()
     {
-        if (PlayerCombat.Instance.GetIsRolling()) return;
+        if (PlayerCombat.Instance.GetIsRolling() || PlayerCombat.Instance.GetIsAttacking())
+        {
+            Vector3 stopVelocity = rb.linearVelocity;
+            stopVelocity.x = 0f;
+            stopVelocity.z = 0f;
+            rb.linearVelocity = stopVelocity;
+            return;
+        }
 
         Vector2 inputVector = GameInput.Instance.GetMovementVectorNormalized();
         Vector3 inputDir = new Vector3(inputVector.x, 0f, inputVector.y);

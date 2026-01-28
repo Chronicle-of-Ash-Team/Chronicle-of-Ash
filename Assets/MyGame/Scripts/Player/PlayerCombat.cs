@@ -15,11 +15,13 @@ public class PlayerCombat : MonoBehaviour
 
     [Header("Roll Settings")]
     public bool isRolling = false;
+    public bool isAttacking = false;
     public float rollSpeed = 8f;
+    public int attackComboCount = 1;
     Vector3 rollDirection;
 
-
     public event Action OnDodge;
+    public event Action<int> OnAttack;
 
     private void Awake()
     {
@@ -31,19 +33,23 @@ public class PlayerCombat : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         GameInput.Instance.OnDodgePerformed += GameInput_OnDodgePerformed;
+        GameInput.Instance.OnAttackPerformed += GameInput_OnAttackPerformed;
+    }
+
+    private void GameInput_OnAttackPerformed()
+    {
+        TryAttack();
     }
 
     private void GameInput_OnDodgePerformed()
     {
         TryDodge();
-        OnDodge?.Invoke();
     }
 
     private void FixedUpdate()
     {
         HandleDodge();
     }
-
 
     private void HandleDodge()
     {
@@ -52,9 +58,26 @@ public class PlayerCombat : MonoBehaviour
         transform.forward = rollDirection;
     }
 
+    private void TryAttack()
+    {
+        if (isRolling) return;
+        isAttacking = true;
+        if(attackComboCount == 3)
+        {
+            attackComboCount = 1;
+        }
+        else
+        {
+            attackComboCount++;
+        }
+        OnAttack?.Invoke(attackComboCount);
+    }
+
     private void TryDodge()
     {
         if (isRolling) return;
+
+        OnDodge?.Invoke();
 
         Vector2 moveInput = GameInput.Instance.GetMovementVectorNormalized();
 
@@ -84,8 +107,23 @@ public class PlayerCombat : MonoBehaviour
         rb.linearVelocity = Vector3.zero;
     }
 
+    public void StartAttack()
+    {
+        isAttacking = true;
+    }
+
+    public void EndAttack()
+    {
+        isAttacking = false;
+    }
+
+
     public bool GetIsRolling()
     {
         return isRolling;
+    }
+    public bool GetIsAttacking()
+    {
+        return isAttacking;
     }
 }

@@ -2,7 +2,7 @@
 
 public class PlayerAnimation : MonoBehaviour
 {
-    [SerializeField] private Animator animator;
+    private Animator animator;
 
     private readonly int moveAmountHash = Animator.StringToHash("MoveAmount");
     private readonly int isMovingHash = Animator.StringToHash("IsMoving");
@@ -12,12 +12,18 @@ public class PlayerAnimation : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         PlayerCombat.Instance.OnDodge += PlayerCombat_OnDodge;
+        PlayerCombat.Instance.OnAttack += PlayerCombat_OnAttack;
+    }
+
+    private void PlayerCombat_OnAttack(int obj)
+    {
+        animator.CrossFade("Attack" + obj.ToString(), 0.1f);
     }
 
     private void PlayerCombat_OnDodge()
     {
-        //animator.SetTrigger(rollHash);
         animator.CrossFade("Roll", 0.02f);
     }
 
@@ -46,5 +52,22 @@ public class PlayerAnimation : MonoBehaviour
     public Animator GetAnimator()
     {
         return animator;
+    }
+
+    public void StartRoll()
+    {
+        PlayerCombat.Instance.StartRoll();
+    }
+    public void EndRoll()
+    {
+        PlayerCombat.Instance.EndRoll();
+    }
+    public void StartAttack()
+    {
+        PlayerCombat.Instance.StartAttack();
+    }
+    public void EndAttack()
+    {
+        PlayerCombat.Instance.EndAttack();
     }
 }
