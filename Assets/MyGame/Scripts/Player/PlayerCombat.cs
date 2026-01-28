@@ -29,15 +29,14 @@ public class PlayerCombat : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        GameInput.Instance.OnDodgePerformed += GameInput_OnDodgePerformed;
     }
 
-    private void Update()
+    private void GameInput_OnDodgePerformed()
     {
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            TryDodge();
-            OnDodge?.Invoke();
-        }
+        TryDodge();
+        OnDodge?.Invoke();
     }
 
     private void FixedUpdate()

@@ -2025,7 +2025,7 @@ MonoBehaviour:
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
   TargetOffset: {x: 0.1, y: 1.8, z: 0}
-  Damping: {x: 0.5, y: 0.5, z: 0.5}
+  Damping: {x: 0.5, y: 0.5, z: 0}
   Lookahead:
     Enabled: 0
     Time: 0
