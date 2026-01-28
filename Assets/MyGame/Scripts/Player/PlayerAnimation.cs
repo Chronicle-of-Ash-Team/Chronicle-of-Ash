@@ -10,6 +10,17 @@ public class PlayerAnimation : MonoBehaviour
     private readonly int horizontalHash = Animator.StringToHash("Horizontal");
     private readonly int verticalHash = Animator.StringToHash("Vertical");
 
+    private void Start()
+    {
+        PlayerCombat.Instance.OnDodge += PlayerCombat_OnDodge;
+    }
+
+    private void PlayerCombat_OnDodge()
+    {
+        //animator.SetTrigger(rollHash);
+        animator.CrossFade("Roll", 0.02f);
+    }
+
     public void UpdateLocomotionAnimation(float normalizedSpeed)
     {
         // Smooth transition với damping time 0.2s
@@ -31,5 +42,9 @@ public class PlayerAnimation : MonoBehaviour
     public void SetMoveAmountImmediate(float value)
     {
         animator.SetFloat(moveAmountHash, value);
+    }
+    public Animator GetAnimator()
+    {
+        return animator;
     }
 }

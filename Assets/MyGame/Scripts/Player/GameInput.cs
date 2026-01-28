@@ -9,6 +9,7 @@ public class GameInput : MonoBehaviour
 
     public event Action<bool> OnRunPerformed;
     public event Action OnLockOnPerformed;
+    public event Action OnDodgePerformed;
 
     private void Awake()
     {
@@ -24,6 +25,12 @@ public class GameInput : MonoBehaviour
         playerInputAction.Player.Run.performed += Run_performed;
         playerInputAction.Player.Run.canceled += Run_canceled;
         playerInputAction.Player.LockOn.performed += LockOn_performed;
+        playerInputAction.Player.Dodge.performed += Dodge_performed;
+    }
+
+    private void Dodge_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnDodgePerformed?.Invoke();
     }
 
     private void LockOn_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)

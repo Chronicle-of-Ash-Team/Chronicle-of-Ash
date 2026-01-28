@@ -42,11 +42,9 @@ public class PlayerTargetLock : MonoBehaviour
 
     private void TryLockOn()
     {
-        CinemachineThirdPersonFollow cinemachineThirdPerson = lockonCinemachineCamera.GetComponent<CinemachineThirdPersonFollow>();
         if (isTargeting)
         {
             // Unlock
-            cinemachineThirdPerson.enabled = false;
             isTargeting = false;
             currentTarget = null;
 
@@ -58,7 +56,6 @@ public class PlayerTargetLock : MonoBehaviour
             GameObject target = BestTarget();
             if (target != null)
             {
-                cinemachineThirdPerson.enabled = true;
                 isTargeting = true;
                 currentTarget = target.transform;
 
@@ -77,7 +74,7 @@ public class PlayerTargetLock : MonoBehaviour
             TryLockOn();
             return;
         }
-
+        lockonCinemachineCamera.transform.LookAt(currentTarget.transform);
         // Tính hướng nhìn vào target
         Vector3 directionToTarget = currentTarget.position - cameraTarget.position;
         directionToTarget.y = 0;
@@ -139,7 +136,6 @@ public class PlayerTargetLock : MonoBehaviour
         }
         return bestTarget;
     }
-
 
     private void OnDrawGizmos()
     {
