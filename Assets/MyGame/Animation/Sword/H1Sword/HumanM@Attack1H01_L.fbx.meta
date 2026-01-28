@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-guid: 21d6b8f558c014046ae463be0828e850
-AssetOrigin:
-  serializedVersion: 1
-  productId: 151650
-  packageName: Human Melee Animations
-  packageVersion: 2.0.2
-  assetPath: Assets/Kevin Iglesias/Human Animations/Animations/Male/Combat/1H/HumanM@Attack1H02_L.fbx
-  uploadId: 824648
+guid: 53f5d462305f9dc409328918fe44d80e
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
@@ -38,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: HumanM@Attack1H02_L
+      name: HumanM@Attack1H01_L
       takeName: Untitled
       internalID: 3094330708855449807
       firstFrame: 0
-      lastFrame: 31
+      lastFrame: 33
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

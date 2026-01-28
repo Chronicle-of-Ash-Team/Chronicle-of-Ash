@@ -24,8 +24,11 @@ public class PlayerCombat : MonoBehaviour
     public float rollSpeed = 8f;
     Vector3 rollDirection;
 
+
+
     public event Action OnDodge;
     public event Action<int> OnAttack;
+
 
     private void Awake()
     {
@@ -49,6 +52,8 @@ public class PlayerCombat : MonoBehaviour
     {
         TryDodge();
     }
+
+
 
     private void FixedUpdate()
     {
@@ -136,4 +141,5 @@ public class PlayerCombat : MonoBehaviour
     {
         return isAttacking;
     }
+
 }

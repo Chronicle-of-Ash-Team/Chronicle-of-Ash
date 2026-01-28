@@ -15,6 +15,17 @@ public class PlayerAnimation : MonoBehaviour
         animator = GetComponent<Animator>();
         PlayerCombat.Instance.OnDodge += PlayerCombat_OnDodge;
         PlayerCombat.Instance.OnAttack += PlayerCombat_OnAttack;
+
+        PlayerWeapon.Instance.OnWeaponChanged += PlayerWeapon_OnWeaponChanged;
+    }
+
+    private void PlayerWeapon_OnWeaponChanged(WeaponData obj)
+    {
+        Debug.Log("Current Sword: " + obj.name);
+        if (obj.animatorOverride != null)
+        {
+            animator.runtimeAnimatorController = obj.animatorOverride;
+        }
     }
 
     private void PlayerCombat_OnAttack(int obj)

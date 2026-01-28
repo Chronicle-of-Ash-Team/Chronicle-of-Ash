@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48e92d25aff455498cbcc4fb5bf7eb3, type: 3}
+  m_Name: H2Sword
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponData
+  weaponName: H2Sword
+  weaponType: 1
+  icon: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  damage: 0
+  attackSpeed: 0
+  staminaCost: 0
+  animatorOverride: {fileID: 22100000, guid: 5eb5afe952c98a44cb65235b44352e9e, type: 2}
+  weaponPrefab: {fileID: 5536419455158562490, guid: c2fb441a5418eef43b77f1a03269d117,
+    type: 3}
