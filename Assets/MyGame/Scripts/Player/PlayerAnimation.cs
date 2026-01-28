@@ -27,6 +27,18 @@ public class PlayerAnimation : MonoBehaviour
         animator.CrossFade("Roll", 0.02f);
     }
 
+    private void LateUpdate()
+    {
+        if (PlayerTargetLock.Instance.GetIsTargeting())
+        {
+            UpdateLockOnLocomotion(PlayerLocomotion.Instance.GetCurrentMoveDir());
+        }
+        else
+        {
+            UpdateLocomotionAnimation(PlayerLocomotion.Instance.GetNormalizedSpeed());
+        }
+    }
+
     public void UpdateLocomotionAnimation(float normalizedSpeed)
     {
         // Smooth transition với damping time 0.2s

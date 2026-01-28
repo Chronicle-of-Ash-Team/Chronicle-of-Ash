@@ -13,11 +13,15 @@ public class PlayerCombat : MonoBehaviour
 
     private Rigidbody rb;
 
+    [Header("Attack Settings")]
+    public bool isAttacking = false;
+    public int attackComboCount = 1;
+    public bool isDamaging = false;
+
+
     [Header("Roll Settings")]
     public bool isRolling = false;
-    public bool isAttacking = false;
     public float rollSpeed = 8f;
-    public int attackComboCount = 1;
     Vector3 rollDirection;
 
     public event Action OnDodge;
@@ -60,9 +64,9 @@ public class PlayerCombat : MonoBehaviour
 
     private void TryAttack()
     {
-        if (isRolling) return;
+        if (isRolling || isAttacking) return;
         isAttacking = true;
-        if(attackComboCount == 3)
+        if (attackComboCount == 3)
         {
             attackComboCount = 1;
         }
@@ -75,7 +79,9 @@ public class PlayerCombat : MonoBehaviour
 
     private void TryDodge()
     {
-        if (isRolling) return;
+        if (isRolling || isDamaging) return;
+
+        isAttacking = false;
 
         OnDodge?.Invoke();
 
@@ -100,21 +106,25 @@ public class PlayerCombat : MonoBehaviour
     public void StartRoll()
     {
         isRolling = true;
+        isAttacking = false;
     }
     public void EndRoll()
     {
         isRolling = false;
+        isAttacking = false;
         rb.linearVelocity = Vector3.zero;
     }
 
     public void StartAttack()
     {
         isAttacking = true;
+        isDamaging = true;
     }
 
     public void EndAttack()
     {
         isAttacking = false;
+        isDamaging = false;
     }
 
 
