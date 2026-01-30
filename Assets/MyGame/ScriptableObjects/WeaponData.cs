@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "WeaponData", menuName = "Scriptable Objects/WeaponData")]
+[CreateAssetMenu(fileName = "WeaponData", menuName = "Game/Weapon/WeaponData")]
 public class WeaponData : ScriptableObject
 {
     [Header("Info")]
@@ -19,6 +19,9 @@ public class WeaponData : ScriptableObject
 
     [Header("Prefab")]
     public GameObject weaponPrefab;
+
+    [Header("Skill")]
+    public WeaponSkill skill;
 }
 
 public enum WeaponType

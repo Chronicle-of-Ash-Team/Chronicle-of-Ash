@@ -797,21 +797,21 @@ MonoBehaviour:
     HashOfParent: 756556552
   - Hash: -427245628
     HashOfParent: -1269438207
-  - Hash: -636098447
+  - Hash: -1874057329
     HashOfParent: -1269438207
-  - Hash: -455582714
+  - Hash: 1655890786
     HashOfParent: -1269438207
   - Hash: -1434456226
     HashOfParent: 756556552
-  - Hash: -1554811915
+  - Hash: -782825222
     HashOfParent: -1434456226
-  - Hash: -2057998873
+  - Hash: 362312717
     HashOfParent: -1434456226
-  - Hash: -1537549527
+  - Hash: -698441690
     HashOfParent: -1434456226
-  - Hash: -2043746396
+  - Hash: -1988288688
     HashOfParent: -1434456226
-  - Hash: 933949300
+  - Hash: -359536395
     HashOfParent: -1434456226
   - Hash: -1476868190
     HashOfParent: 756556552
@@ -820,6 +820,8 @@ MonoBehaviour:
   - Hash: -1947038436
     HashOfParent: 756556552
   - Hash: -51004022
+    HashOfParent: 756556552
+  - Hash: 447775985
     HashOfParent: 756556552
   m_LegacyLookAt: {fileID: 0}
   m_LegacyFollow: {fileID: 0}
@@ -2274,6 +2276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8326b5be25f8d243a4718f92d1f3cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RuntimeUI
+  player: {fileID: 1851503328}
   lockOnImg: {fileID: 1340625396}
 --- !u!1 &1172958369
 GameObject:
@@ -3267,9 +3270,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1851503329}
+  - component: {fileID: 1851503334}
   - component: {fileID: 1851503330}
   - component: {fileID: 1851503333}
-  - component: {fileID: 1851503334}
   - component: {fileID: 1851503335}
   - component: {fileID: 1851503331}
   m_Layer: 0

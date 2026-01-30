@@ -1,11 +1,8 @@
-﻿using System;
-using Unity.Cinemachine;
+﻿using Unity.Cinemachine;
 using UnityEngine;
 
 public class PlayerTargetLock : MonoBehaviour
 {
-    public static PlayerTargetLock Instance;
-
     [SerializeField] private float lockDistance = 10f;
     [SerializeField] private float cancelDistance = 20f;
     [SerializeField] private Transform cameraTarget;
@@ -14,14 +11,6 @@ public class PlayerTargetLock : MonoBehaviour
 
     private bool isTargeting;
     private Transform currentTarget;
-
-
-    public event Action<Transform> OnTargetLock;
-
-    private void Awake()
-    {
-        Instance = this;
-    }
 
     void Start()
     {
@@ -62,7 +51,7 @@ public class PlayerTargetLock : MonoBehaviour
                 lockonCinemachineCamera.ForceCameraPosition(freelookCinemachineCamera.State.GetFinalPosition(), freelookCinemachineCamera.State.GetFinalOrientation());
             }
         }
-        OnTargetLock?.Invoke(currentTarget);
+        UIEvents.OnTargetLock?.Invoke(currentTarget);
     }
 
     private void HandleLockOn()

@@ -1,10 +1,7 @@
 ﻿using UnityEngine;
 
-public class PlayerLocomotion : MonoBehaviour
+public class PlayerLocomotion : MonoBehaviour, IMove
 {
-    public static PlayerLocomotion Instance;
-
-    private Rigidbody rb;
     [SerializeField] private Transform cameraTransform;
 
     [SerializeField] private float walkSpeed = 5f;
@@ -12,19 +9,18 @@ public class PlayerLocomotion : MonoBehaviour
     [SerializeField] private float rotationSpeed = 10f;
 
     private PlayerTargetLock targetLockHandler;
+    private PlayerAnimation playerAnimation;
+    private Rigidbody rb;
 
     private bool isRunning = false;
     private float currentSpeed = 0f;
     private Vector3 currentMoveDir = Vector3.zero;
-
-    private void Awake()
-    {
-        Instance = this;
-    }
+    private bool canMove = true;
 
     void Start()
     {
         targetLockHandler = GetComponent<PlayerTargetLock>();
+        playerAnimation = GetComponentInChildren<PlayerAnimation>();
         rb = GetComponent<Rigidbody>();
     }
 
@@ -38,19 +34,14 @@ public class PlayerLocomotion : MonoBehaviour
         isRunning = obj;
     }
 
-    void Update()
-    {
-    }
-
     void FixedUpdate()
     {
-
         HandleMovement();
     }
 
     private void HandleMovement()
     {
-        if (PlayerCombat.Instance.GetIsRolling() || PlayerCombat.Instance.GetIsAttacking())
+        if (!canMove)
         {
             Vector3 stopVelocity = rb.linearVelocity;
             stopVelocity.x = 0f;
@@ -84,8 +75,6 @@ public class PlayerLocomotion : MonoBehaviour
             Vector3 targetVelocity = currentMoveDir * currentSpeed;
             targetVelocity.y = rb.linearVelocity.y; // Giữ velocity Y (gravity)
             rb.linearVelocity = targetVelocity;
-
-
         }
         else
         {
@@ -96,6 +85,11 @@ public class PlayerLocomotion : MonoBehaviour
             rb.linearVelocity = stopVelocity;
         }
 
+        if (currentMoveDir != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(currentMoveDir);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        }
 
 
         if (targetLockHandler.GetIsTargeting())
@@ -103,19 +97,24 @@ public class PlayerLocomotion : MonoBehaviour
             Vector3 lookPos = targetLockHandler.GetCurrentTarget().position;
             lookPos.y = 0f;
             transform.LookAt(lookPos);
+            playerAnimation.UpdateLockOnLocomotion(currentMoveDir);
         }
-        else if (currentMoveDir != Vector3.zero)
+        else
         {
-            Quaternion targetRotation = Quaternion.LookRotation(currentMoveDir);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            playerAnimation.UpdateLocomotionAnimation(currentSpeed / runSpeed);
         }
     }
-    public float GetNormalizedSpeed()
-    {
-        return currentSpeed / runSpeed;
-    }
+
     public Vector3 GetCurrentMoveDir()
     {
         return currentMoveDir;
+    }
+    public void StopMove()
+    {
+        canMove = false;
+    }
+    public void ResumeMove()
+    {
+        canMove = true;
     }
 }

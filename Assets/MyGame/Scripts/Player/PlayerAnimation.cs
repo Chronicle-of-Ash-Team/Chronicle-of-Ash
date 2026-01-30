@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
@@ -14,23 +15,17 @@ public class PlayerAnimation : MonoBehaviour
     private readonly int verticalHash = Animator.StringToHash("Vertical");
     private readonly int speedMultiplyHash = Animator.StringToHash("SpeedMultiply");
 
+    public event Action OnAttackStart;
+    public event Action OnAttackEnd;
+    public event Action OnDodgeStart;
+    public event Action OnDodgeEnd;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
-        PlayerCombat.Instance.OnDodge += PlayerCombat_OnDodge;
-        PlayerCombat.Instance.OnAttack += PlayerCombat_OnAttack;
-        PlayerCombat.Instance.OnSkill += PlayerCombat_OnSkill;
-
-        PlayerWeapon.Instance.OnWeaponChanged += PlayerWeapon_OnWeaponChanged;
     }
 
-    private void PlayerCombat_OnSkill()
-    {
-        StopBlendUpper();
-        animator.CrossFade("Skill", 0.08f);
-    }
-
-    private void PlayerWeapon_OnWeaponChanged(WeaponData obj)
+    public void ApplyWeapon(WeaponData obj)
     {
         Debug.Log("Current Sword: " + obj.name);
         if (obj.animatorOverride != null)
@@ -40,28 +35,22 @@ public class PlayerAnimation : MonoBehaviour
         animator.SetFloat(speedMultiplyHash, obj.speed);
     }
 
-    private void PlayerCombat_OnAttack(int obj)
+    public void PlayAttack(int comboIndex)
     {
         StopBlendUpper();
-        animator.CrossFade("Attack" + obj.ToString(), 0.08f);
+        animator.CrossFade("Attack" + comboIndex.ToString(), 0.08f);
     }
 
-    private void PlayerCombat_OnDodge()
+    public void PlaySkill()
+    {
+        StopBlendUpper();
+        animator.CrossFade("Skill", 0.08f);
+    }
+
+    public void PlayDodge()
     {
         StopBlendUpper();
         animator.CrossFade("Roll", 0.02f);
-    }
-
-    private void LateUpdate()
-    {
-        if (PlayerTargetLock.Instance.GetIsTargeting())
-        {
-            UpdateLockOnLocomotion(PlayerLocomotion.Instance.GetCurrentMoveDir());
-        }
-        else
-        {
-            UpdateLocomotionAnimation(PlayerLocomotion.Instance.GetNormalizedSpeed());
-        }
     }
 
     public void UpdateLocomotionAnimation(float normalizedSpeed)
@@ -82,13 +71,6 @@ public class PlayerAnimation : MonoBehaviour
 
         animator.SetBool(isMovingHash, localMove.magnitude > 0.1f);
     }
-
-    public void SetMoveAmountImmediate(float value)
-    {
-        animator.SetFloat(moveAmountHash, value);
-    }
-
-
 
     private void StopBlendUpper()
     {
@@ -115,31 +97,25 @@ public class PlayerAnimation : MonoBehaviour
         animator.SetLayerWeight(layer, target);
     }
 
-
-    public Animator GetAnimator()
+    private void StartRoll()
     {
-        return animator;
+        OnDodgeStart?.Invoke();
     }
-
-    public void StartRoll()
+    private void EndRoll()
     {
-        PlayerCombat.Instance.StartRoll();
+        OnDodgeEnd?.Invoke();
     }
-    public void EndRoll()
-    {
-        PlayerCombat.Instance.EndRoll();
-    }
-    public void StartAttack()
+    private void StartAttack()
     {
         animator.SetLayerWeight(1, 0f);
-        PlayerCombat.Instance.StartAttack();
+        OnAttackStart?.Invoke();
     }
-    public void EndAttack()
+    private void EndAttack()
     {
         if (upperBodyBlendRoutine != null)
             StopCoroutine(upperBodyBlendRoutine);
 
         upperBodyBlendRoutine = StartCoroutine(BlendUpperBody(1, 0.25f));
-        PlayerCombat.Instance.EndAttack();
+        OnAttackEnd?.Invoke();
     }
 }

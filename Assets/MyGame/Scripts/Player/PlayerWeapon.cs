@@ -1,23 +1,19 @@
-using System;
 using UnityEngine;
 
 public class PlayerWeapon : MonoBehaviour
 {
-    public static PlayerWeapon Instance;
-
     public Transform rightHandHolder;
 
     [Header("Weapon Setting")]
     public WeaponData currentWeapon;
 
-
     [SerializeField] private float maxDistance = 5f;
 
-    public event Action<WeaponData> OnWeaponChanged;
+    private PlayerAnimation playerAnimation;
 
-    private void Awake()
+    private void Start()
     {
-        Instance = this;
+        playerAnimation = GetComponentInChildren<PlayerAnimation>();
     }
 
     private void Update()
@@ -37,9 +33,8 @@ public class PlayerWeapon : MonoBehaviour
             Destroy(chil.gameObject);
         }
         Instantiate(weaponData.weaponPrefab, rightHandHolder);
-        OnWeaponChanged?.Invoke(weaponData);
+        playerAnimation.ApplyWeapon(currentWeapon);
     }
-
 
     private void HandleInteract()
     {

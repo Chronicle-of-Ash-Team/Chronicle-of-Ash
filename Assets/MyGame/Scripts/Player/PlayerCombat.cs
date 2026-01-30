@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
@@ -27,9 +26,8 @@ public class PlayerCombat : MonoBehaviour
     Vector3 rollDirection;
 
 
-    public event Action OnDodge;
-    public event Action<int> OnAttack;
-    public event Action OnSkill;
+    private IMove playerLocomotion;
+    private PlayerAnimation playerAnimation;
 
 
     private void Awake()
@@ -40,19 +38,16 @@ public class PlayerCombat : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        playerLocomotion = GetComponent<IMove>();
+        playerAnimation = GetComponentInChildren<PlayerAnimation>();
 
         GameInput.Instance.OnDodgePerformed += GameInput_OnDodgePerformed;
         GameInput.Instance.OnAttackPerformed += GameInput_OnAttackPerformed;
-    }
 
-    private void GameInput_OnAttackPerformed()
-    {
-        TryAttack();
-    }
-
-    private void GameInput_OnDodgePerformed()
-    {
-        TryDodge();
+        playerAnimation.OnAttackStart += PlayerAnimation_OnAttackStart;
+        playerAnimation.OnAttackEnd += PlayerAnimation_OnAttackEnd;
+        playerAnimation.OnDodgeStart += PlayerAnimation_OnDodgeStart;
+        playerAnimation.OnDodgeEnd += PlayerAnimation_OnDodgeEnd;
     }
 
     private void Update()
@@ -92,13 +87,15 @@ public class PlayerCombat : MonoBehaviour
     private void TrySkill()
     {
         isAttacking = true;
-        OnSkill?.Invoke();
+        playerLocomotion.StopMove();
+        playerAnimation.PlaySkill();
     }
 
     private void TryAttack()
     {
         if (isRolling || isAttacking) return;
         isAttacking = true;
+        playerLocomotion.StopMove();
         comboTimer = 0f;
 
         attackComboCount++;
@@ -107,7 +104,7 @@ public class PlayerCombat : MonoBehaviour
         {
             attackComboCount = 1;
         }
-        OnAttack?.Invoke(attackComboCount);
+        playerAnimation.PlayAttack(attackComboCount);
     }
 
     private void TryDodge()
@@ -115,8 +112,9 @@ public class PlayerCombat : MonoBehaviour
         if (isRolling || isDamaging) return;
 
         isAttacking = false;
+        playerLocomotion.StopMove();
 
-        OnDodge?.Invoke();
+        playerAnimation.PlayDodge();
 
         Vector2 moveInput = GameInput.Instance.GetMovementVectorNormalized();
 
@@ -136,38 +134,42 @@ public class PlayerCombat : MonoBehaviour
         transform.forward = rollDirection;
     }
 
-    public void StartRoll()
+    private void PlayerAnimation_OnDodgeStart()
     {
         isRolling = true;
         isAttacking = false;
+        playerLocomotion.StopMove();
     }
-    public void EndRoll()
+
+    private void PlayerAnimation_OnDodgeEnd()
     {
         isRolling = false;
         isAttacking = false;
         rb.linearVelocity = Vector3.zero;
+        playerLocomotion.ResumeMove();
     }
 
-    public void StartAttack()
-    {
-        isAttacking = true;
-        isDamaging = true;
-    }
-
-    public void EndAttack()
+    private void PlayerAnimation_OnAttackEnd()
     {
         isAttacking = false;
         isDamaging = false;
+        playerLocomotion.ResumeMove();
     }
 
-
-    public bool GetIsRolling()
+    private void PlayerAnimation_OnAttackStart()
     {
-        return isRolling;
-    }
-    public bool GetIsAttacking()
-    {
-        return isAttacking;
+        isAttacking = true;
+        isDamaging = true;
+        playerLocomotion.StopMove();
     }
 
+    private void GameInput_OnAttackPerformed()
+    {
+        TryAttack();
+    }
+
+    private void GameInput_OnDodgePerformed()
+    {
+        TryDodge();
+    }
 }

@@ -14,10 +14,10 @@ public class RuntimeUI : MonoBehaviour
 
     private void Start()
     {
-        PlayerTargetLock.Instance.OnTargetLock += PlayerTargetLock_OnTargetLock;
+        UIEvents.OnTargetLock += OnTargetLock;
     }
 
-    private void PlayerTargetLock_OnTargetLock(Transform obj)
+    private void OnTargetLock(Transform obj)
     {
         lockOnTarget = obj;
     }
