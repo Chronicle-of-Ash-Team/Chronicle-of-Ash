@@ -3368,6 +3368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
   CurrentState: 0
+  comboResetTime: 2
   isAttacking: 0
   attackComboCount: 1
   isDamaging: 0

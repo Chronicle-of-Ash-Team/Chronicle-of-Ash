@@ -14,16 +14,17 @@ public class PlayerCombat : MonoBehaviour
     private Rigidbody rb;
 
     [Header("Attack Settings")]
-    public bool isAttacking = false;
-    public int attackComboCount = 1;
-    public bool isDamaging = false;
+    [SerializeField] private float comboResetTime = 1.2f;
+    [SerializeField] bool isAttacking = false;
+    [SerializeField] int attackComboCount = 1;
+    [SerializeField] bool isDamaging = false;
 
+    private float comboTimer;
 
     [Header("Roll Settings")]
-    public bool isRolling = false;
-    public float rollSpeed = 8f;
+    [SerializeField] bool isRolling = false;
+    [SerializeField] float rollSpeed = 8f;
     Vector3 rollDirection;
-
 
 
     public event Action OnDodge;
@@ -53,7 +54,10 @@ public class PlayerCombat : MonoBehaviour
         TryDodge();
     }
 
-
+    private void Update()
+    {
+        HandleComboTimer();
+    }
 
     private void FixedUpdate()
     {
@@ -67,17 +71,30 @@ public class PlayerCombat : MonoBehaviour
         transform.forward = rollDirection;
     }
 
+    private void HandleComboTimer()
+    {
+        if (attackComboCount == 0) return;
+
+        comboTimer += Time.deltaTime;
+
+        if (comboTimer >= comboResetTime)
+        {
+            attackComboCount = 0;
+            comboTimer = 0f;
+        }
+    }
+
     private void TryAttack()
     {
         if (isRolling || isAttacking) return;
         isAttacking = true;
-        if (attackComboCount == 3)
+        comboTimer = 0f;
+
+        attackComboCount++;
+
+        if (attackComboCount > 3)
         {
             attackComboCount = 1;
-        }
-        else
-        {
-            attackComboCount++;
         }
         OnAttack?.Invoke(attackComboCount);
     }

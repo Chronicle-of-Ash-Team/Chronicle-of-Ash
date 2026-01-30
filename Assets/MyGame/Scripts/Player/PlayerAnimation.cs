@@ -1,14 +1,18 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
     private Animator animator;
+
+    Coroutine upperBodyBlendRoutine;
 
     private readonly int moveAmountHash = Animator.StringToHash("MoveAmount");
     private readonly int isMovingHash = Animator.StringToHash("IsMoving");
     private readonly int isLockOnHash = Animator.StringToHash("IsLockOn");
     private readonly int horizontalHash = Animator.StringToHash("Horizontal");
     private readonly int verticalHash = Animator.StringToHash("Vertical");
+    private readonly int speedMultiplyHash = Animator.StringToHash("SpeedMultiply");
 
     private void Start()
     {
@@ -26,15 +30,26 @@ public class PlayerAnimation : MonoBehaviour
         {
             animator.runtimeAnimatorController = obj.animatorOverride;
         }
+        animator.SetFloat(speedMultiplyHash, obj.speed);
     }
 
     private void PlayerCombat_OnAttack(int obj)
     {
-        animator.CrossFade("Attack" + obj.ToString(), 0.1f);
+        if (upperBodyBlendRoutine != null)
+            StopCoroutine(upperBodyBlendRoutine);
+
+        animator.SetLayerWeight(1, 0f);
+
+        animator.CrossFade("Attack" + obj.ToString(), 0.08f);
     }
 
     private void PlayerCombat_OnDodge()
     {
+        if (upperBodyBlendRoutine != null)
+            StopCoroutine(upperBodyBlendRoutine);
+
+        animator.SetLayerWeight(1, 0f);
+
         animator.CrossFade("Roll", 0.02f);
     }
 
@@ -68,10 +83,34 @@ public class PlayerAnimation : MonoBehaviour
 
         animator.SetBool(isMovingHash, localMove.magnitude > 0.1f);
     }
+
     public void SetMoveAmountImmediate(float value)
     {
         animator.SetFloat(moveAmountHash, value);
     }
+
+
+
+
+
+    IEnumerator BlendUpperBody(float target, float duration)
+    {
+        int layer = 1;
+        float start = animator.GetLayerWeight(layer);
+        float time = 0f;
+
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+            float t = time / duration;
+            animator.SetLayerWeight(layer, Mathf.Lerp(start, target, t));
+            yield return null;
+        }
+
+        animator.SetLayerWeight(layer, target);
+    }
+
+
     public Animator GetAnimator()
     {
         return animator;
@@ -87,10 +126,15 @@ public class PlayerAnimation : MonoBehaviour
     }
     public void StartAttack()
     {
+        animator.SetLayerWeight(1, 0f);
         PlayerCombat.Instance.StartAttack();
     }
     public void EndAttack()
     {
+        if (upperBodyBlendRoutine != null)
+            StopCoroutine(upperBodyBlendRoutine);
+
+        upperBodyBlendRoutine = StartCoroutine(BlendUpperBody(1, 0.25f));
         PlayerCombat.Instance.EndAttack();
     }
 }

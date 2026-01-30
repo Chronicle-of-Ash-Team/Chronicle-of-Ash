@@ -15,6 +15,7 @@ public class WeaponData : ScriptableObject
 
     [Header("Animation")]
     public RuntimeAnimatorController animatorOverride;
+    public float speed;
 
     [Header("Prefab")]
     public GameObject weaponPrefab;

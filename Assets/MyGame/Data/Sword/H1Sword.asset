@@ -19,5 +19,6 @@ MonoBehaviour:
   attackSpeed: 0
   staminaCost: 0
   animatorOverride: {fileID: 22100000, guid: e834d59464a49494591abf3f723b5581, type: 2}
+  speed: 1
   weaponPrefab: {fileID: 4869747697884731321, guid: c50d5405497fbb74cbd827a81c111d7f,
     type: 3}
