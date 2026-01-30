@@ -19,8 +19,15 @@ public class PlayerAnimation : MonoBehaviour
         animator = GetComponent<Animator>();
         PlayerCombat.Instance.OnDodge += PlayerCombat_OnDodge;
         PlayerCombat.Instance.OnAttack += PlayerCombat_OnAttack;
+        PlayerCombat.Instance.OnSkill += PlayerCombat_OnSkill;
 
         PlayerWeapon.Instance.OnWeaponChanged += PlayerWeapon_OnWeaponChanged;
+    }
+
+    private void PlayerCombat_OnSkill()
+    {
+        StopBlendUpper();
+        animator.CrossFade("Skill", 0.08f);
     }
 
     private void PlayerWeapon_OnWeaponChanged(WeaponData obj)
@@ -35,21 +42,13 @@ public class PlayerAnimation : MonoBehaviour
 
     private void PlayerCombat_OnAttack(int obj)
     {
-        if (upperBodyBlendRoutine != null)
-            StopCoroutine(upperBodyBlendRoutine);
-
-        animator.SetLayerWeight(1, 0f);
-
+        StopBlendUpper();
         animator.CrossFade("Attack" + obj.ToString(), 0.08f);
     }
 
     private void PlayerCombat_OnDodge()
     {
-        if (upperBodyBlendRoutine != null)
-            StopCoroutine(upperBodyBlendRoutine);
-
-        animator.SetLayerWeight(1, 0f);
-
+        StopBlendUpper();
         animator.CrossFade("Roll", 0.02f);
     }
 
@@ -91,7 +90,13 @@ public class PlayerAnimation : MonoBehaviour
 
 
 
+    private void StopBlendUpper()
+    {
+        if (upperBodyBlendRoutine != null)
+            StopCoroutine(upperBodyBlendRoutine);
 
+        animator.SetLayerWeight(1, 0f);
+    }
 
     IEnumerator BlendUpperBody(float target, float duration)
     {

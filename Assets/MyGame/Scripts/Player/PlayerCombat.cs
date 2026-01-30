@@ -29,6 +29,7 @@ public class PlayerCombat : MonoBehaviour
 
     public event Action OnDodge;
     public event Action<int> OnAttack;
+    public event Action OnSkill;
 
 
     private void Awake()
@@ -57,6 +58,10 @@ public class PlayerCombat : MonoBehaviour
     private void Update()
     {
         HandleComboTimer();
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            TrySkill();
+        }
     }
 
     private void FixedUpdate()
@@ -82,6 +87,12 @@ public class PlayerCombat : MonoBehaviour
             attackComboCount = 0;
             comboTimer = 0f;
         }
+    }
+
+    private void TrySkill()
+    {
+        isAttacking = true;
+        OnSkill?.Invoke();
     }
 
     private void TryAttack()
