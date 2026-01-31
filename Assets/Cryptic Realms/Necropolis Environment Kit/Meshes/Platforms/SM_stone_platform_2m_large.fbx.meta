@@ -1,14 +1,7 @@
 fileFormatVersion: 2
 guid: abc00000000014193076436131722458
-AssetOrigin:
-  serializedVersion: 1
-  productId: 277388
-  packageName: Necropolis - Fantasy Graveyard Kit
-  packageVersion: 1.2.1
-  assetPath: Assets/Cryptic Realms/Necropolis Environment Kit/Meshes/Platforms/SM_stone_platform_2m_large.fbx
-  uploadId: 752212
 ModelImporter:
-  serializedVersion: 24200
+  serializedVersion: 22200
   internalIDToNameTable:
   - first:
       1: 100000
@@ -90,7 +83,7 @@ ModelImporter:
     second: //RootNode
   externalObjects: {}
   materials:
-    materialImportMode: 1
+    materialImportMode: 0
     materialName: 1
     materialSearch: 1
     materialLocation: 0
@@ -101,6 +94,8 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -145,9 +140,6 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
-    generateMeshLods: 0
-    meshLodGenerationFlags: 0
-    maximumMeshLod: -1
     meshOptimizationFlags: 1
     indexFormat: 2
     secondaryUVAngleDistortion: 8
@@ -197,3 +189,10 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 277388
+  packageName: Necropolis - Fantasy Graveyard Kit
+  packageVersion: 1.2.1
+  assetPath: Assets/Cryptic Realms/Necropolis Environment Kit/Meshes/Platforms/SM_stone_platform_2m_large.fbx
+  uploadId: 752212
