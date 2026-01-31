@@ -42,16 +42,22 @@ public class PlayerCombat : MonoBehaviour
         CurrentAction = null;
     }
 
-    private void PlayerAnimation_OnDodgeEnd()
+    private void EndAllAction()
     {
         dodgeAction.OnFinish();
+        skillAction.OnFinish();
+        attackAction.OnFinish();
+    }
+
+    private void PlayerAnimation_OnDodgeEnd()
+    {
+        EndAllAction();
         OnActionFinished();
     }
 
     private void PlayerAnimation_OnAttackEnd()
     {
-        attackAction.OnFinish();
-        skillAction.OnFinish();
+        EndAllAction();
         OnActionFinished();
     }
 
