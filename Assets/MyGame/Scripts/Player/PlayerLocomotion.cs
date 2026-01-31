@@ -95,7 +95,7 @@ public class PlayerLocomotion : MonoBehaviour, IMove
         if (targetLockHandler.GetIsTargeting())
         {
             Vector3 lookPos = targetLockHandler.GetCurrentTarget().position;
-            lookPos.y = 0f;
+            lookPos.y = transform.position.y;
             transform.LookAt(lookPos);
             playerAnimation.UpdateLockOnLocomotion(currentMoveDir);
         }

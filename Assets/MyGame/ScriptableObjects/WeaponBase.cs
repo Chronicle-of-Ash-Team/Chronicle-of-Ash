@@ -1,7 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "WeaponData", menuName = "Game/Weapon/WeaponData")]
-public class WeaponData : ScriptableObject
+public abstract class WeaponBase : ScriptableObject
 {
     [Header("Info")]
     public string weaponName;
@@ -21,11 +20,14 @@ public class WeaponData : ScriptableObject
     public GameObject weaponPrefab;
 
     //[Header("Skill")]
+
+    public abstract void Execute(WeaponSkillContext context);
 }
 
-public enum WeaponType
+public class WeaponSkillContext
 {
-    OneHandSword,
-    TwoHandSword,
-    Spear,
+    public Transform caster;
+    public Transform target;
+    public float damage;
 }
+
