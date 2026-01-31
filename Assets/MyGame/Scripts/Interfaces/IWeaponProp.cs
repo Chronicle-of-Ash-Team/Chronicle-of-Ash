@@ -1,5 +1,5 @@
 public interface IWeaponProp
 {
-    public WeaponData GetWeaponData();
+    public WeaponBase GetWeaponData();
 }
 

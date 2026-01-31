@@ -11,6 +11,7 @@ public class GameInput : MonoBehaviour
     public event Action OnLockOnPerformed;
     public event Action OnDodgePerformed;
     public event Action OnAttackPerformed;
+    public event Action OnSkillPerformed;
 
     private void Awake()
     {
@@ -28,6 +29,12 @@ public class GameInput : MonoBehaviour
         playerInputAction.Player.LockOn.performed += LockOn_performed;
         playerInputAction.Player.Dodge.performed += Dodge_performed;
         playerInputAction.Player.Attack.performed += Attack_performed;
+        playerInputAction.Player.Skill.performed += Skill_performed;
+    }
+
+    private void Skill_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnSkillPerformed?.Invoke();
     }
 
     private void Attack_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)

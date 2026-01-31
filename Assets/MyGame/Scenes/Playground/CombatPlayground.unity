@@ -3273,6 +3273,9 @@ GameObject:
   - component: {fileID: 1851503330}
   - component: {fileID: 1851503333}
   - component: {fileID: 1851503335}
+  - component: {fileID: 1851503337}
+  - component: {fileID: 1851503338}
+  - component: {fileID: 1851503336}
   - component: {fileID: 1851503331}
   m_Layer: 0
   m_Name: Player
@@ -3369,13 +3372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb5d49de083b114480958d7e3548a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
-  CurrentState: 0
-  comboResetTime: 2
-  isAttacking: 0
-  attackComboCount: 1
-  isDamaging: 0
-  isRolling: 0
-  rollSpeed: 7
 --- !u!114 &1851503335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3389,8 +3385,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerWeapon
   rightHandHolder: {fileID: 1324837985}
-  currentWeapon: {fileID: 11400000, guid: 7dd7f87dca1d25742a257f6deb830c37, type: 2}
+  currentWeapon: {fileID: 0}
   maxDistance: 5
+--- !u!114 &1851503336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851503328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e295624088af2344b56c65d960f2a22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttackAction
+  staminaCost: 0
+  comboResetTime: 2
+  attackComboCount: 1
+--- !u!114 &1851503337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851503328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acfc92df2dd1aa4198c52bb2f3662a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DodgeAction
+  staminaCost: 3
+  rollSpeed: 7
+--- !u!114 &1851503338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851503328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb7b4034b5d20141be5fab5caf52c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillAction
+  staminaCost: 0
 --- !u!1 &1886011590
 GameObject:
   m_ObjectHideFlags: 0

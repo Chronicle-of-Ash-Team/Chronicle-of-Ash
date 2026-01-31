@@ -8,13 +8,13 @@ public abstract class WeaponBase : ScriptableObject
     public Sprite icon;
 
     [Header("Stats")]
-    public float damage;
-    public float attackSpeed;
-    public float staminaCost;
+    public float damage = 1;
+    public float attackSpeed = 1;
+    public float staminaCost = 1;
 
     [Header("Animation")]
     public RuntimeAnimatorController animatorOverride;
-    public float speed;
+    public float speed = 1;
 
     [Header("Prefab")]
     public GameObject weaponPrefab;

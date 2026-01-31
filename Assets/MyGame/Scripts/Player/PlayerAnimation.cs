@@ -19,15 +19,16 @@ public class PlayerAnimation : MonoBehaviour
     public event Action OnAttackEnd;
     public event Action OnDodgeStart;
     public event Action OnDodgeEnd;
+    public event Action OnHitStart;
+    public event Action OnHitEnd;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
     }
 
-    public void ApplyWeapon(WeaponData obj)
+    public void ApplyWeapon(WeaponBase obj)
     {
-        Debug.Log("Current Sword: " + obj.name);
         if (obj.animatorOverride != null)
         {
             animator.runtimeAnimatorController = obj.animatorOverride;
@@ -53,9 +54,14 @@ public class PlayerAnimation : MonoBehaviour
         animator.CrossFade("Roll", 0.02f);
     }
 
+    public void PlayHit()
+    {
+        StopBlendUpper();
+        animator.CrossFade("Hit", 0f);
+    }
+
     public void UpdateLocomotionAnimation(float normalizedSpeed)
     {
-        // Smooth transition với damping time 0.2s
         animator.SetBool(isLockOnHash, false);
         animator.SetFloat(moveAmountHash, normalizedSpeed, 0.2f, Time.deltaTime);
         animator.SetBool(isMovingHash, normalizedSpeed > 0.1f);
@@ -117,5 +123,13 @@ public class PlayerAnimation : MonoBehaviour
 
         upperBodyBlendRoutine = StartCoroutine(BlendUpperBody(1, 0.25f));
         OnAttackEnd?.Invoke();
+    }
+    private void StartHit()
+    {
+        OnHitStart?.Invoke();
+    }
+    private void EndHit()
+    {
+        OnHitEnd?.Invoke();
     }
 }

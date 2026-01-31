@@ -5,7 +5,7 @@ public class PlayerWeapon : MonoBehaviour
     public Transform rightHandHolder;
 
     [Header("Weapon Setting")]
-    public WeaponData currentWeapon;
+    public WeaponBase currentWeapon;
 
     [SerializeField] private float maxDistance = 5f;
 
@@ -25,7 +25,7 @@ public class PlayerWeapon : MonoBehaviour
         }
     }
 
-    private void ChangeWeapon(WeaponData weaponData)
+    private void ChangeWeapon(WeaponBase weaponData)
     {
         currentWeapon = weaponData;
         foreach (Transform chil in rightHandHolder.transform)
