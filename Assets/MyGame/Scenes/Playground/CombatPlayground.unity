@@ -2276,7 +2276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8326b5be25f8d243a4718f92d1f3cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RuntimeUI
-  player: {fileID: 1851503328}
   lockOnImg: {fileID: 1340625396}
 --- !u!1 &1172958369
 GameObject:
