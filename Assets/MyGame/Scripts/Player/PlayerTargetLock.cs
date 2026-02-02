@@ -94,7 +94,8 @@ public class PlayerTargetLock : MonoBehaviour
 
         foreach (Collider collider in colliders)
         {
-            if (collider.TryGetComponent<ILockable>(out var lockable))
+            var lockable = collider.GetComponentInParent<ILockable>();
+            if (lockable != null)
             {
                 float distance = Vector3.Distance(transform.position, collider.transform.position);
 
@@ -119,7 +120,7 @@ public class PlayerTargetLock : MonoBehaviour
                 if (score < bestScore)
                 {
                     bestScore = score;
-                    bestTarget = collider.gameObject;
+                    bestTarget = lockPoint.gameObject;
                 }
             }
         }

@@ -38,7 +38,7 @@ public class AttackAction : BaseCombatAction
 
     protected override void Execute()
     {
-        playerLocomotion.StopMove();
+        locomotion.StopMove();
         comboTimer = 0f;
 
         attackComboCount++;
@@ -52,7 +52,7 @@ public class AttackAction : BaseCombatAction
 
     public override void OnFinish()
     {
-        playerLocomotion.ResumeMove();
+        locomotion.ResumeMove();
         IsRunning = false;
     }
 }

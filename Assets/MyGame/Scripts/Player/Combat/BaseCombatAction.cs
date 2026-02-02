@@ -6,14 +6,14 @@ public abstract class BaseCombatAction : MonoBehaviour
     //protected PlayerStamina stamina;
     protected PlayerAnimation playerAnimation;
     protected Rigidbody rb;
-    protected IMove playerLocomotion;
+    protected IMove locomotion;
 
     public bool IsRunning { get; protected set; }
 
     protected virtual void Awake()
     {
         //stamina = GetComponent<PlayerStamina>();
-        playerLocomotion = GetComponent<IMove>();
+        locomotion = GetComponent<IMove>();
         playerAnimation = GetComponentInChildren<PlayerAnimation>();
         rb = GetComponent<Rigidbody>();
     }

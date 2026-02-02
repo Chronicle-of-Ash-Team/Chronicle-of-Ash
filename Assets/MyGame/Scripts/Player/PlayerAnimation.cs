@@ -56,7 +56,7 @@ public class PlayerAnimation : MonoBehaviour
 
     public void PlayHit()
     {
-        StopBlendUpper();
+        //StopBlendUpper();
         animator.CrossFade("Hit", 0f);
     }
 

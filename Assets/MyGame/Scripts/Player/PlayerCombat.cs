@@ -9,10 +9,12 @@ public class PlayerCombat : MonoBehaviour
     private SkillAction skillAction;
 
     private PlayerAnimation playerAnimation;
+    private PlayerHealth playerHealth;
 
     private void Start()
     {
         playerAnimation = GetComponentInChildren<PlayerAnimation>();
+        playerHealth = GetComponent<PlayerHealth>();
 
         attackAction = GetComponent<AttackAction>();
         dodgeAction = GetComponent<DodgeAction>();
@@ -28,10 +30,9 @@ public class PlayerCombat : MonoBehaviour
 
     public void TryAction(BaseCombatAction action)
     {
-        if (CurrentAction != null && CurrentAction.IsRunning)
-            return;
-        if (CurrentAction == action)
-            return;
+        if (playerHealth.IsHit) return;
+        if (CurrentAction != null && CurrentAction.IsRunning) return;
+        if (CurrentAction == action) return;
         action.OnFinish();
         action.TryExecute();
         CurrentAction = action;
@@ -42,11 +43,12 @@ public class PlayerCombat : MonoBehaviour
         CurrentAction = null;
     }
 
-    private void EndAllAction()
+    public void EndAllAction()
     {
         dodgeAction.OnFinish();
         skillAction.OnFinish();
         attackAction.OnFinish();
+        CurrentAction = null;
     }
 
     private void PlayerAnimation_OnDodgeEnd()

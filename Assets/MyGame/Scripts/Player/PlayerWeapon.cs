@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerWeapon : MonoBehaviour
+public class PlayerWeapon : MonoBehaviour, IWeaponOwner
 {
     public Transform rightHandHolder;
 
@@ -32,7 +32,10 @@ public class PlayerWeapon : MonoBehaviour
         {
             Destroy(chil.gameObject);
         }
-        Instantiate(weaponData.weaponPrefab, rightHandHolder);
+        GameObject weapon = Instantiate(weaponData.weaponPrefab, rightHandHolder);
+
+        weapon.GetComponentInChildren<WeaponHitBox>().SetOwner(this, playerAnimation);
+
         playerAnimation.ApplyWeapon(currentWeapon);
     }
 
@@ -51,5 +54,20 @@ public class PlayerWeapon : MonoBehaviour
                 ChangeWeapon(weapon.GetWeaponData());
             }
         }
+    }
+
+    public int GetDamage()
+    {
+        return 1;
+    }
+
+    public WeaponBase GetWeaponData()
+    {
+        return currentWeapon;
+    }
+
+    public Transform GetTransform()
+    {
+        return transform;
     }
 }

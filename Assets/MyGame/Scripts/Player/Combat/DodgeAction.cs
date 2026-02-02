@@ -29,7 +29,7 @@ public class DodgeAction : BaseCombatAction
 
     protected override void Execute()
     {
-        playerLocomotion.StopMove();
+        locomotion.StopMove();
 
         playerAnimation.PlayDodge();
 
@@ -54,6 +54,6 @@ public class DodgeAction : BaseCombatAction
     {
         IsRunning = false;
         rb.linearVelocity = Vector3.zero;
-        playerLocomotion.ResumeMove();
+        locomotion.ResumeMove();
     }
 }

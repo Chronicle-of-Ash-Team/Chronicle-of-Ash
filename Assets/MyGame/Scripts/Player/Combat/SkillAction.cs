@@ -11,13 +11,13 @@ public class SkillAction : BaseCombatAction
     }
     protected override void Execute()
     {
-        playerLocomotion.StopMove();
+        locomotion.StopMove();
         playerAnimation.PlaySkill();
     }
 
     public override void OnFinish()
     {
-        playerLocomotion.ResumeMove();
+        locomotion.ResumeMove();
         IsRunning = false;
     }
 }
