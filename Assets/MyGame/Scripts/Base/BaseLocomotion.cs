@@ -3,7 +3,7 @@
 [RequireComponent(typeof(Rigidbody))]
 public abstract class BaseLocomotion : MonoBehaviour, IMove
 {
-    [SerializeField] private float walkSpeed = 5f;
+    [SerializeField] protected float walkSpeed = 5f;
     [SerializeField] protected float runSpeed = 7f;
     [SerializeField] private float rotationSpeed = 10f;
 

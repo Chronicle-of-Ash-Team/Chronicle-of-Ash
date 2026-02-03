@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour, IDamageable
@@ -5,25 +6,12 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     [SerializeField] private int maxHealth = 10;
     [SerializeField] private int currentHealth = 10;
 
-    public bool IsHit = false;
+    public bool IsHit { get; private set; }
+    public bool isInvincible = false;
 
-    private PlayerAnimation playerAnimation;
-    private PlayerLocomotion playerLocomotion;
-    private PlayerCombat playerCombat;
-
-    private DodgeAction dodgeAction;
-
-    private void Start()
-    {
-        playerAnimation = GetComponentInChildren<PlayerAnimation>();
-        playerLocomotion = GetComponent<PlayerLocomotion>();
-        playerCombat = GetComponent<PlayerCombat>();
-        dodgeAction = GetComponent<DodgeAction>();
-
-
-        playerAnimation.OnHitStart += PlayerAnimation_OnHitStart;
-        playerAnimation.OnHitEnd += PlayerAnimation_OnHitEnd;
-    }
+    public event Action OnHit;
+    public event Action OnHitEnd;
+    public event Action OnDied;
 
     private void Update()
     {
@@ -35,35 +23,21 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damage)
     {
-        if (!dodgeAction.IsRunning)
+        if (isInvincible) return;
+
+        currentHealth -= damage;
+
+        if (currentHealth <= 0)
         {
-            playerCombat.EndAllAction();
-            playerAnimation.PlayHit();
-            playerLocomotion.StopMove();
-
-            currentHealth -= damage;
-
-            if (currentHealth < 0)
-            {
-                Die();
-            }
+            OnDied?.Invoke();
+            return;
         }
+        OnHit?.Invoke();
     }
 
-    private void Die()
+    public void EndHit()
     {
-
-    }
-
-    private void PlayerAnimation_OnHitStart()
-    {
-        playerLocomotion.StopMove();
-        IsHit = true;
-    }
-
-    private void PlayerAnimation_OnHitEnd()
-    {
-        playerLocomotion.ResumeMove();
-        IsHit = false;
+        //IsHit = false;
+        OnHitEnd?.Invoke();
     }
 }

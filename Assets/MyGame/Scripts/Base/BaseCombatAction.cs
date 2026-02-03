@@ -5,8 +5,9 @@ public abstract class BaseCombatAction : MonoBehaviour
     [SerializeField] protected int staminaCost;
     //protected PlayerStamina stamina;
     protected PlayerAnimation playerAnimation;
-    protected Rigidbody rb;
+    protected IActionHandler actionHandler;
     protected IMove locomotion;
+    protected Rigidbody rb;
 
     public bool IsRunning { get; protected set; }
 
@@ -14,6 +15,7 @@ public abstract class BaseCombatAction : MonoBehaviour
     {
         //stamina = GetComponent<PlayerStamina>();
         locomotion = GetComponent<IMove>();
+        actionHandler = GetComponent<IActionHandler>();
         playerAnimation = GetComponentInChildren<PlayerAnimation>();
         rb = GetComponent<Rigidbody>();
     }
@@ -24,7 +26,7 @@ public abstract class BaseCombatAction : MonoBehaviour
         return !IsRunning;
     }
 
-    public void TryExecute()
+    public virtual void TryExecute()
     {
         if (!CanExecute()) return;
 

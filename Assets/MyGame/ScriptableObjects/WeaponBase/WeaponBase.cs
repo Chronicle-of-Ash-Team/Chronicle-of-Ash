@@ -8,9 +8,8 @@ public abstract class WeaponBase : ScriptableObject
     public Sprite icon;
 
     [Header("Stats")]
-    public float damage = 1;
-    public float attackSpeed = 1;
-    public float staminaCost = 1;
+    public int damage = 1;
+    public int staminaCost = 1;
 
     [Header("Animation")]
     public RuntimeAnimatorController animatorOverride;

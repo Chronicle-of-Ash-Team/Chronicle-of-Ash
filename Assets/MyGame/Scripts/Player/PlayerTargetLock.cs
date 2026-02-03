@@ -100,7 +100,7 @@ public class PlayerTargetLock : MonoBehaviour
                 float distance = Vector3.Distance(transform.position, collider.transform.position);
 
                 // Lấy lock point
-                Transform lockPoint = lockable.lockPos();
+                Transform lockPoint = lockable.GetLockOnTransform();
                 Vector3 targetPosition = lockPoint != null ? lockPoint.position : collider.transform.position;
 
                 // Tính hướng tới target

@@ -1,66 +1,74 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerCombat : MonoBehaviour
+public class PlayerCombat : MonoBehaviour, IActionHandler
 {
     public BaseCombatAction CurrentAction { get; private set; }
 
     private AttackAction attackAction;
     private DodgeAction dodgeAction;
     private SkillAction skillAction;
-
-    private PlayerAnimation playerAnimation;
+    private HitAction hitAction;
     private PlayerHealth playerHealth;
 
     private void Start()
     {
-        playerAnimation = GetComponentInChildren<PlayerAnimation>();
         playerHealth = GetComponent<PlayerHealth>();
 
         attackAction = GetComponent<AttackAction>();
         dodgeAction = GetComponent<DodgeAction>();
         skillAction = GetComponent<SkillAction>();
+        hitAction = GetComponent<HitAction>();
 
         GameInput.Instance.OnDodgePerformed += GameInput_OnDodgePerformed;
         GameInput.Instance.OnAttackPerformed += GameInput_OnAttackPerformed;
         GameInput.Instance.OnSkillPerformed += GameInput_OnSkillPerformed;
-
-        playerAnimation.OnAttackEnd += PlayerAnimation_OnAttackEnd;
-        playerAnimation.OnDodgeEnd += PlayerAnimation_OnDodgeEnd;
+        playerHealth.OnHit += PlayerHealth_OnHit;
     }
 
     public void TryAction(BaseCombatAction action)
     {
-        if (playerHealth.IsHit) return;
-        if (CurrentAction != null && CurrentAction.IsRunning) return;
-        if (CurrentAction == action) return;
-        action.OnFinish();
+        if (action == hitAction)
+        {
+            if (CurrentAction != null && CurrentAction != hitAction)
+            {
+                CurrentAction.OnFinish();
+                CurrentAction = null;
+            }
+
+            action.TryExecute();
+            CurrentAction = action;
+
+            return;
+        }
+
+
+        if (CurrentAction != null && CurrentAction.IsRunning)
+            return;
+
+        if (CurrentAction == action)
+            return;
+
+        // Execute action mới
+        CurrentAction?.OnFinish();
         action.TryExecute();
         CurrentAction = action;
     }
 
-    public void OnActionFinished()
-    {
-        CurrentAction = null;
-    }
-
     public void EndAllAction()
     {
-        dodgeAction.OnFinish();
-        skillAction.OnFinish();
-        attackAction.OnFinish();
+        CurrentAction?.OnFinish();
         CurrentAction = null;
     }
 
-    private void PlayerAnimation_OnDodgeEnd()
+    public void OnActionFinished(BaseCombatAction action)
     {
-        EndAllAction();
-        OnActionFinished();
+        if (CurrentAction == action)
+            CurrentAction = null;
     }
 
-    private void PlayerAnimation_OnAttackEnd()
+    private void PlayerHealth_OnHit()
     {
-        EndAllAction();
-        OnActionFinished();
+        TryAction(hitAction);
     }
 
     private void GameInput_OnAttackPerformed()
@@ -77,4 +85,5 @@ public class PlayerCombat : MonoBehaviour
     {
         TryAction(dodgeAction);
     }
+
 }

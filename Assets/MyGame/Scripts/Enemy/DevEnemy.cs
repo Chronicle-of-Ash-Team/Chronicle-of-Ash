@@ -16,7 +16,7 @@ public class DevEnemy : MonoBehaviour, ILockable, IDamageable
         animator = GetComponent<Animator>();
     }
 
-    public Transform lockPos()
+    public Transform GetLockOnTransform()
     {
         return lockOnPos;
     }
@@ -25,7 +25,7 @@ public class DevEnemy : MonoBehaviour, ILockable, IDamageable
     {
         animator.CrossFade("Damage0", 0f);
         faceMaterial.mainTexture = faces.damageFace;
-        Debug.Log("Slime: Ouch");
+        currentHealth -= damage;
     }
 
     private void EndHit()

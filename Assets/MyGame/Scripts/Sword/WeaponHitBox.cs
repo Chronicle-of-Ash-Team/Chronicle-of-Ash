@@ -9,6 +9,7 @@ public class WeaponHitBox : BaseWeapon
     private void Awake()
     {
         col = GetComponent<BoxCollider>();
+        DisableHitbox();
     }
 
     private void EnableHitbox()
@@ -38,8 +39,6 @@ public class WeaponHitBox : BaseWeapon
     private void OnTriggerEnter(Collider other)
     {
         if (!col.enabled || owner == null) return;
-
-        Debug.Log(other.name);
 
         IDamageable target = other.GetComponentInParent<IDamageable>();
         if (target != null)

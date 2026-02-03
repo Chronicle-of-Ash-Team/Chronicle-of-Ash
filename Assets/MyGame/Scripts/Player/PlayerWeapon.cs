@@ -2,11 +2,8 @@ using UnityEngine;
 
 public class PlayerWeapon : MonoBehaviour, IWeaponOwner
 {
-    public Transform rightHandHolder;
-
-    [Header("Weapon Setting")]
+    [SerializeField] private Transform rightHandHolder;
     public WeaponBase currentWeapon;
-
     [SerializeField] private float maxDistance = 5f;
 
     private PlayerAnimation playerAnimation;
@@ -58,7 +55,7 @@ public class PlayerWeapon : MonoBehaviour, IWeaponOwner
 
     public int GetDamage()
     {
-        return 1;
+        return currentWeapon.damage;
     }
 
     public WeaponBase GetWeaponData()

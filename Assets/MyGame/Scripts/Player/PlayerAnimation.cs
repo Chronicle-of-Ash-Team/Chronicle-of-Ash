@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class PlayerAnimation : MonoBehaviour
 {
     private Animator animator;
@@ -22,7 +23,7 @@ public class PlayerAnimation : MonoBehaviour
     public event Action OnHitStart;
     public event Action OnHitEnd;
 
-    private void Start()
+    private void Awake()
     {
         animator = GetComponent<Animator>();
     }
@@ -56,8 +57,7 @@ public class PlayerAnimation : MonoBehaviour
 
     public void PlayHit()
     {
-        //StopBlendUpper();
-        animator.CrossFade("Hit", 0f);
+        animator.Play("Hit", 0, 0);
     }
 
     public void UpdateLocomotionAnimation(float normalizedSpeed)
@@ -109,6 +109,10 @@ public class PlayerAnimation : MonoBehaviour
     }
     private void EndRoll()
     {
+        if (upperBodyBlendRoutine != null)
+            StopCoroutine(upperBodyBlendRoutine);
+
+        upperBodyBlendRoutine = StartCoroutine(BlendUpperBody(1, 0.25f));
         OnDodgeEnd?.Invoke();
     }
     private void StartAttack()

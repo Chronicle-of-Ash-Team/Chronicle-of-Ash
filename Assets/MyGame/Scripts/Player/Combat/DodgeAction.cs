@@ -8,6 +8,12 @@ public class DodgeAction : BaseCombatAction
     private void Start()
     {
         playerAnimation.OnDodgeStart += PlayerAnimation_OnDodgeStart;
+        playerAnimation.OnDodgeEnd += PlayerAnimation_OnDodgeEnd;
+    }
+
+    private void PlayerAnimation_OnDodgeEnd()
+    {
+        OnFinish();
     }
 
     private void PlayerAnimation_OnDodgeStart()
@@ -55,5 +61,6 @@ public class DodgeAction : BaseCombatAction
         IsRunning = false;
         rb.linearVelocity = Vector3.zero;
         locomotion.ResumeMove();
+        actionHandler.OnActionFinished(this);
     }
 }
