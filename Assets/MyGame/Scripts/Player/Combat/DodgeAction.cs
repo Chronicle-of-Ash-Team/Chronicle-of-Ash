@@ -12,17 +12,30 @@ public class DodgeAction : BaseCombatAction
 
         baseAnimation.OnDodgeStart += PlayerAnimation_OnDodgeStart;
         baseAnimation.OnDodgeEnd += PlayerAnimation_OnDodgeEnd;
+
+        baseAnimation.OnActionEventStart += BaseAnimation_OnActionEventStart;
+        baseAnimation.OnActionEventEnd += BaseAnimation_OnActionEventEnd;
+    }
+
+    private void BaseAnimation_OnActionEventEnd()
+    {
+        OnFinish();
+    }
+
+    private void BaseAnimation_OnActionEventStart()
+    {
+        IsRunning = true;
     }
 
     private void PlayerAnimation_OnDodgeEnd()
     {
-        OnFinish();
+        damageable.SetInvincible(false);
     }
 
     private void PlayerAnimation_OnDodgeStart()
     {
         damageable.SetInvincible(true);
-        IsRunning = true;
+
     }
 
     private void FixedUpdate()
@@ -32,13 +45,15 @@ public class DodgeAction : BaseCombatAction
 
     private void HandleDodge()
     {
-        if (!IsRunning) return;
+        if (!IsRunning || !IsThisAction) return;
         base.rb.linearVelocity = rollDirection * rollSpeed;
         transform.forward = rollDirection;
     }
 
     protected override void Execute()
     {
+        IsThisAction = true;
+
         locomotion.StopMove();
 
         baseAnimation.PlayThisAnimation("Roll");
@@ -62,7 +77,8 @@ public class DodgeAction : BaseCombatAction
     }
     public override void OnFinish()
     {
-        damageable.SetInvincible(false);
+        IsThisAction = false;
+
         IsRunning = false;
         rb.linearVelocity = Vector3.zero;
         locomotion.ResumeMove();

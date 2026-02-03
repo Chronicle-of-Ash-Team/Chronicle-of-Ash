@@ -10,17 +10,19 @@ public class AttackAction : BaseCombatAction
 
     private void Start()
     {
-        baseAnimation.OnAttackStart += PlayerAnimation_OnAttackStart;
-        baseAnimation.OnAttackEnd += PlayerAnimation_OnAttackEnd;
+        baseAnimation.OnActionEventStart += BaseAnimation_OnActionEventStart;
+        baseAnimation.OnActionEventEnd += BaseAnimation_OnActionEventEnd;
     }
 
-    private void PlayerAnimation_OnAttackEnd()
+    private void BaseAnimation_OnActionEventEnd()
     {
+        if (!IsThisAction) return;
         OnFinish();
     }
 
-    private void PlayerAnimation_OnAttackStart()
+    private void BaseAnimation_OnActionEventStart()
     {
+        if (!IsThisAction) return;
         IsRunning = true;
     }
 
@@ -44,6 +46,8 @@ public class AttackAction : BaseCombatAction
 
     protected override void Execute()
     {
+        IsThisAction = true;
+
         locomotion.StopMove();
         comboTimer = 0f;
 
@@ -54,10 +58,13 @@ public class AttackAction : BaseCombatAction
             attackComboCount = 1;
         }
         baseAnimation.PlayThisAnimation("Attack" + attackComboCount.ToString());
+
     }
 
     public override void OnFinish()
     {
+        IsThisAction = false;
+
         locomotion.ResumeMove();
         IsRunning = false;
         actionHandler.OnActionFinished(this);

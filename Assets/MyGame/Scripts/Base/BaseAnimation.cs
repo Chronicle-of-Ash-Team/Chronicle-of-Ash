@@ -22,6 +22,9 @@ public abstract class BaseAnimation : MonoBehaviour
     public event Action OnHitStart;
     public event Action OnHitEnd;
 
+    public event Action OnActionEventStart;
+    public event Action OnActionEventEnd;
+
     protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
@@ -126,5 +129,13 @@ public abstract class BaseAnimation : MonoBehaviour
     protected void OnHitEndEvent()
     {
         OnHitEnd?.Invoke();
+    }
+    protected void OnActionEventStartEvent()
+    {
+        OnActionEventStart?.Invoke();
+    }
+    protected void OnActionEventEndEvent()
+    {
+        OnActionEventEnd?.Invoke();
     }
 }

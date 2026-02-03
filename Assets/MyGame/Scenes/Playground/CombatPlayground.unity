@@ -4497,7 +4497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DodgeAction
   staminaCost: 3
-  rollSpeed: 5
+  rollSpeed: 4
 --- !u!114 &1851503338
 MonoBehaviour:
   m_ObjectHideFlags: 0

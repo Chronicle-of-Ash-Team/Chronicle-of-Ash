@@ -17,6 +17,8 @@ public class HitAction : BaseCombatAction
 
     public override void OnFinish()
     {
+        IsThisAction = false;
+
         IsRunning = false;
         locomotion.ResumeMove();
         actionHandler.OnActionFinished(this);
@@ -24,6 +26,8 @@ public class HitAction : BaseCombatAction
 
     protected override void Execute()
     {
+        IsThisAction = true;
+
         IsRunning = true;
         locomotion.StopMove();
         baseAnimation.PlayThisAnimationWithUpper("Hit");

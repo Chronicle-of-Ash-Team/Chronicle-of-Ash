@@ -10,6 +10,7 @@ public abstract class BaseCombatAction : MonoBehaviour
     protected Rigidbody rb;
 
     public bool IsRunning { get; protected set; }
+    public bool IsThisAction { get; protected set; }
 
     protected virtual void Awake()
     {

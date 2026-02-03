@@ -31,4 +31,12 @@ public class PlayerAnimation : BaseAnimation
         BlendUpper();
         OnHitEndEvent();
     }
+    private void StartAction()
+    {
+        OnActionEventStartEvent();
+    }
+    private void EndAction()
+    {
+        OnActionEventEndEvent();
+    }
 }
