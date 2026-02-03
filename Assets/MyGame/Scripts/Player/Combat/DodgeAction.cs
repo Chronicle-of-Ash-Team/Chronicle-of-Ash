@@ -4,11 +4,14 @@ public class DodgeAction : BaseCombatAction
 {
     [SerializeField] float rollSpeed = 8f;
     Vector3 rollDirection;
+    IDamageable damageable;
 
     private void Start()
     {
-        playerAnimation.OnDodgeStart += PlayerAnimation_OnDodgeStart;
-        playerAnimation.OnDodgeEnd += PlayerAnimation_OnDodgeEnd;
+        damageable = GetComponent<IDamageable>();
+
+        baseAnimation.OnDodgeStart += PlayerAnimation_OnDodgeStart;
+        baseAnimation.OnDodgeEnd += PlayerAnimation_OnDodgeEnd;
     }
 
     private void PlayerAnimation_OnDodgeEnd()
@@ -18,6 +21,7 @@ public class DodgeAction : BaseCombatAction
 
     private void PlayerAnimation_OnDodgeStart()
     {
+        damageable.SetInvincible(true);
         IsRunning = true;
     }
 
@@ -37,7 +41,7 @@ public class DodgeAction : BaseCombatAction
     {
         locomotion.StopMove();
 
-        playerAnimation.PlayDodge();
+        baseAnimation.PlayThisAnimation("Roll");
 
         Vector2 moveInput = GameInput.Instance.GetMovementVectorNormalized();
 
@@ -58,6 +62,7 @@ public class DodgeAction : BaseCombatAction
     }
     public override void OnFinish()
     {
+        damageable.SetInvincible(false);
         IsRunning = false;
         rb.linearVelocity = Vector3.zero;
         locomotion.ResumeMove();

@@ -2,8 +2,8 @@ public class SkillAction : BaseCombatAction
 {
     private void Start()
     {
-        playerAnimation.OnAttackStart += PlayerAnimation_OnAttackStart;
-        playerAnimation.OnAttackEnd += PlayerAnimation_OnAttackEnd;
+        baseAnimation.OnAttackStart += PlayerAnimation_OnAttackStart;
+        baseAnimation.OnAttackEnd += PlayerAnimation_OnAttackEnd;
     }
 
     private void PlayerAnimation_OnAttackEnd()
@@ -18,7 +18,7 @@ public class SkillAction : BaseCombatAction
     protected override void Execute()
     {
         locomotion.StopMove();
-        playerAnimation.PlaySkill();
+        baseAnimation.PlayThisAnimation("Skill");
     }
 
     public override void OnFinish()

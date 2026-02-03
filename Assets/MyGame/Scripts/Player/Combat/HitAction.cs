@@ -2,7 +2,7 @@ public class HitAction : BaseCombatAction
 {
     private void Start()
     {
-        playerAnimation.OnHitEnd += PlayerAnimation_OnHitEnd;
+        baseAnimation.OnHitEnd += PlayerAnimation_OnHitEnd;
     }
 
     private void PlayerAnimation_OnHitEnd()
@@ -26,6 +26,6 @@ public class HitAction : BaseCombatAction
     {
         IsRunning = true;
         locomotion.StopMove();
-        playerAnimation.PlayHit();
+        baseAnimation.PlayThisAnimationWithUpper("Hit");
     }
 }

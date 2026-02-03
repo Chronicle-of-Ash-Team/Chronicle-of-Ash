@@ -3,9 +3,9 @@ using UnityEngine;
 public abstract class BaseWeapon : MonoBehaviour
 {
     protected IWeaponOwner owner;
-    protected PlayerAnimation animation;
+    protected new BaseAnimation animation;
 
-    public virtual void SetOwner(IWeaponOwner owner, PlayerAnimation animEvent)
+    public virtual void SetOwner(IWeaponOwner owner, BaseAnimation animEvent)
     {
         this.owner = owner;
         this.animation = animEvent;

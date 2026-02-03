@@ -4,7 +4,7 @@ public abstract class BaseCombatAction : MonoBehaviour
 {
     [SerializeField] protected int staminaCost;
     //protected PlayerStamina stamina;
-    protected PlayerAnimation playerAnimation;
+    protected BaseAnimation baseAnimation;
     protected IActionHandler actionHandler;
     protected IMove locomotion;
     protected Rigidbody rb;
@@ -16,7 +16,7 @@ public abstract class BaseCombatAction : MonoBehaviour
         //stamina = GetComponent<PlayerStamina>();
         locomotion = GetComponent<IMove>();
         actionHandler = GetComponent<IActionHandler>();
-        playerAnimation = GetComponentInChildren<PlayerAnimation>();
+        baseAnimation = GetComponentInChildren<BaseAnimation>();
         rb = GetComponent<Rigidbody>();
     }
 

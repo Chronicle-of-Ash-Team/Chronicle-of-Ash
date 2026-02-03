@@ -16,7 +16,6 @@ MonoBehaviour:
   weaponType: 1
   icon: {fileID: 0}
   damage: 2
-  attackSpeed: 0.8
   staminaCost: 0
   animatorOverride: {fileID: 22100000, guid: 5eb5afe952c98a44cb65235b44352e9e, type: 2}
   speed: 0.8

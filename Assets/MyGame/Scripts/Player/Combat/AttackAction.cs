@@ -10,8 +10,8 @@ public class AttackAction : BaseCombatAction
 
     private void Start()
     {
-        playerAnimation.OnAttackStart += PlayerAnimation_OnAttackStart;
-        playerAnimation.OnAttackEnd += PlayerAnimation_OnAttackEnd;
+        baseAnimation.OnAttackStart += PlayerAnimation_OnAttackStart;
+        baseAnimation.OnAttackEnd += PlayerAnimation_OnAttackEnd;
     }
 
     private void PlayerAnimation_OnAttackEnd()
@@ -53,7 +53,7 @@ public class AttackAction : BaseCombatAction
         {
             attackComboCount = 1;
         }
-        playerAnimation.PlayAttack(attackComboCount);
+        baseAnimation.PlayThisAnimation("Attack" + attackComboCount.ToString());
     }
 
     public override void OnFinish()

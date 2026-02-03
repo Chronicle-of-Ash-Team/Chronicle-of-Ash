@@ -14,7 +14,7 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
     [SerializeField] private WeaponBase weaponData;
     [SerializeField] private Transform target;
     [SerializeField] private float attackRange = 2.2f;
-    [SerializeField] private float stopDistance = 1.8f;
+    //[SerializeField] private float stopDistance = 1.8f;
 
     [Header("Action Settings")]
     public BaseCombatAction CurrentAction { get; private set; }
@@ -104,10 +104,15 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
             CurrentAction = null;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, GameObject attacker)
     {
         TryAction(hitAction);
         currentHealth -= damage;
+        var checkAttacker = attacker.GetComponent<IDamageable>();
+        if (checkAttacker != null)
+        {
+            target = attacker.transform;
+        }
     }
 
 
@@ -149,5 +154,10 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
     public Transform GetTransform()
     {
         return transform;
+    }
+
+    public void SetInvincible(bool invincible)
+    {
+        //throw new System.NotImplementedException();
     }
 }

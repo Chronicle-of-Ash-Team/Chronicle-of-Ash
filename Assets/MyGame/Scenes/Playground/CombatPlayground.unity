@@ -3023,7 +3023,7 @@ Transform:
   m_GameObject: {fileID: 1298370868}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.8842998, y: 2.7911, z: -0.25003004}
+  m_LocalPosition: {x: -6.8842998, y: 3.1911001, z: -0.55003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3041,7 +3041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 886251e9a18ece04ea8e61686c173e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachinePositionComposer
-  CameraDistance: 2.7
+  CameraDistance: 3
   DeadZoneDepth: 0
   Composition:
     ScreenPosition: {x: 0, y: 0}
@@ -3053,8 +3053,8 @@ MonoBehaviour:
       Size: {x: 0.8, y: 0.8}
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
-  TargetOffset: {x: 0.1, y: 1.8, z: 0}
-  Damping: {x: 0.5, y: 0.5, z: 0}
+  TargetOffset: {x: 0.1, y: 2.2, z: 0}
+  Damping: {x: 0.7, y: 0.5, z: 0}
   Lookahead:
     Enabled: 0
     Time: 0
@@ -3090,8 +3090,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.99690247, z: -0, w: 0.07864865}
   m_LocalPosition: {x: 8.82357, y: -0.37079006, z: -4.99565}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 875424566}
   - {fileID: 1754699061}
@@ -3143,10 +3143,9 @@ MonoBehaviour:
   weaponHolder: {fileID: 1473071306}
   maxHealth: 100
   currentHealth: 0
-  weaponData: {fileID: 11400000, guid: ab076371d69b34f438f6b76a0cc4f885, type: 2}
+  weaponData: {fileID: 11400000, guid: f552d091a9d46d8479f41f8d10715041, type: 2}
   target: {fileID: 0}
   attackRange: 2.2
-  stopDistance: 1.8
 --- !u!114 &1313325803
 MonoBehaviour:
   m_ObjectHideFlags: 0
