@@ -47,7 +47,14 @@ public class WeaponHitBox : BaseWeapon
             if (other.transform == owner.GetTransform()) return;
 
             hittedTargets.Add(target);
-            target.TakeDamage(owner.GetDamage(), owner.GetTransform().gameObject);
+            target.TakeDamage(new DamageContext
+            {
+                Attacker = owner.GetTransform().gameObject,
+                Damage = owner.GetDamage(),
+                DamageType = DamageType.Heavy,
+                HitDirection = (other.transform.position - owner.GetTransform().position).normalized,
+                HitPosition = other.ClosestPoint(transform.position),
+            });
         }
     }
 

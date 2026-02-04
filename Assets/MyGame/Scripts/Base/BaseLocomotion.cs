@@ -76,6 +76,7 @@ public abstract class BaseLocomotion : MonoBehaviour, IMove
     }
     public void ResumeMove()
     {
+        Debug.Log("Resume Move");
         canMove = true;
     }
 

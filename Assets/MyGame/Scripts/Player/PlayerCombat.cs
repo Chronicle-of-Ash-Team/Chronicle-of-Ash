@@ -32,7 +32,7 @@ public class PlayerCombat : MonoBehaviour, IActionHandler
 
     public void TryAction(BaseCombatAction action)
     {
-        if (action == hitAction && CurrentAction != blockAction)
+        if (action == hitAction)
         {
             if (CurrentAction != null && CurrentAction != hitAction)
             {
@@ -46,7 +46,6 @@ public class PlayerCombat : MonoBehaviour, IActionHandler
             return;
         }
 
-
         if (CurrentAction != null && CurrentAction.IsRunning)
             return;
 
@@ -54,6 +53,7 @@ public class PlayerCombat : MonoBehaviour, IActionHandler
             return;
 
         // Execute action mới
+        action.OnFinish();
         CurrentAction?.OnFinish();
         action.TryExecute();
         CurrentAction = action;
@@ -98,7 +98,7 @@ public class PlayerCombat : MonoBehaviour, IActionHandler
         }
         else
         {
-            blockAction.OnFinish();
+            blockAction.OnBlockCancel();
             OnActionFinished(blockAction);
         }
     }

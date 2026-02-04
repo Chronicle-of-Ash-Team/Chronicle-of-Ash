@@ -19,11 +19,14 @@ public class DodgeAction : BaseCombatAction
 
     private void BaseAnimation_OnActionEventEnd()
     {
+        IsRunning = false;
+        if (!IsThisAction) return;
         OnFinish();
     }
 
     private void BaseAnimation_OnActionEventStart()
     {
+        if (!IsThisAction) return;
         IsRunning = true;
     }
 

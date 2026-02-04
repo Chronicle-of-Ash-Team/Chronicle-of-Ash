@@ -9,6 +9,12 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public bool IsHit { get; private set; }
     public bool isInvincible = false;
 
+    public GameObject parryParticle;
+
+    private BlockAction blockAction;
+    private PlayerAnimation playerAnimation;
+    private Rigidbody rb;
+
     public event Action OnHit;
     public event Action OnHitEnd;
     public event Action OnDied;
@@ -16,25 +22,50 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     private void Awake()
     {
         currentHealth = maxHealth;
+        blockAction = GetComponent<BlockAction>();
+        rb = GetComponent<Rigidbody>();
+        playerAnimation = GetComponentInChildren<PlayerAnimation>();
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
-            TakeDamage(1, gameObject);
+            //TakeDamage(new DamageContext
+            //{
+            //    Attacker = gameObject,
+            //    Damage = 1,
+            //    DamageType = DamageType.Normal,
+            //    HitDirection = Vector3.forward,
+            //});
         }
     }
 
-    public void TakeDamage(int damage, GameObject attacker)
+    public void TakeDamage(DamageContext damageContext)
     {
+        if (blockAction.isParrying)
+        {
+            playerAnimation.PlayThisAnimation("Parry", 0f);
+            blockAction.ShutdownBlock();
+            rb.AddForce(damageContext.HitDirection * 25f, ForceMode.Impulse);
+            Destroy(Instantiate(parryParticle, damageContext.HitPosition, Quaternion.identity), 1f);
+            return;
+        }
         if (isInvincible)
         {
             Debug.Log("You just dodge");
             return;
         }
+        rb.AddForce(damageContext.HitDirection * 45f, ForceMode.Impulse);
 
-        currentHealth -= damage;
+        if (blockAction.isBlocking)
+        {
+            Debug.Log("IsBlocking");
+            return;
+        }
+
+
+        currentHealth -= damageContext.Damage;
 
         if (currentHealth <= 0)
         {

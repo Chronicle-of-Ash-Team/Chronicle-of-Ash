@@ -5,6 +5,7 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
     [Header("Common Settings")]
     [SerializeField] private Transform lockOnPos;
     [SerializeField] private Transform weaponHolder;
+    [SerializeField] private float speedMultiplier = 0.4f;
 
     [Header("Health Settings")]
     [SerializeField] private int maxHealth = 100;
@@ -37,7 +38,7 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
         GameObject weapon = Instantiate(weaponData.weaponPrefab, weaponHolder);
 
         weapon.GetComponentInChildren<WeaponHitBox>().SetOwner(this, playerAnimation);
-        weaponData.speed = 0.4f;
+        weaponData.speed = speedMultiplier;
 
         playerAnimation.ApplyWeapon(weaponData);
     }
@@ -104,14 +105,14 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
             CurrentAction = null;
     }
 
-    public void TakeDamage(int damage, GameObject attacker)
+    public void TakeDamage(DamageContext damageContext)
     {
         TryAction(hitAction);
-        currentHealth -= damage;
-        var checkAttacker = attacker.GetComponent<IDamageable>();
+        currentHealth -= damageContext.Damage;
+        var checkAttacker = damageContext.Attacker.GetComponent<IDamageable>();
         if (checkAttacker != null)
         {
-            target = attacker.transform;
+            target = damageContext.Attacker.transform;
         }
     }
 

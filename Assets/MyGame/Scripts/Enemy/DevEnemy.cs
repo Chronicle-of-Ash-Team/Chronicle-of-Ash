@@ -22,11 +22,11 @@ public class DevEnemy : MonoBehaviour, ILockable, IDamageable
         return lockOnPos;
     }
 
-    public void TakeDamage(int damage, GameObject attacker)
+    public void TakeDamage(DamageContext damageContext)
     {
         animator.CrossFade("Damage0", 0f);
         faceMaterial.mainTexture = faces.damageFace;
-        currentHealth -= damage;
+        currentHealth -= damageContext.Damage;
     }
 
     private void EndHit()

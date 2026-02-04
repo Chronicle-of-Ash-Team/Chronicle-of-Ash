@@ -76,7 +76,7 @@ public class PlayerTargetLock : MonoBehaviour
             cameraTarget.rotation = Quaternion.Slerp(
                 cameraTarget.rotation,
                 targetRotation,
-                2 * Time.deltaTime
+                200 * Time.deltaTime
             );
         }
     }
