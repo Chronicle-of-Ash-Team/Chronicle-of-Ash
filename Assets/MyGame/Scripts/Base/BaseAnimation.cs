@@ -14,6 +14,8 @@ public abstract class BaseAnimation : MonoBehaviour
     protected readonly int horizontalHash = Animator.StringToHash("Horizontal");
     protected readonly int verticalHash = Animator.StringToHash("Vertical");
     protected readonly int speedMultiplyHash = Animator.StringToHash("SpeedMultiply");
+    protected readonly int isBlockingHash = Animator.StringToHash("IsBlocking");
+
 
     public event Action OnAttackStart;
     public event Action OnAttackEnd;
@@ -21,6 +23,10 @@ public abstract class BaseAnimation : MonoBehaviour
     public event Action OnDodgeEnd;
     public event Action OnHitStart;
     public event Action OnHitEnd;
+    public event Action OnBlockStart;
+    public event Action OnBlockEnd;
+    public event Action OnParryStart;
+    public event Action OnParryEnd;
 
     public event Action OnActionEventStart;
     public event Action OnActionEventEnd;
@@ -28,11 +34,6 @@ public abstract class BaseAnimation : MonoBehaviour
     protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
-    }
-
-    protected void ApplyAnimatorOverride()
-    {
-
     }
 
     public void ApplyWeapon(WeaponBase obj)
@@ -106,6 +107,11 @@ public abstract class BaseAnimation : MonoBehaviour
         animator.SetLayerWeight(layer, target);
     }
 
+    public void SetBlocking(bool blocking)
+    {
+        animator.SetBool(isBlockingHash, blocking);
+    }
+
     protected void OnAttackStartEvent()
     {
         OnAttackStart?.Invoke();
@@ -130,6 +136,24 @@ public abstract class BaseAnimation : MonoBehaviour
     {
         OnHitEnd?.Invoke();
     }
+
+    protected void OnBlockStartEvent()
+    {
+        OnBlockStart?.Invoke();
+    }
+    protected void OnBlockEndEvent()
+    {
+        OnBlockEnd?.Invoke();
+    }
+    protected void OnParryStartEvent()
+    {
+        OnParryStart?.Invoke();
+    }
+    protected void OnParryEndEvent()
+    {
+        OnParryEnd?.Invoke();
+    }
+
     protected void OnActionEventStartEvent()
     {
         OnActionEventStart?.Invoke();

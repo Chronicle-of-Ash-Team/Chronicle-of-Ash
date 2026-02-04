@@ -825,6 +825,8 @@ MonoBehaviour:
     HashOfParent: 756556552
   - Hash: 447775985
     HashOfParent: 756556552
+  - Hash: -1005802792
+    HashOfParent: 756556552
   m_LegacyLookAt: {fileID: 0}
   m_LegacyFollow: {fileID: 0}
 --- !u!4 &384234182
@@ -4355,6 +4357,7 @@ GameObject:
   - component: {fileID: 1851503337}
   - component: {fileID: 1851503340}
   - component: {fileID: 1851503338}
+  - component: {fileID: 1851503341}
   - component: {fileID: 1851503336}
   - component: {fileID: 1851503330}
   - component: {fileID: 1851503333}
@@ -4538,6 +4541,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b225e40ff2fb6c4f867980c6fdddac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitAction
+  staminaCost: 0
+--- !u!114 &1851503341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851503328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d55c6bc5c76fa345a3e3bae9b0160a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlockAction
   staminaCost: 0
 --- !u!1 &1879603127 stripped
 GameObject:

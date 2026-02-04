@@ -31,6 +31,22 @@ public class PlayerAnimation : BaseAnimation
         BlendUpper();
         OnHitEndEvent();
     }
+    private void StartBlock()
+    {
+        OnBlockStartEvent();
+    }
+    private void EndBlock()
+    {
+        OnBlockEndEvent();
+    }
+    private void StartParry()
+    {
+        OnParryStartEvent();
+    }
+    private void EndParry()
+    {
+        OnParryEndEvent();
+    }
     private void StartAction()
     {
         OnActionEventStartEvent();

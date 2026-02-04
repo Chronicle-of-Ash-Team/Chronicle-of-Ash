@@ -8,6 +8,8 @@ public class PlayerCombat : MonoBehaviour, IActionHandler
     private DodgeAction dodgeAction;
     private SkillAction skillAction;
     private HitAction hitAction;
+    private BlockAction blockAction;
+
     private PlayerHealth playerHealth;
 
     private void Start()
@@ -18,16 +20,19 @@ public class PlayerCombat : MonoBehaviour, IActionHandler
         dodgeAction = GetComponent<DodgeAction>();
         skillAction = GetComponent<SkillAction>();
         hitAction = GetComponent<HitAction>();
+        blockAction = GetComponent<BlockAction>();
 
         GameInput.Instance.OnDodgePerformed += GameInput_OnDodgePerformed;
         GameInput.Instance.OnAttackPerformed += GameInput_OnAttackPerformed;
         GameInput.Instance.OnSkillPerformed += GameInput_OnSkillPerformed;
+        GameInput.Instance.OnBlockPerformed += GameInput_OnBlockPerformed;
+
         playerHealth.OnHit += PlayerHealth_OnHit;
     }
 
     public void TryAction(BaseCombatAction action)
     {
-        if (action == hitAction)
+        if (action == hitAction && CurrentAction != blockAction)
         {
             if (CurrentAction != null && CurrentAction != hitAction)
             {
@@ -85,5 +90,16 @@ public class PlayerCombat : MonoBehaviour, IActionHandler
     {
         TryAction(dodgeAction);
     }
-
+    private void GameInput_OnBlockPerformed(bool obj)
+    {
+        if (obj)
+        {
+            TryAction(blockAction);
+        }
+        else
+        {
+            blockAction.OnFinish();
+            OnActionFinished(blockAction);
+        }
+    }
 }
