@@ -45,7 +45,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     {
         if (blockAction.isParrying)
         {
-            playerAnimation.PlayThisAnimation("Parry", 0f);
+            playerAnimation.PlayThisAnimation("Parry", 0.3f);
             blockAction.ShutdownBlock();
             rb.AddForce(damageContext.HitDirection * 25f, ForceMode.Impulse);
             Destroy(Instantiate(parryParticle, damageContext.HitPosition, Quaternion.identity), 1f);
