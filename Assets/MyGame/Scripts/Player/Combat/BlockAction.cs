@@ -32,12 +32,7 @@ public class BlockAction : BaseCombatAction
 
         animReachedEnd = true;
 
-        if (isHolding)
-        {
-            IsRunning = true;
-            isBlocking = true;
-        }
-        else
+        if (!isHolding)
         {
             ShutdownBlock();
         }
@@ -64,10 +59,9 @@ public class BlockAction : BaseCombatAction
     {
         isHolding = false;
 
-        if (animReachedEnd || isBlocking)
-        {
-            ShutdownBlock();
-        }
+        if (!animReachedEnd) return;
+
+        ShutdownBlock();
     }
 
     public void ShutdownBlock()
