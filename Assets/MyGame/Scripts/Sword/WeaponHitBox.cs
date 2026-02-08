@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponHitBox : BaseWeapon
+public class WeaponHitBox : MonoBehaviour
 {
     private Collider col;
     private HashSet<IDamageable> hittedTargets = new();
+    private IWeaponOwner owner;
 
     private void Awake()
     {
@@ -12,28 +13,20 @@ public class WeaponHitBox : BaseWeapon
         DisableHitbox();
     }
 
-    private void EnableHitbox()
+    public void Init(IWeaponOwner owner)
+    {
+        this.owner = owner;
+    }
+
+    public void EnableHitbox()
     {
         hittedTargets.Clear();
         col.enabled = true;
     }
 
-    private void DisableHitbox()
+    public void DisableHitbox()
     {
         col.enabled = false;
-    }
-
-
-    protected override void Subscribe()
-    {
-        animation.OnAttackStart += Animation_OnAttackStart;
-        animation.OnAttackEnd += Animation_OnAttackEnd;
-    }
-
-    private void OnDestroy()
-    {
-        animation.OnAttackStart -= Animation_OnAttackStart;
-        animation.OnAttackEnd -= Animation_OnAttackEnd;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -47,24 +40,7 @@ public class WeaponHitBox : BaseWeapon
             if (other.transform == owner.GetTransform()) return;
 
             hittedTargets.Add(target);
-            target.TakeDamage(new DamageContext
-            {
-                Attacker = owner.GetTransform().gameObject,
-                Damage = owner.GetDamage(),
-                DamageType = DamageType.Heavy,
-                HitDirection = (other.transform.position - owner.GetTransform().position).normalized,
-                HitPosition = other.ClosestPoint(transform.position),
-            });
+            owner.OnWeaponHit(target, other, this);
         }
-    }
-
-    private void Animation_OnAttackEnd()
-    {
-        DisableHitbox();
-    }
-
-    private void Animation_OnAttackStart()
-    {
-        EnableHitbox();
     }
 }

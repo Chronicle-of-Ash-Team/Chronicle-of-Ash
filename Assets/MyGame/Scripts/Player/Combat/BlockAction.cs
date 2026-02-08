@@ -3,6 +3,7 @@ public class BlockAction : BaseCombatAction
     private bool isHolding;
     public bool isBlocking;
     public bool isParrying;
+    private bool animReachedEnd;
 
     private void Start()
     {
@@ -28,9 +29,13 @@ public class BlockAction : BaseCombatAction
     private void BaseAnimation_OnActionEventEnd()
     {
         if (!IsThisAction) return;
+
+        animReachedEnd = true;
+
         if (isHolding)
         {
             IsRunning = true;
+            isBlocking = true;
         }
         else
         {
@@ -47,7 +52,7 @@ public class BlockAction : BaseCombatAction
     private void BaseAnimation_OnBlockStart()
     {
         isBlocking = true;
-
+        baseAnimation.SetBlocking(true);
     }
 
     public override void OnFinish()
@@ -59,7 +64,7 @@ public class BlockAction : BaseCombatAction
     {
         isHolding = false;
 
-        if (isBlocking)
+        if (animReachedEnd || isBlocking)
         {
             ShutdownBlock();
         }
@@ -67,24 +72,24 @@ public class BlockAction : BaseCombatAction
 
     public void ShutdownBlock()
     {
-        baseAnimation.SetBlocking(false);
-        IsThisAction = false;
         IsRunning = false;
         isHolding = false;
         isBlocking = false;
         isParrying = false;
+        IsThisAction = false;
+        animReachedEnd = false;
+        baseAnimation.SetBlocking(false);
         locomotion.ResumeMove();
     }
 
     protected override void Execute()
     {
+        IsRunning = true;
         isHolding = true;
         IsThisAction = true;
-        IsRunning = true;
 
         baseAnimation.SetBlocking(false);
         baseAnimation.PlayThisAnimation("Block", 0f);
-        baseAnimation.SetBlocking(true);
         locomotion.StopMove();
     }
 }

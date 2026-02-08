@@ -1,5 +1,7 @@
+using UnityEngine;
+
 public interface IWeaponProp
 {
-    public WeaponBase GetWeaponData();
+    public GameObject GetWeaponPref();
 }
 

@@ -1,39 +1,88 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerWeapon : MonoBehaviour, IWeaponOwner
 {
     [SerializeField] private Transform rightHandHolder;
-    public WeaponBase currentWeapon;
+    [SerializeField] private GameObject weaponPref;
     [SerializeField] private float maxDistance = 5f;
 
+
+    private WeaponController currentWeapon;
     private PlayerAnimation playerAnimation;
 
     private void Start()
     {
         playerAnimation = GetComponentInChildren<PlayerAnimation>();
+
+        playerAnimation.OnAttackStart += PlayerAnimation_OnAttackStart;
+        playerAnimation.OnAttackEnd += PlayerAnimation_OnAttackEnd;
+
+
+
+
+        GameObject weaponGO = Instantiate(weaponPref, rightHandHolder);
+        weaponGO.transform.localPosition = Vector3.zero;
+        weaponGO.transform.localRotation = Quaternion.identity;
+
+        // 3. Cache weapon
+        currentWeapon = weaponGO.GetComponent<WeaponController>();
+
+        // 4. Init
+        currentWeapon.Init(this);
+
+        // 5. Apply animation theo weapon mới
+        playerAnimation.ApplyWeapon(currentWeapon.GetWeaponData());
+    }
+
+    private void PlayerAnimation_OnAttackEnd()
+    {
+        currentWeapon.GetWeaponHitBox().DisableHitbox();
+    }
+
+    private void PlayerAnimation_OnAttackStart()
+    {
+        currentWeapon.GetWeaponHitBox().EnableHitbox();
     }
 
     private void Update()
     {
-        HandleInteract();
         if (Input.GetKeyDown(KeyCode.T))
         {
-            ChangeWeapon(currentWeapon);
+            HandleInteract();
         }
     }
 
-    private void ChangeWeapon(WeaponBase weaponData)
+    private void OnDestroy()
     {
-        currentWeapon = weaponData;
-        foreach (Transform chil in rightHandHolder.transform)
+        if (playerAnimation == null) return;
+
+        playerAnimation.OnAttackStart -= PlayerAnimation_OnAttackStart;
+        playerAnimation.OnAttackEnd -= PlayerAnimation_OnAttackEnd;
+    }
+
+    private void ChangeWeapon(GameObject newWeaponPref)
+    {
+        // 1. Gỡ vũ khí cũ
+        if (currentWeapon != null)
         {
-            Destroy(chil.gameObject);
+            currentWeapon.GetWeaponHitBox().DisableHitbox();
+            Destroy(currentWeapon.gameObject);
+            currentWeapon = null;
         }
-        GameObject weapon = Instantiate(weaponData.weaponPrefab, rightHandHolder);
 
-        weapon.GetComponentInChildren<WeaponHitBox>().SetOwner(this, playerAnimation);
+        // 2. Spawn vũ khí mới
+        GameObject weaponGO = Instantiate(newWeaponPref, rightHandHolder);
+        weaponGO.transform.localPosition = Vector3.zero;
+        weaponGO.transform.localRotation = Quaternion.identity;
 
-        playerAnimation.ApplyWeapon(currentWeapon);
+        // 3. Cache weapon
+        currentWeapon = weaponGO.GetComponent<WeaponController>();
+
+        // 4. Init
+        currentWeapon.Init(this);
+
+        // 5. Apply animation theo weapon mới
+        playerAnimation.ApplyWeapon(currentWeapon.GetWeaponData());
     }
 
     private void HandleInteract()
@@ -48,23 +97,35 @@ public class PlayerWeapon : MonoBehaviour, IWeaponOwner
             var weapon = hit.transform.GetComponentInParent<IWeaponProp>();
             if (weapon != null && Input.GetKeyDown(KeyCode.E))
             {
-                ChangeWeapon(weapon.GetWeaponData());
+                ChangeWeapon(weapon.GetWeaponPref());
             }
         }
     }
 
     public int GetDamage()
     {
-        return currentWeapon.damage;
+        return currentWeapon.GetWeaponData().damage;
     }
 
     public WeaponBase GetWeaponData()
     {
-        return currentWeapon;
+        return currentWeapon.GetWeaponData();
     }
 
     public Transform GetTransform()
     {
         return transform;
+    }
+
+    public void OnWeaponHit(IDamageable target, Collider other, WeaponHitBox hitbox)
+    {
+        target.TakeDamage(new DamageContext
+        {
+            Attacker = gameObject,
+            Damage = currentWeapon.GetWeaponData().damage,
+            DamageType = DamageType.Heavy,
+            HitDirection = (other.transform.position - transform.position).normalized,
+            HitPosition = other.ClosestPoint(hitbox.transform.position),
+        });
     }
 }

@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class SwordProp : MonoBehaviour, IWeaponProp
 {
-    [SerializeField] private WeaponBase weaponData;
+    [SerializeField] private GameObject weaponPref;
 
-    public WeaponBase GetWeaponData()
+    public GameObject GetWeaponPref()
     {
-        return weaponData;
+        return weaponPref;
     }
 }

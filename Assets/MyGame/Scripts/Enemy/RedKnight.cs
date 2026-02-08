@@ -12,7 +12,7 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
     [SerializeField] private int currentHealth;
 
     [Header("Attack Settings")]
-    [SerializeField] private WeaponBase weaponData;
+    [SerializeField] private GameObject weaponPref;
     [SerializeField] private Transform target;
     [SerializeField] private float attackRange = 2.2f;
     //[SerializeField] private float stopDistance = 1.8f;
@@ -20,6 +20,7 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
     [Header("Action Settings")]
     public BaseCombatAction CurrentAction { get; private set; }
     private AttackAction attackAction;
+    private WeaponController currentWeapon;
     private HitAction hitAction;
 
     private PlayerAnimation playerAnimation;
@@ -35,12 +36,37 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
     private void Start()
     {
         currentHealth = maxHealth;
-        GameObject weapon = Instantiate(weaponData.weaponPrefab, weaponHolder);
+        if (weaponPref != null)
+        {
+            GameObject weapon = Instantiate(weaponPref, weaponHolder);
+            currentWeapon = weapon.GetComponent<WeaponController>();
+            currentWeapon.Init(this);
+        }
 
-        weapon.GetComponentInChildren<WeaponHitBox>().SetOwner(this, playerAnimation);
-        weaponData.speed = speedMultiplier;
+        currentWeapon.GetWeaponData().speed = speedMultiplier;
 
-        playerAnimation.ApplyWeapon(weaponData);
+        playerAnimation.ApplyWeapon(currentWeapon.GetWeaponData());
+
+        playerAnimation.OnAttackStart += PlayerAnimation_OnAttackStart;
+        playerAnimation.OnAttackEnd += PlayerAnimation_OnAttackEnd;
+    }
+
+    private void PlayerAnimation_OnAttackEnd()
+    {
+        currentWeapon.GetWeaponHitBox().DisableHitbox();
+    }
+
+    private void PlayerAnimation_OnAttackStart()
+    {
+        currentWeapon.GetWeaponHitBox().EnableHitbox();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            target = null;
+        }
     }
 
     private void FixedUpdate()
@@ -140,12 +166,12 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
     }
     public int GetDamage()
     {
-        return weaponData.damage;
+        return currentWeapon.GetWeaponData().damage;
     }
 
     public WeaponBase GetWeaponData()
     {
-        return weaponData;
+        return currentWeapon.GetWeaponData();
     }
     public Transform GetLockOnTransform()
     {
@@ -160,5 +186,17 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
     public void SetInvincible(bool invincible)
     {
         //throw new System.NotImplementedException();
+    }
+
+    public void OnWeaponHit(IDamageable target, Collider other, WeaponHitBox hitbox)
+    {
+        target.TakeDamage(new DamageContext
+        {
+            Attacker = gameObject,
+            Damage = currentWeapon.GetWeaponData().damage,
+            DamageType = DamageType.Heavy,
+            HitDirection = (other.transform.position - transform.position).normalized,
+            HitPosition = other.ClosestPoint(hitbox.transform.position),
+        });
     }
 }
