@@ -3,6 +3,7 @@ using UnityEngine;
 public class AttackAction : BaseCombatAction
 {
     [Header("Attack Settings")]
+    [SerializeField] private int totalAttack = 3;
     [SerializeField] private float comboResetTime = 1.2f;
     [SerializeField] int attackComboCount = 1;
 
@@ -53,7 +54,7 @@ public class AttackAction : BaseCombatAction
 
         attackComboCount++;
 
-        if (attackComboCount > 3)
+        if (attackComboCount > totalAttack)
         {
             attackComboCount = 1;
         }

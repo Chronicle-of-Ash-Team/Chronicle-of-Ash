@@ -133,7 +133,7 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
 
     public void TakeDamage(DamageContext damageContext)
     {
-        TryAction(hitAction);
+        //TryAction(hitAction);
         currentHealth -= damageContext.Damage;
         var checkAttacker = damageContext.Attacker.GetComponent<IDamageable>();
         if (checkAttacker != null)

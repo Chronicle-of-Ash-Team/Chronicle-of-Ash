@@ -27,27 +27,18 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         playerAnimation = GetComponentInChildren<PlayerAnimation>();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            //TakeDamage(new DamageContext
-            //{
-            //    Attacker = gameObject,
-            //    Damage = 1,
-            //    DamageType = DamageType.Normal,
-            //    HitDirection = Vector3.forward,
-            //});
-        }
-    }
-
     public void TakeDamage(DamageContext damageContext)
     {
+        Vector3 pushDir = damageContext.HitDirection;
+        pushDir.y = 0f;
+
         if (blockAction.isParrying)
         {
-            playerAnimation.PlayThisAnimation("Parry");
+            //Parry success
             blockAction.ShutdownBlock();
-            rb.AddForce(damageContext.HitDirection * 25f, ForceMode.Impulse);
+            rb.AddForce(pushDir * 25f, ForceMode.Impulse);
+            int parryNum = UnityEngine.Random.Range(1, 4);
+            playerAnimation.PlayThisAnimation("Parry" + parryNum, 0.1f);
             Destroy(Instantiate(parryParticle, damageContext.HitPosition, Quaternion.identity), 1f);
             return;
         }
@@ -56,7 +47,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
             Debug.Log("You just dodge");
             return;
         }
-        rb.AddForce(damageContext.HitDirection * 45f, ForceMode.Impulse);
+        rb.AddForce(pushDir * 45f, ForceMode.Impulse);
 
         if (blockAction.isBlocking)
         {
