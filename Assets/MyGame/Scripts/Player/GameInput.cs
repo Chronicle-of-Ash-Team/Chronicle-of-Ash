@@ -10,6 +10,9 @@ public class GameInput : MonoBehaviour
     public event Action<bool> OnRunPerformed;
     public event Action OnLockOnPerformed;
     public event Action OnDodgePerformed;
+    public event Action OnAttackPerformed;
+    public event Action OnSkillPerformed;
+    public event Action<bool> OnBlockPerformed;
 
     private void Awake()
     {
@@ -26,6 +29,30 @@ public class GameInput : MonoBehaviour
         playerInputAction.Player.Run.canceled += Run_canceled;
         playerInputAction.Player.LockOn.performed += LockOn_performed;
         playerInputAction.Player.Dodge.performed += Dodge_performed;
+        playerInputAction.Player.Attack.performed += Attack_performed;
+        playerInputAction.Player.Skill.performed += Skill_performed;
+        playerInputAction.Player.Block.performed += Block_performed;
+        playerInputAction.Player.Block.canceled += Block_canceled;
+    }
+
+    private void Block_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnBlockPerformed?.Invoke(true);
+    }
+
+    private void Block_canceled(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnBlockPerformed?.Invoke(false);
+    }
+
+    private void Skill_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnSkillPerformed?.Invoke();
+    }
+
+    private void Attack_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnAttackPerformed?.Invoke();
     }
 
     private void Dodge_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)

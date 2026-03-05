@@ -1,29 +1,34 @@
 ﻿using UnityEngine;
 
-public class PlayerLocomotion : MonoBehaviour
+public class PlayerLocomotion : BaseLocomotion
 {
-    private Rigidbody rb;
     [SerializeField] private Transform cameraTransform;
 
-    [SerializeField] private float walkSpeed = 5f;
-    [SerializeField] private float runSpeed = 7f;
-    [SerializeField] private float rotationSpeed = 10f;
-
-    private PlayerAnimation animationHandler;
     private PlayerTargetLock targetLockHandler;
+    private PlayerAnimation playerAnimation;
 
-    private bool isRunning = false;
+    private bool isRunning;
 
     void Start()
     {
-        animationHandler = GetComponent<PlayerAnimation>();
         targetLockHandler = GetComponent<PlayerTargetLock>();
-        rb = GetComponent<Rigidbody>();
+        playerAnimation = GetComponentInChildren<PlayerAnimation>();
+    }
+
+    private void FixedUpdate()
+    {
+        Vector3 moveDir = CalculateMoveDirection();
+        HandleMovement(moveDir, isRunning);
+        UpdateAnimation(moveDir);
     }
 
     private void OnEnable()
     {
         GameInput.Instance.OnRunPerformed += GameInput_OnRunPerformed;
+    }
+    private void OnDisable()
+    {
+        GameInput.Instance.OnRunPerformed -= GameInput_OnRunPerformed;
     }
 
     private void GameInput_OnRunPerformed(bool obj)
@@ -31,85 +36,32 @@ public class PlayerLocomotion : MonoBehaviour
         isRunning = obj;
     }
 
-    void Update()
+    private Vector3 CalculateMoveDirection()
     {
+        Vector2 input = GameInput.Instance.GetMovementVectorNormalized();
+        if (input.magnitude < 0.1f) return Vector3.zero;
+
+        Vector3 camForward = cameraTransform.forward;
+        Vector3 camRight = cameraTransform.right;
+        camForward.y = 0;
+        camRight.y = 0;
+
+        return (camForward * input.y + camRight * input.x).normalized;
     }
 
-    void FixedUpdate()
-    {
-        HandleMovement();
-    }
-
-    private void HandleMovement()
-    {
-        if (PlayerCombat.Instance.GetIsRolling()) return;
-
-        Vector2 inputVector = GameInput.Instance.GetMovementVectorNormalized();
-        Vector3 inputDir = new Vector3(inputVector.x, 0f, inputVector.y);
-
-
-        Vector3 cameraForward = cameraTransform.forward;
-        Vector3 cameraRight = cameraTransform.right;
-        cameraForward.y = 0f;
-        cameraRight.y = 0f;
-
-        Vector3 moveDir = (cameraForward * inputDir.z + cameraRight * inputDir.x).normalized;
-        moveDir.y = 0f;
-
-        // Tính tốc độ
-        float moveValue = inputVector.magnitude;
-        float currentSpeed = 0f;
-
-
-        if (moveValue > 0.1f)
-        {
-            currentSpeed = isRunning ? runSpeed : walkSpeed;
-
-            // Di chuyển bằng Rigidbody
-            Vector3 targetVelocity = moveDir * currentSpeed;
-            targetVelocity.y = rb.linearVelocity.y; // Giữ velocity Y (gravity)
-            rb.linearVelocity = targetVelocity;
-
-
-        }
-        else
-        {
-            // Dừng di chuyển
-            Vector3 stopVelocity = rb.linearVelocity;
-            stopVelocity.x = 0f;
-            stopVelocity.z = 0f;
-            rb.linearVelocity = stopVelocity;
-        }
-
-
-
-        if (targetLockHandler.GetIsTargeting())
-        {
-            Vector3 lookPos = targetLockHandler.GetCurrentTarget().position;
-            lookPos.y = 0f;
-            transform.LookAt(lookPos);
-            UpdateAnimation(moveDir);
-        }
-        else if (moveDir != Vector3.zero)
-        {
-            Quaternion targetRotation = Quaternion.LookRotation(moveDir);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-            UpdateAnimation(currentSpeed);
-        }
-        else
-        {
-            UpdateAnimation(currentSpeed);
-        }
-    }
-
-
-    private void UpdateAnimation(float currentSpeed)
-    {
-        float normalizedSpeed = currentSpeed / runSpeed;
-        animationHandler.UpdateLocomotionAnimation(normalizedSpeed);
-    }
     private void UpdateAnimation(Vector3 moveDir)
     {
-        animationHandler.UpdateLockOnLocomotion(moveDir);
+        if (targetLockHandler != null && targetLockHandler.GetIsTargeting())
+        {
+            Vector3 lookPos = targetLockHandler.GetCurrentTarget().position;
+            lookPos.y = transform.position.y;
+            transform.LookAt(lookPos);
+
+            playerAnimation.UpdateLockOnLocomotion(moveDir);
+        }
+        else
+        {
+            playerAnimation.UpdateLocomotionAnimation(base.currentSpeed / base.runSpeed);
+        }
     }
 }

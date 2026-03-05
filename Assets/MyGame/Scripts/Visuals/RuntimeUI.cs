@@ -14,10 +14,10 @@ public class RuntimeUI : MonoBehaviour
 
     private void Start()
     {
-        PlayerTargetLock.Instance.OnTargetLock += PlayerTargetLock_OnTargetLock;
+        UIEvents.OnTargetLock += OnTargetLock;
     }
 
-    private void PlayerTargetLock_OnTargetLock(Transform obj)
+    private void OnTargetLock(Transform obj)
     {
         lockOnTarget = obj;
     }
@@ -34,14 +34,14 @@ public class RuntimeUI : MonoBehaviour
             lockOnImg.enabled = true;
             lockOnImg.transform.position = screenPos;
 
-            Ray ray = new Ray(Camera.main.transform.position,
-                  lockOnTarget.position - Camera.main.transform.position);
+            //Ray ray = new Ray(Camera.main.transform.position,
+            //      lockOnTarget.position - Camera.main.transform.position);
 
-            if (Physics.Raycast(ray, out RaycastHit hit))
-            {
-                if (hit.transform != lockOnTarget)
-                    lockOnImg.enabled = false;
-            }
+            //if (Physics.Raycast(ray, out RaycastHit hit))
+            //{
+            //    if (hit.transform.GetComponentInParent<Transform>() != lockOnTarget.GetComponentInParent<Transform>())
+            //        lockOnImg.enabled = false;
+            //}
         }
     }
 }

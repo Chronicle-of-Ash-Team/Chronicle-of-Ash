@@ -1,50 +1,58 @@
 ﻿using UnityEngine;
 
-public class PlayerAnimation : MonoBehaviour
+[RequireComponent(typeof(Animator))]
+public class PlayerAnimation : BaseAnimation
 {
-    [SerializeField] private Animator animator;
-
-    private readonly int moveAmountHash = Animator.StringToHash("MoveAmount");
-    private readonly int isMovingHash = Animator.StringToHash("IsMoving");
-    private readonly int isLockOnHash = Animator.StringToHash("IsLockOn");
-    private readonly int horizontalHash = Animator.StringToHash("Horizontal");
-    private readonly int verticalHash = Animator.StringToHash("Vertical");
-
-    private void Start()
+    private void StartRoll()
     {
-        PlayerCombat.Instance.OnDodge += PlayerCombat_OnDodge;
+        OnDodgeStartEvent();
     }
-
-    private void PlayerCombat_OnDodge()
+    private void EndRoll()
     {
-        //animator.SetTrigger(rollHash);
-        animator.CrossFade("Roll", 0.02f);
+        BlendUpper();
+        OnDodgeEndEvent();
     }
-
-    public void UpdateLocomotionAnimation(float normalizedSpeed)
+    private void StartAttack()
     {
-        // Smooth transition với damping time 0.2s
-        animator.SetBool(isLockOnHash, false);
-        animator.SetFloat(moveAmountHash, normalizedSpeed, 0.2f, Time.deltaTime);
-        animator.SetBool(isMovingHash, normalizedSpeed > 0.1f);
+        animator.SetLayerWeight(1, 0f);
+        OnAttackStartEvent();
     }
-    public void UpdateLockOnLocomotion(Vector3 worldMoveDir)
+    private void EndAttack()
     {
-        animator.SetBool(isLockOnHash, true);
-
-        Vector3 localMove = transform.InverseTransformDirection(worldMoveDir);
-
-        animator.SetFloat(horizontalHash, localMove.x, 0.15f, Time.deltaTime);
-        animator.SetFloat(verticalHash, localMove.z, 0.15f, Time.deltaTime);
-
-        animator.SetBool(isMovingHash, localMove.magnitude > 0.1f);
+        BlendUpper();
+        OnAttackEndEvent();
     }
-    public void SetMoveAmountImmediate(float value)
+    private void StartHit()
     {
-        animator.SetFloat(moveAmountHash, value);
+        OnHitStartEvent();
     }
-    public Animator GetAnimator()
+    private void EndHit()
     {
-        return animator;
+        BlendUpper();
+        OnHitEndEvent();
+    }
+    private void StartBlock()
+    {
+        OnBlockStartEvent();
+    }
+    private void EndBlock()
+    {
+        OnBlockEndEvent();
+    }
+    private void StartParry()
+    {
+        OnParryStartEvent();
+    }
+    private void EndParry()
+    {
+        OnParryEndEvent();
+    }
+    private void StartAction()
+    {
+        OnActionEventStartEvent();
+    }
+    private void EndAction()
+    {
+        OnActionEventEndEvent();
     }
 }

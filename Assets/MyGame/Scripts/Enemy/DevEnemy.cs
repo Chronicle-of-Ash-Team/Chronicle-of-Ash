@@ -1,21 +1,41 @@
 using UnityEngine;
 
-public class DevEnemy : MonoBehaviour, ILockable
+public class DevEnemy : MonoBehaviour, ILockable, IDamageable
 {
-    public Transform lockPos()
+    [SerializeField] private int maxHealth = 20;
+    [SerializeField] private int currentHealth;
+
+    [SerializeField] private Material faceMaterial;
+    [SerializeField] private Face faces;
+    [SerializeField] private Transform lockOnPos;
+
+    private Animator animator;
+
+    private void Awake()
     {
-        return transform;
+        animator = GetComponent<Animator>();
+        currentHealth = maxHealth;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public Transform GetLockOnTransform()
     {
-
+        return lockOnPos;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TakeDamage(DamageContext damageContext)
     {
+        animator.CrossFade("Damage0", 0f);
+        faceMaterial.mainTexture = faces.damageFace;
+        currentHealth -= damageContext.Damage;
+    }
 
+    private void EndHit()
+    {
+        faceMaterial.mainTexture = faces.Idleface;
+    }
+
+    public void SetInvincible(bool invincible)
+    {
+        throw new System.NotImplementedException();
     }
 }

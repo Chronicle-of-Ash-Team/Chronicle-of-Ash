@@ -1,91 +1,105 @@
-using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerCombat : MonoBehaviour
+public class PlayerCombat : MonoBehaviour, IActionHandler
 {
-    public static PlayerCombat Instance;
-    public enum PlayerState
-    {
-        Idle,
-        Combat,
-    }
-    public PlayerState CurrentState;
+    public BaseCombatAction CurrentAction { get; private set; }
 
-    private Rigidbody rb;
+    private AttackAction attackAction;
+    private DodgeAction dodgeAction;
+    private SkillAction skillAction;
+    private HitAction hitAction;
+    private BlockAction blockAction;
 
-    [Header("Roll Settings")]
-    public bool isRolling = false;
-    public float rollSpeed = 8f;
-    Vector3 rollDirection;
-
-
-    public event Action OnDodge;
-
-    private void Awake()
-    {
-        Instance = this;
-    }
+    private PlayerHealth playerHealth;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        playerHealth = GetComponent<PlayerHealth>();
+
+        attackAction = GetComponent<AttackAction>();
+        dodgeAction = GetComponent<DodgeAction>();
+        skillAction = GetComponent<SkillAction>();
+        hitAction = GetComponent<HitAction>();
+        blockAction = GetComponent<BlockAction>();
 
         GameInput.Instance.OnDodgePerformed += GameInput_OnDodgePerformed;
+        GameInput.Instance.OnAttackPerformed += GameInput_OnAttackPerformed;
+        GameInput.Instance.OnSkillPerformed += GameInput_OnSkillPerformed;
+        GameInput.Instance.OnBlockPerformed += GameInput_OnBlockPerformed;
+
+        playerHealth.OnHit += PlayerHealth_OnHit;
+    }
+
+    public void TryAction(BaseCombatAction action)
+    {
+        if (action == hitAction)
+        {
+            if (CurrentAction != null && CurrentAction != hitAction)
+            {
+                CurrentAction.OnFinish();
+                CurrentAction = null;
+            }
+
+            action.TryExecute();
+            CurrentAction = action;
+
+            return;
+        }
+
+        if (CurrentAction != null && CurrentAction.IsRunning)
+            return;
+
+        if (CurrentAction == action)
+            return;
+
+        // Execute action mới
+        action.OnFinish();
+        CurrentAction?.OnFinish();
+        action.TryExecute();
+        CurrentAction = action;
+    }
+
+    public void EndAllAction()
+    {
+        CurrentAction?.OnFinish();
+        CurrentAction = null;
+    }
+
+    public void OnActionFinished(BaseCombatAction action)
+    {
+        if (CurrentAction == action)
+            CurrentAction = null;
+    }
+
+    private void PlayerHealth_OnHit()
+    {
+        TryAction(hitAction);
+    }
+
+    private void GameInput_OnAttackPerformed()
+    {
+        TryAction(attackAction);
+    }
+
+    private void GameInput_OnSkillPerformed()
+    {
+        TryAction(skillAction);
     }
 
     private void GameInput_OnDodgePerformed()
     {
-        TryDodge();
-        OnDodge?.Invoke();
+        TryAction(dodgeAction);
     }
-
-    private void FixedUpdate()
+    private void GameInput_OnBlockPerformed(bool obj)
     {
-        HandleDodge();
-    }
-
-
-    private void HandleDodge()
-    {
-        if (!isRolling) return;
-        rb.linearVelocity = rollDirection * rollSpeed;
-        transform.forward = rollDirection;
-    }
-
-    private void TryDodge()
-    {
-        if (isRolling) return;
-
-        Vector2 moveInput = GameInput.Instance.GetMovementVectorNormalized();
-
-        Vector3 cameraForward = Camera.main.transform.forward;
-        Vector3 cameraRight = Camera.main.transform.right;
-        cameraForward.y = 0f;
-        cameraRight.y = 0f;
-
-        Vector3 moveDir = (cameraForward * moveInput.y + cameraRight * moveInput.x).normalized;
-
-        if (moveDir.sqrMagnitude < 0.01f)
+        if (obj)
         {
-            moveDir = transform.forward;
+            TryAction(blockAction);
         }
-
-        rollDirection = moveDir.normalized;
-        transform.forward = rollDirection;
-    }
-
-    public void StartRoll()
-    {
-        isRolling = true;
-    }
-    public void EndRoll()
-    {
-        isRolling = false;
-        rb.linearVelocity = Vector3.zero;
-    }
-
-    public bool GetIsRolling()
-    {
-        return isRolling;
+        else
+        {
+            blockAction.OnBlockCancel();
+            OnActionFinished(blockAction);
+        }
     }
 }
