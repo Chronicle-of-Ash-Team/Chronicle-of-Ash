@@ -179,7 +179,7 @@ Material:
         a: 3.375957e+24}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GlassTint: {r: 0.8784314, g: 0.47843128, b: 0.24705878, a: 1}
+    - _GlassTint: {r: 0.7882353, g: 0.72156864, b: 0.4509804, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &5032196703130663779
