@@ -34,23 +34,23 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MI_glass_windows_orange
-  m_Shader: {fileID: -6465566751694194690, guid: a3edb5f10740ba4449c14cdafb36b338, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: a3edb5f10740ba4449c14cdafb36b338,
+    type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _DISABLE_SSR_TRANSPARENT
   - _DOUBLESIDED_ON
   - _ENABLE_FOG_ON_TRANSPARENT
   - _MATERIAL_FEATURE_TRANSMISSION
   - _SURFACE_TYPE_TRANSPARENT
-  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
   m_CustomRenderQueue: 3000
   stringTagMap:
     MotionVector: User
-    RenderType: Transparent
   disabledShaderPasses:
   - MOTIONVECTORS
   - TransparentDepthPostpass
@@ -108,7 +108,7 @@ Material:
     - _BUILTIN_QueueControl: -1
     - _BUILTIN_QueueOffset: 0
     - _BlendMode: 0
-    - _ColorStrength: 1
+    - _ColorStrength: 0.09
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 0
     - _CullModeForward: 0
@@ -175,10 +175,11 @@ Material:
     - LocalObjectBoundsMin: {r: 0, g: 0, b: 0, a: 0}
     - View_BufferSizeAndInvSize: {r: 1920, g: 1080, b: 0.00052, a: 0.00092}
     - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-    - _DiffusionProfileAsset: {r: -1.894302e+30, g: 1.6934117e-26, b: 2.9520924e-32, a: 3.375957e+24}
+    - _DiffusionProfileAsset: {r: -1.894302e+30, g: 1.6934117e-26, b: 2.9520924e-32,
+        a: 3.375957e+24}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GlassTint: {r: 1, g: 0.48220387, b: 0, a: 1}
+    - _GlassTint: {r: 0.7882353, g: 0.72156864, b: 0.4509804, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &5032196703130663779
