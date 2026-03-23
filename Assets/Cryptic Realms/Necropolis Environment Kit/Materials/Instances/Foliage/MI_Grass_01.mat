@@ -161,12 +161,12 @@ Material:
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
     - _UVSec: 0
-    - _UseLeafWind: 1
+    - _UseLeafWind: 0
     - _UseShadowThreshold: 0
-    - _UseWindAnimation: 1
-    - _WindBendStrength: 6.1
-    - _WindScale: 3.83
-    - _WindSpeed: 0.69
+    - _UseWindAnimation: 0
+    - _WindBendStrength: 8
+    - _WindScale: 4
+    - _WindSpeed: 0.8
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 3
     - _ZTestTransparent: 4
