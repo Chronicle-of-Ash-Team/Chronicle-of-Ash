@@ -34,7 +34,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WaterSplashMat
-  m_Shader: {fileID: -6465566751694194690, guid: 4c9c846df19bed74f86c0cbbd835ba19, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 4c9c846df19bed74f86c0cbbd835ba19,
+    type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
@@ -176,6 +177,7 @@ Material:
     - _Distort_Rotate: 0
     - _Distort_Strength: 0
     - _DstBlend: 10
+    - _DstBlendAlpha: 10
     - _EnvironmentReflections: 1
     - _Fresnel_AddOrMultiply: 0
     - _GlossMapScale: 0
@@ -203,6 +205,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 5
+    - _SrcBlendAlpha: 1
     - _Surface: 1
     - _SwitchColors: 1
     - _UseFresnel: 0
