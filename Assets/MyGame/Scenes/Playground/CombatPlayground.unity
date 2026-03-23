@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.015
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.18431373, g: 0.20392157, b: 0.21960784, a: 1}
+  m_AmbientSkyColor: {r: 0.36862746, g: 0.40784314, b: 0.4392157, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0.5
@@ -6766,7 +6766,7 @@ GameObject:
   - component: {fileID: 642263234}
   - component: {fileID: 642263233}
   m_Layer: 0
-  m_Name: ParryParticle
+  m_Name: Dev_ParryParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21158,8 +21158,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.56078434, g: 0.6392157, b: 0.6509804, a: 1}
+  m_Intensity: 0.7
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
