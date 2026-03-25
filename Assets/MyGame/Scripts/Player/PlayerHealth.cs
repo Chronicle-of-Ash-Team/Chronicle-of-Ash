@@ -7,6 +7,9 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     [SerializeField] private int currentHealth;
 
     public bool IsHit { get; private set; }
+
+    private bool isAlive = true;
+
     public bool isInvincible = false;
 
     public GameObject parryParticle;
@@ -14,6 +17,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     private BlockAction blockAction;
     private PlayerAnimation playerAnimation;
     private Rigidbody rb;
+    private PlayerEvents playerEvents;
 
     public event Action OnHit;
     public event Action OnHitEnd;
@@ -25,6 +29,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         blockAction = GetComponent<BlockAction>();
         rb = GetComponent<Rigidbody>();
         playerAnimation = GetComponentInChildren<PlayerAnimation>();
+        playerEvents = GetComponent<PlayerEvents>();
     }
 
     public void TakeDamage(DamageContext damageContext)
@@ -57,10 +62,17 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
 
         currentHealth -= damageContext.Damage;
+        playerEvents.HPChanged_Event.Raise(new HPContext
+        {
+            CurrentHP = currentHealth,
+            MaxHP = maxHealth
+        });
 
         if (currentHealth <= 0)
         {
+            isAlive = false;
             OnDied?.Invoke();
+            playerAnimation.PlayThisAnimation("Die", 0f);
             return;
         }
         OnHit?.Invoke();
@@ -75,5 +87,10 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public void SetInvincible(bool invincible)
     {
         isInvincible = invincible;
+    }
+
+    public bool GetIsAlive()
+    {
+        return isAlive;
     }
 }

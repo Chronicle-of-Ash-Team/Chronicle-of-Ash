@@ -32,6 +32,8 @@ public class PlayerCombat : MonoBehaviour, IActionHandler
 
     public void TryAction(BaseCombatAction action)
     {
+        if (!playerHealth.GetIsAlive()) return;
+
         if (action == hitAction)
         {
             if (CurrentAction != null && CurrentAction != hitAction)

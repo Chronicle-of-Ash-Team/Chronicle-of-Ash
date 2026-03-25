@@ -3,7 +3,7 @@ using UnityEngine;
 
 public abstract class EventBase<T> : ScriptableObject
 {
-    private Action<T> OnEventRaised;
+    public Action<T> OnEventRaised;
 
     public void Raise(T value)
     {

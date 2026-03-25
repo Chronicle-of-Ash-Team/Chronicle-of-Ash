@@ -7,9 +7,12 @@ public class WeaponHitBox : MonoBehaviour
     private HashSet<IDamageable> hittedTargets = new();
     private IWeaponOwner owner;
 
+    private GameObject trailEffect;
+
     private void Awake()
     {
         col = GetComponent<BoxCollider>();
+        trailEffect = transform.GetComponentInChildren<ParticleSystem>()?.gameObject;
         DisableHitbox();
     }
 
@@ -21,11 +24,20 @@ public class WeaponHitBox : MonoBehaviour
     public void EnableHitbox()
     {
         hittedTargets.Clear();
+        if (trailEffect != null)
+        {
+            trailEffect.SetActive(true);
+        }
+
         col.enabled = true;
     }
 
     public void DisableHitbox()
     {
+        if (trailEffect != null)
+        {
+            trailEffect.SetActive(false);
+        }
         col.enabled = false;
     }
 

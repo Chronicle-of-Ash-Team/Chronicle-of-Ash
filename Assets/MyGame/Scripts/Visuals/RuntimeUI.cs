@@ -4,6 +4,10 @@ using UnityEngine.UI;
 public class RuntimeUI : MonoBehaviour
 {
     [SerializeField] private Image lockOnImg;
+    [SerializeField] private Slider hpSlider;
+    [SerializeField] private Slider staminaSlider;
+
+    [SerializeField] private HPChanged_Event HPChanged_Event;
 
     private Transform lockOnTarget;
 
@@ -15,6 +19,13 @@ public class RuntimeUI : MonoBehaviour
     private void Start()
     {
         UIEvents.OnTargetLock += OnTargetLock;
+
+        HPChanged_Event.OnEventRaised += OnHPChanged;
+    }
+
+    private void OnHPChanged(HPContext context)
+    {
+        hpSlider.value = context.CurrentHP / (float)context.MaxHP;
     }
 
     private void OnTargetLock(Transform obj)

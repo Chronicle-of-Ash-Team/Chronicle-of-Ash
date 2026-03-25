@@ -116,7 +116,7 @@ public abstract class BaseAnimation : MonoBehaviour
     {
         OnAttackStart?.Invoke();
     }
-    protected void OnAttackEndEvent()
+    public void OnAttackEndEvent()
     {
         OnAttackEnd?.Invoke();
     }
