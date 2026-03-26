@@ -19,6 +19,7 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
     //[SerializeField] private float stopDistance = 1.8f;
 
     [Header("Action Settings")]
+    [SerializeField] private Hit_Event hitEvent;
     public BaseCombatAction CurrentAction { get; private set; }
     private AttackAction attackAction;
     private WeaponController currentWeapon;
@@ -143,6 +144,7 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
     public void TakeDamage(DamageContext damageContext)
     {
         //TryAction(hitAction);
+        hitEvent.Raise(damageContext);
         currentHealth -= damageContext.Damage;
         var checkAttacker = damageContext.Attacker.GetComponent<IDamageable>();
         if (checkAttacker != null)
