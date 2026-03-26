@@ -8,8 +8,9 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
     [SerializeField] private float speedMultiplier = 0.4f;
 
     [Header("Health Settings")]
-    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private int maxHealth = 10;
     [SerializeField] private int currentHealth;
+    [SerializeField] private bool isAlive = true;
 
     [Header("Attack Settings")]
     [SerializeField] private GameObject weaponPref;
@@ -71,7 +72,14 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
 
     private void FixedUpdate()
     {
+        if (!isAlive) return;
         if (target == null) return;
+
+        if (!target.GetComponent<IDamageable>().GetIsAlive())
+        {
+            target = null;
+            return;
+        }
 
         float distance = Vector3.Distance(transform.position, target.position);
 
@@ -97,6 +105,7 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
 
     public void TryAction(BaseCombatAction action)
     {
+        if (!isAlive) return;
         if (action == hitAction)
         {
             if (CurrentAction != null)
@@ -139,6 +148,11 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
         if (checkAttacker != null)
         {
             target = damageContext.Attacker.transform;
+        }
+        if (currentHealth <= 0)
+        {
+            isAlive = false;
+            playerAnimation.PlayThisAnimation("Die", 0f);
         }
     }
 
@@ -190,13 +204,19 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
 
     public void OnWeaponHit(IDamageable target, Collider other, WeaponHitBox hitbox)
     {
+        if (target.GetIsAlive() == false) return;
         target.TakeDamage(new DamageContext
         {
             Attacker = gameObject,
-            Damage = currentWeapon.GetWeaponData().damage,
+            Damage = 2,
             DamageType = DamageType.Heavy,
             HitDirection = (other.transform.position - transform.position).normalized,
             HitPosition = other.ClosestPoint(hitbox.transform.position),
         });
+    }
+
+    public bool GetIsAlive()
+    {
+        return isAlive;
     }
 }

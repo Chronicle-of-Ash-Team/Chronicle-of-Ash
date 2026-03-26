@@ -68,6 +68,7 @@ public class AttackAction : BaseCombatAction
 
         locomotion.ResumeMove();
         IsRunning = false;
+        baseAnimation.OnAttackEndEvent();
         actionHandler.OnActionFinished(this);
     }
 }

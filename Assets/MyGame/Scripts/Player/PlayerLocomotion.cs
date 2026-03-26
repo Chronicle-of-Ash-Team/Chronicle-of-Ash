@@ -6,6 +6,7 @@ public class PlayerLocomotion : BaseLocomotion
 
     private PlayerTargetLock targetLockHandler;
     private PlayerAnimation playerAnimation;
+    private PlayerHealth playerHealth;
 
     private bool isRunning;
 
@@ -13,10 +14,12 @@ public class PlayerLocomotion : BaseLocomotion
     {
         targetLockHandler = GetComponent<PlayerTargetLock>();
         playerAnimation = GetComponentInChildren<PlayerAnimation>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
 
     private void FixedUpdate()
     {
+        if (!playerHealth.GetIsAlive()) return;
         Vector3 moveDir = CalculateMoveDirection();
         HandleMovement(moveDir, isRunning);
         UpdateAnimation(moveDir);

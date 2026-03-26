@@ -38,4 +38,9 @@ public class DevEnemy : MonoBehaviour, ILockable, IDamageable
     {
         throw new System.NotImplementedException();
     }
+
+    public bool GetIsAlive()
+    {
+        throw new System.NotImplementedException();
+    }
 }
