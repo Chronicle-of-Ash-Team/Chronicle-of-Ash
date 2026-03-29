@@ -3706,6 +3706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64d6605bbf0e9a438cde2e3437c9039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimation
+  footStepEvent: {fileID: 11400000, guid: 2ebcea0eac3fd004f9c38212766ada4b, type: 2}
 --- !u!136 &875424569
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4694,6 +4695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64d6605bbf0e9a438cde2e3437c9039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimation
+  footStepEvent: {fileID: 11400000, guid: 2ebcea0eac3fd004f9c38212766ada4b, type: 2}
 --- !u!136 &972073622
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -19738,9 +19740,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SfxSystem
   hitEvent: {fileID: 11400000, guid: a2ca9ad216a0c8d499605b442b9c70b6, type: 2}
   parryEvent: {fileID: 11400000, guid: 1a46bb07300a78b45b6c060e7a3456bb, type: 2}
+  footStepEvent: {fileID: 11400000, guid: 2ebcea0eac3fd004f9c38212766ada4b, type: 2}
   hitVfxPrefab: {fileID: 4482326890864269911, guid: 038624b2c658cc047ad9fdcd60c0fb10,
     type: 3}
   parryVfxPrefab: {fileID: 9144962315233834592, guid: 7563af7b99b04bb42bb181ec25216ee8,
+    type: 3}
+  footStepVfxPrefab: {fileID: 4339195632735825941, guid: b840f0addadd32242ab6efe925d0288e,
     type: 3}
 --- !u!1001 &2012350669
 PrefabInstance:
@@ -21676,6 +21681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64d6605bbf0e9a438cde2e3437c9039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimation
+  footStepEvent: {fileID: 11400000, guid: 2ebcea0eac3fd004f9c38212766ada4b, type: 2}
 --- !u!1 &2318773156496390746
 GameObject:
   m_ObjectHideFlags: 0
