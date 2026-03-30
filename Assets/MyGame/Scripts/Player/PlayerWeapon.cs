@@ -3,9 +3,8 @@
 public class PlayerWeapon : MonoBehaviour, IWeaponOwner
 {
     [SerializeField] private Transform rightHandHolder;
-    [SerializeField] private GameObject weaponPref;
+    [SerializeField] private WeaponBase weaponData;
     [SerializeField] private float maxDistance = 5f;
-
 
     private WeaponController currentWeapon;
     private PlayerAnimation playerAnimation;
@@ -16,22 +15,19 @@ public class PlayerWeapon : MonoBehaviour, IWeaponOwner
 
         playerAnimation.OnAttackStart += PlayerAnimation_OnAttackStart;
         playerAnimation.OnAttackEnd += PlayerAnimation_OnAttackEnd;
+        playerAnimation.OnSkillStart += PlayerAnimation_OnSkillStart;
 
+        ChangeWeapon(weaponData.weaponPrefab);
+    }
 
-
-
-        GameObject weaponGO = Instantiate(weaponPref, rightHandHolder);
-        weaponGO.transform.localPosition = Vector3.zero;
-        weaponGO.transform.localRotation = Quaternion.identity;
-
-        // 3. Cache weapon
-        currentWeapon = weaponGO.GetComponent<WeaponController>();
-
-        // 4. Init
-        currentWeapon.Init(this);
-
-        // 5. Apply animation theo weapon mới
-        playerAnimation.ApplyWeapon(currentWeapon.GetWeaponData());
+    private void PlayerAnimation_OnSkillStart()
+    {
+        weaponData.Execute(new WeaponSkillContext
+        {
+            caster = transform,
+            target = GetComponent<PlayerTargetLock>().currentTarget,
+            damage = weaponData.damage
+        });
     }
 
     private void PlayerAnimation_OnAttackEnd()

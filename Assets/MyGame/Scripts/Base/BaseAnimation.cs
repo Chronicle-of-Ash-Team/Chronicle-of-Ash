@@ -27,6 +27,7 @@ public abstract class BaseAnimation : MonoBehaviour
     public event Action OnBlockEnd;
     public event Action OnParryStart;
     public event Action OnParryEnd;
+    public event Action OnSkillStart;
 
     public event Action OnActionEventStart;
     public event Action OnActionEventEnd;
@@ -110,6 +111,11 @@ public abstract class BaseAnimation : MonoBehaviour
     public void SetBlocking(bool blocking)
     {
         animator.SetBool(isBlockingHash, blocking);
+    }
+
+    public void OnSkillStartEvent()
+    {
+        OnSkillStart?.Invoke();
     }
 
     protected void OnAttackStartEvent()

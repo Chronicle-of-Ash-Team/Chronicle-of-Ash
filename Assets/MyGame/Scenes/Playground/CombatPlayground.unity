@@ -1348,7 +1348,7 @@ MonoBehaviour:
   lockOnPos: {fileID: 1127132571}
   weaponHolder: {fileID: 1794736131}
   speedMultiplier: 0.7
-  maxHealth: 5
+  maxHealth: 10
   currentHealth: 0
   isAlive: 1
   weaponPref: {fileID: 5536419455158562490, guid: c2fb441a5418eef43b77f1a03269d117,
@@ -13919,6 +13919,7 @@ MonoBehaviour:
   cameraTarget: {fileID: 504499695}
   freelookCinemachineCamera: {fileID: 813717298}
   lockonCinemachineCamera: {fileID: 1298370871}
+  currentTarget: {fileID: 0}
 --- !u!114 &1851503334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13944,8 +13945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerWeapon
   rightHandHolder: {fileID: 1324837985}
-  weaponPref: {fileID: 5031064877762363101, guid: 52d39a1ea219f6b468e99d68f5006d48,
-    type: 3}
+  weaponData: {fileID: 11400000, guid: ba5b77488aea1ba439a99b459d4e3559, type: 2}
   maxDistance: 5
 --- !u!114 &1851503336
 MonoBehaviour:

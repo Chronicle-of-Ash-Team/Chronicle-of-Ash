@@ -10,7 +10,7 @@ public class PlayerTargetLock : MonoBehaviour
     [SerializeField] private CinemachineCamera lockonCinemachineCamera;
 
     private bool isTargeting;
-    private Transform currentTarget;
+    public Transform currentTarget;
 
     void Start()
     {
