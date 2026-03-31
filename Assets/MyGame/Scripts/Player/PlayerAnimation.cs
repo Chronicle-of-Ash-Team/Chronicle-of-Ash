@@ -10,7 +10,6 @@ public class PlayerAnimation : BaseAnimation
         {
             stepPlayer = transform
         });
-        Debug.Log("FootStep" + transform.position);
     }
     private void StartRoll()
     {

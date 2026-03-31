@@ -25,12 +25,12 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
     private WeaponController currentWeapon;
     private HitAction hitAction;
 
-    private PlayerAnimation playerAnimation;
+    private BaseAnimation playerAnimation;
 
     protected override void Awake()
     {
         base.Awake();
-        playerAnimation = GetComponentInChildren<PlayerAnimation>();
+        playerAnimation = GetComponentInChildren<BaseAnimation>();
         hitAction = GetComponent<HitAction>();
         attackAction = GetComponent<AttackAction>();
     }
