@@ -23,6 +23,13 @@ public abstract class WeaponBase : ScriptableObject
     public abstract void Execute(WeaponSkillContext context);
 }
 
+public enum WeaponType
+{
+    OneHandSword,
+    TwoHandSword,
+    Spear,
+}
+
 public class WeaponSkillContext
 {
     public Transform caster;

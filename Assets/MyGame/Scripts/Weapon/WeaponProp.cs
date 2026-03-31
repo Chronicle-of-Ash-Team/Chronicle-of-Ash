@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SwordProp : MonoBehaviour, IWeaponProp
+public class WeaponProp : MonoBehaviour, IWeaponProp
 {
     [SerializeField] private GameObject weaponPref;
 
