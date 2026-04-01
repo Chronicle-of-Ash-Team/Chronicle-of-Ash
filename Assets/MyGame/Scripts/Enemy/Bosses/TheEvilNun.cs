@@ -9,6 +9,7 @@ public class TheEvilNun : BaseLocomotion, ILockable, IActionHandler, IDamageable
     [SerializeField] private int maxHealth = 10;
     [SerializeField] private int currentHealth;
     [SerializeField] private bool isAlive = true;
+    [SerializeField] private bool isInvicible = false;
 
     [Header("Attack Settings")]
     [SerializeField] private Transform target;
@@ -140,7 +141,6 @@ public class TheEvilNun : BaseLocomotion, ILockable, IActionHandler, IDamageable
         hitEvent.Raise(damageContext);
         currentHealth -= damageContext.Damage;
 
-        // Nếu attacker có thể bị damage, thì set target thành attacker
         var checkAttacker = damageContext.Attacker.GetComponent<IDamageable>();
         if (checkAttacker != null)
         {
@@ -172,6 +172,6 @@ public class TheEvilNun : BaseLocomotion, ILockable, IActionHandler, IDamageable
 
     public void SetInvincible(bool invincible)
     {
-        //throw new System.NotImplementedException();
+        isInvicible = invincible;
     }
 }
