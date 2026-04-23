@@ -194,7 +194,7 @@ Transform:
   m_GameObject: {fileID: 18203174}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.7, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5599,8 +5599,15 @@ MonoBehaviour:
   maxHealth: 50
   currentHealth: 0
   isAlive: 1
+  isInvicible: 0
   target: {fileID: 0}
   attackRange: 20
+  attack1Pref: {fileID: 3096270318630140988, guid: 865f2d4985d792f48864eee83b0d6f9c,
+    type: 3}
+  attack2Pref: {fileID: 3096270318630140988, guid: 865f2d4985d792f48864eee83b0d6f9c,
+    type: 3}
+  attack3Pref: {fileID: 3096270318630140988, guid: 865f2d4985d792f48864eee83b0d6f9c,
+    type: 3}
   hitEvent: {fileID: 11400000, guid: a2ca9ad216a0c8d499605b442b9c70b6, type: 2}
 --- !u!54 &1269092964
 Rigidbody:

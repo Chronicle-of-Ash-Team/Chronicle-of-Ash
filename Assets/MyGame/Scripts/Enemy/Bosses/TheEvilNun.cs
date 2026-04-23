@@ -14,6 +14,9 @@ public class TheEvilNun : BaseLocomotion, ILockable, IActionHandler, IDamageable
     [Header("Attack Settings")]
     [SerializeField] private Transform target;
     [SerializeField] private float attackRange = 10f;
+    [SerializeField] private GameObject attack1Pref;
+    [SerializeField] private GameObject attack2Pref;
+    [SerializeField] private GameObject attack3Pref;
 
     [Header("Action Settings")]
     [SerializeField] private Hit_Event hitEvent;
@@ -71,16 +74,26 @@ public class TheEvilNun : BaseLocomotion, ILockable, IActionHandler, IDamageable
         baseAnimation.UpdateLocomotionAnimation(currentSpeed);
     }
 
+    private void BaseAnimation_OnAttackStart()
+    {
+        switch (attackAction.attackComboCount)
+        {
+            case 1:
+                Instantiate(attack1Pref, transform.position, Quaternion.identity);
+                break;
+            case 2:
+
+                break;
+            case 3:
+
+                break;
+        }
+    }
+
     private void BaseAnimation_OnAttackEnd()
     {
         //throw new System.NotImplementedException();
         Debug.Log("Enemy attack number " + attackAction.attackComboCount + " end");
-    }
-
-    private void BaseAnimation_OnAttackStart()
-    {
-        //throw new System.NotImplementedException();
-        Debug.Log("Enemy attack number " + attackAction.attackComboCount + " start");
     }
 
     private Vector3 GetMoveDirToTarget(Transform self, Transform target)
@@ -108,21 +121,6 @@ public class TheEvilNun : BaseLocomotion, ILockable, IActionHandler, IDamageable
     public void TryAction(BaseCombatAction action)
     {
         if (!isAlive) return;
-        //if (action == hitAction)
-        //{
-        //    if (CurrentAction != null)
-        //    {
-        //        CurrentAction.OnFinish();
-        //        CurrentAction = null;
-        //    }
-
-        //    action.TryExecute();
-        //    CurrentAction = action;
-
-        //    Debug.Log("Enemy hit");
-        //    return;
-        //}
-
 
         if (CurrentAction != null && CurrentAction.IsRunning)
             return;
