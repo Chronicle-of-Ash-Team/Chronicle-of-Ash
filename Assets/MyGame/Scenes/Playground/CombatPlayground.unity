@@ -1428,17 +1428,18 @@ MonoBehaviour:
   walkSpeed: 1.5
   runSpeed: 2
   rotationSpeed: 10
-  lockOnPos: {fileID: 1127132571}
-  weaponHolder: {fileID: 1794736131}
-  speedMultiplier: 0.7
+  target: {fileID: 0}
   maxHealth: 10
   currentHealth: 0
   isAlive: 1
+  isInvicible: 0
+  hitEvent: {fileID: 11400000, guid: a2ca9ad216a0c8d499605b442b9c70b6, type: 2}
+  lockOnPos: {fileID: 1127132571}
+  weaponHolder: {fileID: 1794736131}
+  speedMultiplier: 0.7
   weaponPref: {fileID: 5536419455158562490, guid: c2fb441a5418eef43b77f1a03269d117,
     type: 3}
-  target: {fileID: 0}
   attackRange: 2.2
-  hitEvent: {fileID: 11400000, guid: a2ca9ad216a0c8d499605b442b9c70b6, type: 2}
 --- !u!54 &356550499
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5595,12 +5596,13 @@ MonoBehaviour:
   walkSpeed: 1
   runSpeed: 1
   rotationSpeed: 1
-  lockOnPos: {fileID: 18203175}
+  target: {fileID: 0}
   maxHealth: 50
   currentHealth: 0
   isAlive: 1
   isInvicible: 0
-  target: {fileID: 0}
+  hitEvent: {fileID: 11400000, guid: a2ca9ad216a0c8d499605b442b9c70b6, type: 2}
+  lockOnPos: {fileID: 18203175}
   attackRange: 20
   attack1Pref: {fileID: 3096270318630140988, guid: 865f2d4985d792f48864eee83b0d6f9c,
     type: 3}
@@ -5608,7 +5610,6 @@ MonoBehaviour:
     type: 3}
   attack3Pref: {fileID: 3096270318630140988, guid: 865f2d4985d792f48864eee83b0d6f9c,
     type: 3}
-  hitEvent: {fileID: 11400000, guid: a2ca9ad216a0c8d499605b442b9c70b6, type: 2}
 --- !u!54 &1269092964
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6011,17 +6012,18 @@ MonoBehaviour:
   walkSpeed: 1.5
   runSpeed: 2
   rotationSpeed: 10
-  lockOnPos: {fileID: 1754699061}
-  weaponHolder: {fileID: 1473071306}
-  speedMultiplier: 0.7
+  target: {fileID: 0}
   maxHealth: 5
   currentHealth: 0
   isAlive: 1
+  isInvicible: 0
+  hitEvent: {fileID: 11400000, guid: a2ca9ad216a0c8d499605b442b9c70b6, type: 2}
+  lockOnPos: {fileID: 1754699061}
+  weaponHolder: {fileID: 1473071306}
+  speedMultiplier: 0.7
   weaponPref: {fileID: 5536419455158562490, guid: c2fb441a5418eef43b77f1a03269d117,
     type: 3}
-  target: {fileID: 0}
   attackRange: 2.2
-  hitEvent: {fileID: 11400000, guid: a2ca9ad216a0c8d499605b442b9c70b6, type: 2}
 --- !u!114 &1313325803
 MonoBehaviour:
   m_ObjectHideFlags: 0

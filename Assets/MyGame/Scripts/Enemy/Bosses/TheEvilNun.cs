@@ -1,45 +1,30 @@
 ﻿using UnityEngine;
 
-public class TheEvilNun : BaseLocomotion, ILockable, IActionHandler, IDamageable
+public class TheEvilNun : BaseBoss, IActionHandler
 {
-    [Header("Common Settings")]
-    [SerializeField] private Transform lockOnPos;
-
-    [Header("Health Settings")]
-    [SerializeField] private int maxHealth = 10;
-    [SerializeField] private int currentHealth;
-    [SerializeField] private bool isAlive = true;
-    [SerializeField] private bool isInvicible = false;
-
     [Header("Attack Settings")]
-    [SerializeField] private Transform target;
     [SerializeField] private float attackRange = 10f;
     [SerializeField] private GameObject attack1Pref;
     [SerializeField] private GameObject attack2Pref;
     [SerializeField] private GameObject attack3Pref;
 
-    [Header("Action Settings")]
-    [SerializeField] private Hit_Event hitEvent;
     public BaseCombatAction CurrentAction { get; private set; }
     private AttackAction attackAction;
     //private HitAction hitAction;
 
-    private BaseAnimation baseAnimation;
-
     protected override void Awake()
     {
         base.Awake();
-        baseAnimation = GetComponentInChildren<BaseAnimation>();
         //hitAction = GetComponent<HitAction>();
         attackAction = GetComponent<AttackAction>();
     }
 
     private void Start()
     {
-        currentHealth = maxHealth;
-
         baseAnimation.OnAttackStart += BaseAnimation_OnAttackStart;
         baseAnimation.OnAttackEnd += BaseAnimation_OnAttackEnd;
+        baseAnimation.OnActionEventStart += BaseAnimation_OnActionEventStart;
+        baseAnimation.OnActionEventEnd += BaseAnimation_OnActionEventEnd;
     }
 
     private void Update()
@@ -74,6 +59,11 @@ public class TheEvilNun : BaseLocomotion, ILockable, IActionHandler, IDamageable
         baseAnimation.UpdateLocomotionAnimation(currentSpeed);
     }
 
+    private void BaseAnimation_OnActionEventStart()
+    {
+        //throw new NotImplementedException();
+    }
+
     private void BaseAnimation_OnAttackStart()
     {
         switch (attackAction.attackComboCount)
@@ -96,26 +86,9 @@ public class TheEvilNun : BaseLocomotion, ILockable, IActionHandler, IDamageable
         Debug.Log("Enemy attack number " + attackAction.attackComboCount + " end");
     }
 
-    private Vector3 GetMoveDirToTarget(Transform self, Transform target)
+    private void BaseAnimation_OnActionEventEnd()
     {
-        Vector3 dir = target.position - self.position;
-        dir.y = 0f;
-        return dir.normalized;
-    }
-
-    private void FaceTarget(Transform target)
-    {
-        Vector3 dir = target.position - transform.position;
-        dir.y = 0f;
-
-        if (dir.sqrMagnitude < 0.001f) return;
-
-        Quaternion targetRot = Quaternion.LookRotation(dir);
-        transform.rotation = Quaternion.Slerp(
-            transform.rotation,
-            targetRot,
-            Time.deltaTime * rotationSpeed
-        );
+        //throw new NotImplementedException();
     }
 
     public void TryAction(BaseCombatAction action)
@@ -134,42 +107,9 @@ public class TheEvilNun : BaseLocomotion, ILockable, IActionHandler, IDamageable
         CurrentAction = action;
     }
 
-    public void TakeDamage(DamageContext damageContext)
-    {
-        hitEvent.Raise(damageContext);
-        currentHealth -= damageContext.Damage;
-
-        var checkAttacker = damageContext.Attacker.GetComponent<IDamageable>();
-        if (checkAttacker != null)
-        {
-            target = damageContext.Attacker.transform;
-        }
-
-        if (currentHealth <= 0)
-        {
-            isAlive = false;
-            baseAnimation.PlayThisAnimation("Die", 0f);
-        }
-    }
-
-    public bool GetIsAlive()
-    {
-        return isAlive;
-    }
-
-    public Transform GetLockOnTransform()
-    {
-        return lockOnPos;
-    }
-
     public void OnActionFinished(BaseCombatAction action)
     {
         if (CurrentAction == action)
             CurrentAction = null;
-    }
-
-    public void SetInvincible(bool invincible)
-    {
-        isInvicible = invincible;
     }
 }
