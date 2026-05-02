@@ -1,19 +1,30 @@
+using System;
 using UnityEngine;
 
 public class MiniBossGate : MonoBehaviour
 {
-    [SerializeField] private IDamageable miniBoss;
+    [SerializeField] private BaseBoss boss;
     [SerializeField] private GameObject blockGate;
-    //[SerializeField] private GameObject openGate;
 
     private void Start()
     {
-        if (miniBoss == null)
+        if (boss == null)
         {
             Debug.LogError("MiniBoss reference is not set in the inspector.");
             return;
         }
+
+        boss.OnBossDie += HandleBossDeath;
+        boss.OnBossStart += HandleBossStart;
+    }
+
+    private void HandleBossStart()
+    {
         blockGate.SetActive(true);
-        //openGate.SetActive(false);
+    }
+
+    private void HandleBossDeath()
+    {
+        blockGate.SetActive(false);
     }
 }
