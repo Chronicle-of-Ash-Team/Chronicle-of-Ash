@@ -18,7 +18,6 @@ public class BaseBoss : BaseLocomotion, IDamageable, ILockable
     protected BaseAnimation baseAnimation;
 
     public Action OnBossDie;
-    public Action OnBossStart;
 
     protected override void Awake()
     {

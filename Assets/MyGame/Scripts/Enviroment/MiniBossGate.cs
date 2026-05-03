@@ -1,6 +1,6 @@
-using System;
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider))]
 public class MiniBossGate : MonoBehaviour
 {
     [SerializeField] private BaseBoss boss;
@@ -13,9 +13,17 @@ public class MiniBossGate : MonoBehaviour
             Debug.LogError("MiniBoss reference is not set in the inspector.");
             return;
         }
+        blockGate.SetActive(false);
 
         boss.OnBossDie += HandleBossDeath;
-        boss.OnBossStart += HandleBossStart;
+    }
+
+    private void OnDestroy()
+    {
+        if (boss != null)
+        {
+            boss.OnBossDie -= HandleBossDeath;
+        }
     }
 
     private void HandleBossStart()
@@ -23,8 +31,16 @@ public class MiniBossGate : MonoBehaviour
         blockGate.SetActive(true);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponentInParent<IDamageable>() != null)
+        {
+            HandleBossStart();
+        }
+    }
+
     private void HandleBossDeath()
     {
-        blockGate.SetActive(false);
+        Destroy(gameObject);
     }
 }
