@@ -3,6 +3,14 @@
 [RequireComponent(typeof(Animator))]
 public class PlayerAnimation : BaseAnimation
 {
+    [SerializeField] private FoorStep_Event footStepEvent;
+    private void FootStep()
+    {
+        footStepEvent.Raise(new FootStepContext
+        {
+            stepPlayer = transform
+        });
+    }
     private void StartRoll()
     {
         OnDodgeStartEvent();

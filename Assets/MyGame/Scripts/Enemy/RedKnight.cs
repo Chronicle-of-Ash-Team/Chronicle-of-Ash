@@ -1,42 +1,32 @@
 ﻿using UnityEngine;
 
-public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable, IWeaponOwner
+public class RedKnight : BaseBoss, IActionHandler, IWeaponOwner
 {
     [Header("Common Settings")]
-    [SerializeField] private Transform lockOnPos;
     [SerializeField] private Transform weaponHolder;
     [SerializeField] private float speedMultiplier = 0.4f;
 
-    [Header("Health Settings")]
-    [SerializeField] private int maxHealth = 10;
-    [SerializeField] private int currentHealth;
-    [SerializeField] private bool isAlive = true;
-
     [Header("Attack Settings")]
     [SerializeField] private GameObject weaponPref;
-    [SerializeField] private Transform target;
     [SerializeField] private float attackRange = 2.2f;
-    //[SerializeField] private float stopDistance = 1.8f;
 
-    [Header("Action Settings")]
     public BaseCombatAction CurrentAction { get; private set; }
     private AttackAction attackAction;
     private WeaponController currentWeapon;
     private HitAction hitAction;
 
-    private PlayerAnimation playerAnimation;
+    private BaseAnimation playerAnimation;
 
     protected override void Awake()
     {
         base.Awake();
-        playerAnimation = GetComponentInChildren<PlayerAnimation>();
+        playerAnimation = GetComponentInChildren<BaseAnimation>();
         hitAction = GetComponent<HitAction>();
         attackAction = GetComponent<AttackAction>();
     }
 
     private void Start()
     {
-        currentHealth = maxHealth;
         if (weaponPref != null)
         {
             GameObject weapon = Instantiate(weaponPref, weaponHolder);
@@ -140,44 +130,6 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
             CurrentAction = null;
     }
 
-    public void TakeDamage(DamageContext damageContext)
-    {
-        //TryAction(hitAction);
-        currentHealth -= damageContext.Damage;
-        var checkAttacker = damageContext.Attacker.GetComponent<IDamageable>();
-        if (checkAttacker != null)
-        {
-            target = damageContext.Attacker.transform;
-        }
-        if (currentHealth <= 0)
-        {
-            isAlive = false;
-            playerAnimation.PlayThisAnimation("Die", 0f);
-        }
-    }
-
-
-    private Vector3 GetMoveDirToTarget(Transform self, Transform target)
-    {
-        Vector3 dir = target.position - self.position;
-        dir.y = 0f;
-        return dir.normalized;
-    }
-
-    private void FaceTarget(Transform target)
-    {
-        Vector3 dir = target.position - transform.position;
-        dir.y = 0f;
-
-        if (dir.sqrMagnitude < 0.001f) return;
-
-        Quaternion targetRot = Quaternion.LookRotation(dir);
-        transform.rotation = Quaternion.Slerp(
-            transform.rotation,
-            targetRot,
-            Time.deltaTime * 10f
-        );
-    }
     public int GetDamage()
     {
         return currentWeapon.GetWeaponData().damage;
@@ -187,19 +139,10 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
     {
         return currentWeapon.GetWeaponData();
     }
-    public Transform GetLockOnTransform()
-    {
-        return lockOnPos;
-    }
 
     public Transform GetTransform()
     {
         return transform;
-    }
-
-    public void SetInvincible(bool invincible)
-    {
-        //throw new System.NotImplementedException();
     }
 
     public void OnWeaponHit(IDamageable target, Collider other, WeaponHitBox hitbox)
@@ -213,10 +156,5 @@ public class RedKnight : BaseLocomotion, ILockable, IActionHandler, IDamageable,
             HitDirection = (other.transform.position - transform.position).normalized,
             HitPosition = other.ClosestPoint(hitbox.transform.position),
         });
-    }
-
-    public bool GetIsAlive()
-    {
-        return isAlive;
     }
 }

@@ -12,8 +12,6 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     public bool isInvincible = false;
 
-    public GameObject parryParticle;
-
     private BlockAction blockAction;
     private PlayerAnimation playerAnimation;
     private Rigidbody rb;
@@ -44,7 +42,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
             rb.AddForce(pushDir * 25f, ForceMode.Impulse);
             int parryNum = UnityEngine.Random.Range(1, 4);
             playerAnimation.PlayThisAnimation("Parry" + parryNum, 0.1f);
-            Destroy(Instantiate(parryParticle, damageContext.HitPosition, Quaternion.identity), 1f);
+            playerEvents.Parry_Event.Raise(damageContext);
             return;
         }
         if (isInvincible)
@@ -62,6 +60,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
 
         currentHealth -= damageContext.Damage;
+        playerEvents.Hit_Event.Raise(damageContext);
         playerEvents.HPChanged_Event.Raise(new HPContext
         {
             CurrentHP = currentHealth,

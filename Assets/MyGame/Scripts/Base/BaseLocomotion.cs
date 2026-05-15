@@ -5,7 +5,7 @@ public abstract class BaseLocomotion : MonoBehaviour, IMove
 {
     [SerializeField] protected float walkSpeed = 5f;
     [SerializeField] protected float runSpeed = 7f;
-    [SerializeField] private float rotationSpeed = 10f;
+    [SerializeField] protected float rotationSpeed = 10f;
 
     private Rigidbody rb;
 

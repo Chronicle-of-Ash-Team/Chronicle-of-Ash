@@ -5,7 +5,7 @@ public class AttackAction : BaseCombatAction
     [Header("Attack Settings")]
     [SerializeField] private int totalAttack = 3;
     [SerializeField] private float comboResetTime = 1.2f;
-    [SerializeField] int attackComboCount = 1;
+    [SerializeField] public int attackComboCount = 1;
 
     private float comboTimer;
 
