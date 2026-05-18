@@ -13,12 +13,18 @@ public class MoveToFlowerState : IState
 
     public void OnEnter()
     {
-
+        brain.animator.CrossFade("Running", 0f);
     }
 
     public void OnExit()
     {
+        brain.animator.Play("Idle");
 
+        Vector3 velocity = brain.rigidbody.linearVelocity;
+        velocity.x = 0;
+        velocity.z = 0;
+
+        brain.rigidbody.linearVelocity = velocity;
     }
 
     public void OnUpdate()
@@ -41,7 +47,7 @@ public class MoveToFlowerState : IState
         }
         else
         {
-            brain.FSM.ChangeState(new PickFlowerState(brain));
+            brain.FSM.ChangeState(brain.pickFlowerState);
         }
     }
 
@@ -53,6 +59,19 @@ public class MoveToFlowerState : IState
         Vector3 velocity = currentMoveDir * brain.moveSpeed;
         velocity.y = brain.rigidbody.linearVelocity.y;
         brain.rigidbody.linearVelocity = velocity;
+
+        if (moveDir != Vector3.zero)
+        {
+            Quaternion rot =
+                Quaternion.LookRotation(moveDir);
+
+            brain.transform.rotation =
+                Quaternion.Slerp(
+                    brain.transform.rotation,
+                    rot,
+                    10f * Time.deltaTime
+                );
+        }
     }
 
     private Vector3 GetMoveDirToTarget(Transform self, Vector3 target)

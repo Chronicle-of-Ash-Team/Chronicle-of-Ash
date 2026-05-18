@@ -19,9 +19,7 @@ public class ChooseFlowerState : IState
 
         brain.currentFlowerTarget = randomPos;
 
-        brain.FSM.ChangeState(
-            new MoveToFlowerState(brain)
-        );
+        brain.FSM.ChangeState(brain.moveToFlowerState);
     }
 
     public void OnExit()

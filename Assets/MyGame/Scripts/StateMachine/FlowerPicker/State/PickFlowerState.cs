@@ -14,11 +14,13 @@ public class PickFlowerState : IState
     public void OnEnter()
     {
         pickFlowerTimer = brain.pickFlowerTime;
+        brain.animator.CrossFade("PickFlower", 0.2f);
     }
 
     public void OnExit()
     {
         //throw new System.NotImplementedException();
+        brain.animator.CrossFade("Idle", 0.5f);
     }
 
     public void OnUpdate()
@@ -27,7 +29,7 @@ public class PickFlowerState : IState
 
         if(pickFlowerTimer < 0f)
         {
-            brain.FSM.ChangeState(new RestState(brain));
+            brain.FSM.ChangeState(brain.restState);
         }
     }
 }

@@ -26,7 +26,7 @@ public class RestState : IState
 
         if(timer < 0)
         {
-            brain.FSM.ChangeState(new ChooseFlowerState(brain));
+            brain.FSM.ChangeState(brain.chooseFlowerState);
         }
     }
 }
