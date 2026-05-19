@@ -19363,11 +19363,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerPicker
       objectReference: {fileID: 0}
-    - target: {fileID: 5059744907885804342, guid: f9b111377d5e15745a05167071f421c0,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6931280619395921898, guid: f9b111377d5e15745a05167071f421c0,
         type: 3}
       propertyPath: m_LocalPosition.x
