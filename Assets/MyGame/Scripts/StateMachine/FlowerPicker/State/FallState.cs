@@ -26,7 +26,7 @@ public class FallState : IState
         timer -= Time.deltaTime;
         if (timer < 0f)
         {
-            brain.FSM.ChangeState(brain.restState);
+            brain.FSM.ChangeState(brain.standUpState);
         }
     }
 }

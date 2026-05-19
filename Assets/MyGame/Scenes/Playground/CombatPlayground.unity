@@ -10353,7 +10353,7 @@ Transform:
   m_GameObject: {fileID: 1923988967}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 29.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10629,7 +10629,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 0.043137256}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.19215687}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -10694,7 +10694,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 60
-      minScalar: 20
+      minScalar: 30
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -11157,7 +11157,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 60
+      value: 50
       mode: 0
       spread: 0
       speed:
@@ -11276,7 +11276,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 50
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -19086,6 +19086,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1159066723427433220, guid: f9b111377d5e15745a05167071f421c0,
+        type: 3}
+      propertyPath: fallTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1159066723427433220, guid: f9b111377d5e15745a05167071f421c0,
+        type: 3}
+      propertyPath: standUpTime
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4389239172531507593, guid: f9b111377d5e15745a05167071f421c0,
         type: 3}
       propertyPath: m_Name

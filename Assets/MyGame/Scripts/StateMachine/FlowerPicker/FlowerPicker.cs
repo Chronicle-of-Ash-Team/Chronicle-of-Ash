@@ -31,6 +31,8 @@ public class FlowerPicker : MonoBehaviour
 
     public float fallTime = 1f;
 
+    public float standUpTime = 1f;
+
     private void Awake()
     {
         FSM = new BasicStateMachine();
@@ -58,7 +60,7 @@ public class FlowerPicker : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (FSM.currentState == fallState) return;
+        if (FSM.currentState == fallState || FSM.currentState == deadState || FSM.currentState == standUpState) return;
         var obHit = collision.gameObject.TryGetComponent<IDamageable>(out var damageable);
         if( obHit )
         {

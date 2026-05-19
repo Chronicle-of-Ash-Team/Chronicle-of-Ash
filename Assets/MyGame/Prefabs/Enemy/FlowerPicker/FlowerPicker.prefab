@@ -1920,7 +1920,8 @@ MonoBehaviour:
   chooseFlowerRadius: 20
   pickFlowerTime: 1
   restTime: 15
-  fallTime: 1
+  fallTime: 2
+  standUpTime: 20
 --- !u!1 &4564499595886958301
 GameObject:
   m_ObjectHideFlags: 0
