@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FlowerPicker : MonoBehaviour
+public class FlowerPicker : MonoBehaviour, IDamageable
 {
     public BasicStateMachine FSM {  get; private set;  }
 
@@ -32,6 +32,8 @@ public class FlowerPicker : MonoBehaviour
     public float fallTime = 1f;
 
     public float standUpTime = 1f;
+
+    public bool isAlive = true;
 
     private void Awake()
     {
@@ -65,6 +67,24 @@ public class FlowerPicker : MonoBehaviour
         if( obHit )
         {
             FSM.ChangeState(fallState);
+        }
+    }
+
+    public bool GetIsAlive()
+    {
+        return isAlive;
+    }
+
+    public void SetInvincible(bool invincible)
+    {
+    }
+
+    public void TakeDamage(DamageContext damageContext)
+    {
+        if (isAlive)
+        {
+            isAlive = false;
+            FSM.ChangeState(deadState);
         }
     }
 }

@@ -11,7 +11,7 @@ public class DeadState : IState
 
     public void OnEnter()
     {
-
+        brain.animator.CrossFade("Death", 0.2f);
     }
 
     public void OnExit()
