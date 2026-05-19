@@ -1,19 +1,20 @@
 using UnityEngine;
 
-public class RestState : IState
+public class FallState : IState
 {
     private FlowerPicker brain;
 
     private float timer;
 
-    public RestState(FlowerPicker brain)
+    public FallState(FlowerPicker brain)
     {
         this.brain = brain;
     }
 
     public void OnEnter()
     {
-        timer = brain.restTime;
+        brain.animator.Play("Tripping");
+        timer = brain.fallTime;
     }
 
     public void OnExit()
@@ -23,10 +24,9 @@ public class RestState : IState
     public void OnUpdate()
     {
         timer -= Time.deltaTime;
-
-        if(timer < 0)
+        if (timer < 0f)
         {
-            brain.FSM.ChangeState(brain.chooseFlowerState);
+            brain.FSM.ChangeState(brain.restState);
         }
     }
 }
