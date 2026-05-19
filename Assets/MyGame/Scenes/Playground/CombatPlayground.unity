@@ -420,7 +420,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1838227914876800877, guid: aee9757862161f84f84498e3671437b5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1782,6 +1783,8 @@ MonoBehaviour:
   - Hash: -1169940740
     HashOfParent: 756556552
   - Hash: -851235222
+    HashOfParent: 756556552
+  - Hash: -1482263730
     HashOfParent: 756556552
   m_LegacyLookAt: {fileID: 0}
   m_LegacyFollow: {fileID: 0}
@@ -3430,7 +3433,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1838227914876800877, guid: aee9757862161f84f84498e3671437b5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -4770,7 +4774,7 @@ TerrainCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_TerrainData: {fileID: 15600000, guid: eecd9f163bbc41840a66139299926d8d, type: 2}
-  m_EnableTreeColliders: 1
+  m_EnableTreeColliders: 0
 --- !u!218 &955242296
 Terrain:
   m_ObjectHideFlags: 0
