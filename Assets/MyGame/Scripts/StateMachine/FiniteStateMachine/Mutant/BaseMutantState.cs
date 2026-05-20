@@ -8,6 +8,7 @@ public abstract class BaseMutantState : IFiniteState
     protected static readonly int LocomotionHash = Animator.StringToHash("Locomotion");
     protected static readonly int AttackHash = Animator.StringToHash("Attack");
     protected static readonly int WalkHash = Animator.StringToHash("Walking");
+    protected static readonly int RunHash = Animator.StringToHash("Running");
     protected static readonly int IdleHash = Animator.StringToHash("Idle");
 
     protected const float CrossFadeDuration = 0.1f;

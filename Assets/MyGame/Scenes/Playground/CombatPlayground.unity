@@ -8132,13 +8132,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d6169a96e8715144832485047532823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MutantBrain
-  target: {fileID: 0}
+  target: {fileID: 1851503329}
   animator: {fileID: 352537877}
   rigidbody: {fileID: 1628290268}
   rotationSpeed: 5
   detectRange: 8
   attackRange: 2
   moveSpeed: 2.25
+  runSpeed: 4
   maxHp: 10
   currentHp: 0
   wasHit: 0
@@ -8182,7 +8183,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &1640600638

@@ -11,21 +11,30 @@ public class MutantBrain : MonoBehaviour, IDamageable
     public float detectRange = 8f;
     public float attackRange = 2f;
     public float moveSpeed = 3f;
+    public float runSpeed = 4f;
 
-    public int maxHp = 100;
+    public int maxHp = 10;
     public int currentHp;
 
     public bool wasHit;
 
     private FiniteStateMachine FSM;
 
+    // Nghỉ
     public MutantIdleState idleState;
+    // Đi tuần
     public MutantPatrolState patrolState;
+    // Đuổi target
     public MutantChaseState chaseState;
+    // Tấn công
     public MutantAttackState attackState;
+    // Bị đánh
     public MutantStaggerState staggerState;
+    // Chạy trốn
     public MutantFleeState fleeState;
+    // Quay lại đi tuần
     public MutantReturnState returnState;
+    // Chết
     public MutantDeadState deadState;
 
     private void Awake()
