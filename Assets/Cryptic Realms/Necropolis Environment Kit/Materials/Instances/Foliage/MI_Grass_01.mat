@@ -39,20 +39,16 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MI_Grass_01
-  m_Shader: {fileID: -6465566751694194690, guid: 3019546e5ad65134ba2906624719c983,
+  m_Shader: {fileID: -6465566751694194690, guid: a3edb5f10740ba4449c14cdafb36b338,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _DISABLE_SSR_TRANSPARENT
-  - _DOUBLESIDED_ON
-  - _MATERIAL_FEATURE_SUBSURFACE_SCATTERING
-  - _MATERIAL_FEATURE_TRANSMISSION
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: 2475
+  m_CustomRenderQueue: -1
   stringTagMap:
     MotionVector: User
   disabledShaderPasses:
@@ -85,6 +81,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: abc00000000009834118174264612341, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Masks:
+        m_Texture: {fileID: 2800000, guid: abc00000000003872160618933875147, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Normalmap:
         m_Texture: {fileID: 2800000, guid: abc00000000008108415702934818503, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -113,6 +113,7 @@ Material:
     - _BUILTIN_QueueControl: -1
     - _BUILTIN_QueueOffset: 0
     - _BlendMode: 0
+    - _ColorStrength: 1
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 0
     - _CullModeForward: 0
@@ -123,11 +124,18 @@ Material:
     - _DoubleSidedNormalMode: 2
     - _DstBlend: 0
     - _DstBlend2: 0
+    - _EmissiveStrength: 0
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
     - _ExcludeFromTUAndAA: 0
+    - _FlipNormalmapGreenChannel: 1
+    - _FresnelFade: 11.7
+    - _FresnelPower: 0.5
+    - _GeneralOpacity: 1
+    - _IsEmissive: 1
     - _MaterialID: 0
     - _MaterialTypeMask: 1
+    - _NormalIntensity: 1
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 0
     - _QueueControl: 1
@@ -139,6 +147,7 @@ Material:
     - _RenderQueueType: 1
     - _RequireSplitLighting: 1
     - _Roughness: 0.5
+    - _RoughnessStrength: 1
     - _SrcBlend: 1
     - _StencilRef: 4
     - _StencilRefDepth: 8
@@ -152,6 +161,7 @@ Material:
     - _StencilWriteMaskMV: 41
     - _SupportDecals: 1
     - _SurfaceType: 0
+    - _Thickness: 0
     - _TransmissionEnable: 1
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
@@ -165,8 +175,8 @@ Material:
     - _UseShadowThreshold: 0
     - _UseWindAnimation: 0
     - _WindBendStrength: 8
-    - _WindScale: 4
-    - _WindSpeed: 0.8
+    - _WindScale: 0
+    - _WindSpeed: 0
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 3
     - _ZTestTransparent: 4
@@ -180,6 +190,7 @@ Material:
         a: 3.375957e+24}
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlassTint: {r: 1, g: 1, b: 1, a: 1}
     - _SubsurfaceColor: {r: 1, g: 0, b: 0, a: 1}
     - _WindDirection: {r: 0.42, g: 0.25, b: 0, a: 0}
   m_BuildTextureStacks: []

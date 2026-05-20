@@ -21,12 +21,12 @@ public class FiniteStateMachine
     }
 
 
-    public void OnFixesUpdate()
+    public void OnFixedUpdate()
     {
         current.State?.OnFixedUpdate();
     }
 
-    public void SetState(IState state)
+    public void SetState(IFiniteState state)
     {
         current = nodes[state.GetType()];
         current.State?.OnEnter();

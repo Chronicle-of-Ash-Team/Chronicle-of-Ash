@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7138996084308171405
 Transform:
@@ -57,7 +57,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8218390947842292288
 Transform:
@@ -180,6 +180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BP_grave_comp_01_C_1_SM_candle_03_12_303
       objectReference: {fileID: 0}
+    - target: {fileID: 1030974139, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1030974140, guid: abc00000000002070806389736705641, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -228,6 +232,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1030974143, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974147, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974151, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974155, guid: abc00000000002070806389736705641, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1030974142, guid: abc00000000002070806389736705641, type: 3}
     m_RemovedGameObjects: []
@@ -251,6 +271,10 @@ PrefabInstance:
     - target: {fileID: 1030974117, guid: abc00000000001833029746077444960, type: 3}
       propertyPath: m_Name
       value: BP_grave_comp_01_C_1_SM_candle_02_13_304
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974117, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
       propertyPath: m_RootOrder
@@ -300,6 +324,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1030974121, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974125, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974129, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974133, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1030974120, guid: abc00000000001833029746077444960, type: 3}
     m_RemovedGameObjects: []
@@ -323,6 +363,10 @@ PrefabInstance:
     - target: {fileID: 1030974117, guid: abc00000000001833029746077444960, type: 3}
       propertyPath: m_Name
       value: BP_grave_comp_01_C_1_SM_candle_02_14_305
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974117, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1030974118, guid: abc00000000001833029746077444960, type: 3}
       propertyPath: m_RootOrder
@@ -372,6 +416,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1030974121, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974125, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974129, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974133, guid: abc00000000001833029746077444960, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1030974120, guid: abc00000000001833029746077444960, type: 3}
     m_RemovedGameObjects: []
@@ -395,6 +455,10 @@ PrefabInstance:
     - target: {fileID: 1030973733, guid: abc00000000003789144296011863629, type: 3}
       propertyPath: m_Name
       value: BP_grave_comp_01_C_1_SM_grave_base_16_306
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973733, guid: abc00000000003789144296011863629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1030973734, guid: abc00000000003789144296011863629, type: 3}
       propertyPath: m_RootOrder
@@ -444,6 +508,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1030973737, guid: abc00000000003789144296011863629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973741, guid: abc00000000003789144296011863629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973745, guid: abc00000000003789144296011863629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973749, guid: abc00000000003789144296011863629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1030973736, guid: abc00000000003789144296011863629, type: 3}
     m_RemovedGameObjects: []
@@ -467,6 +547,10 @@ PrefabInstance:
     - target: {fileID: 1030973733, guid: abc00000000003789144296011863629, type: 3}
       propertyPath: m_Name
       value: BP_grave_comp_01_C_1_SM_grave_base_20_307
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973733, guid: abc00000000003789144296011863629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1030973734, guid: abc00000000003789144296011863629, type: 3}
       propertyPath: m_RootOrder
@@ -516,6 +600,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1030973737, guid: abc00000000003789144296011863629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973741, guid: abc00000000003789144296011863629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973745, guid: abc00000000003789144296011863629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973749, guid: abc00000000003789144296011863629, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1030973736, guid: abc00000000003789144296011863629, type: 3}
     m_RemovedGameObjects: []
@@ -539,6 +639,10 @@ PrefabInstance:
     - target: {fileID: 1030974095, guid: abc00000000000489225338623424107, type: 3}
       propertyPath: m_Name
       value: BP_grave_comp_01_C_1_SM_candle_01_1_299
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974095, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
       propertyPath: m_RootOrder
@@ -588,6 +692,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1030974099, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974103, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974107, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974111, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1030974098, guid: abc00000000000489225338623424107, type: 3}
     m_RemovedGameObjects: []
@@ -611,6 +731,10 @@ PrefabInstance:
     - target: {fileID: 1030974095, guid: abc00000000000489225338623424107, type: 3}
       propertyPath: m_Name
       value: BP_grave_comp_01_C_1_SM_candle_01_2_300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974095, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1030974096, guid: abc00000000000489225338623424107, type: 3}
       propertyPath: m_RootOrder
@@ -660,6 +784,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1030974099, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974103, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974107, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974111, guid: abc00000000000489225338623424107, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1030974098, guid: abc00000000000489225338623424107, type: 3}
     m_RemovedGameObjects: []
@@ -683,6 +823,10 @@ PrefabInstance:
     - target: {fileID: 1030973500, guid: abc00000000003034836660290831928, type: 3}
       propertyPath: m_Name
       value: BP_grave_comp_01_C_1_SM_grave_06_4_301
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973500, guid: abc00000000003034836660290831928, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1030973501, guid: abc00000000003034836660290831928, type: 3}
       propertyPath: m_RootOrder
@@ -732,6 +876,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1030973504, guid: abc00000000003034836660290831928, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973508, guid: abc00000000003034836660290831928, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973512, guid: abc00000000003034836660290831928, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030973516, guid: abc00000000003034836660290831928, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1030973503, guid: abc00000000003034836660290831928, type: 3}
     m_RemovedGameObjects: []
@@ -755,6 +915,10 @@ PrefabInstance:
     - target: {fileID: 1030974161, guid: abc00000000001809851061607989973, type: 3}
       propertyPath: m_Name
       value: BP_grave_comp_01_C_1_SM_candle_base_01_6_302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974161, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1030974162, guid: abc00000000001809851061607989973, type: 3}
       propertyPath: m_RootOrder
@@ -803,6 +967,22 @@ PrefabInstance:
     - target: {fileID: 1030974163, guid: abc00000000001809851061607989973, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974165, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974169, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974173, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1030974177, guid: abc00000000001809851061607989973, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1030974164, guid: abc00000000001809851061607989973, type: 3}
