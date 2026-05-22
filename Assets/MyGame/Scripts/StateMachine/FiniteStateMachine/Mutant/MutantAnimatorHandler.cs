@@ -15,6 +15,7 @@ public class MutantAnimatorHandler : MonoBehaviour
 
     public void StartAttack()
     {
+        brain.isAttacking = true;
         foreach (var hitBox in weaponHitBoxes)
         {
             hitBox.EnableHitbox();
@@ -22,6 +23,7 @@ public class MutantAnimatorHandler : MonoBehaviour
     }
     public void EndAttack()
     {
+        brain.isAttacking = false;
         foreach (var hitBox in weaponHitBoxes)
         {
             hitBox.DisableHitbox();

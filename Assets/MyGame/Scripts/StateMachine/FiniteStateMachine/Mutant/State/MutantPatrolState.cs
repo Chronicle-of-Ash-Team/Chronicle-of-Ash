@@ -60,7 +60,7 @@ public class MutantPatrolState : BaseMutantState
 
         brain.rigidbody.linearVelocity = velocity;
 
-        brain.stamina -= Time.deltaTime * 2f;
+        brain.currentStamina -= Time.deltaTime * 2f;
     }
 
     public override void OnExit()
@@ -76,10 +76,27 @@ public class MutantPatrolState : BaseMutantState
 
     private void PickNewTarget()
     {
-        targetPos =
-            brain.transform.position +
-            Random.insideUnitSphere * 5f;
+        for (int i = 0; i < 10; i++)
+        {
+            Vector2 randomCircle =
+                Random.insideUnitCircle *
+                brain.patrolRange;
 
-        targetPos.y = brain.transform.position.y;
+            Vector3 randomPos = new Vector3(
+                brain.patrolPos.x + randomCircle.x,
+                brain.transform.position.y,
+                brain.patrolPos.z + randomCircle.y
+            );
+
+            if (Vector3.Distance(
+                brain.transform.position,
+                randomPos) > 2f)
+            {
+                targetPos = randomPos;
+                return;
+            }
+        }
+
+        targetPos = brain.patrolPos;
     }
 }

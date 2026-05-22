@@ -19,6 +19,6 @@ public class MutantIdleState : BaseMutantState
     {
         base.OnUpdate();
 
-        brain.stamina += Time.deltaTime * 5f;
+        brain.currentStamina += Time.deltaTime * 5f;
     }
 }

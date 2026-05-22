@@ -1,25 +1,35 @@
-using System;
 using UnityEngine;
 
-public class MutantBrain : MonoBehaviour, IDamageable, IWeaponOwner
+public class MutantBrain : MonoBehaviour, IDamageable, IWeaponOwner, ILockable
 {
     public Transform target;
     public Animator animator;
     public Rigidbody rigidbody;
     public MutantAnimatorHandler mutantAnimatorHandler;
+    public Transform lockOnPos;
+    public Vector3 patrolPos;
+
+    public float patrolRange = 10f;
+    public float attackRange = 2f;
+    public float detectRange = 8f;
+    public float fleeRange = 20f;
 
     public float rotationSpeed = 10f;
-    public float detectRange = 8f;
-    public float attackRange = 2f;
     public float moveSpeed = 3f;
     public float runSpeed = 4f;
-    public float stamina = 100f;
 
     public int maxHp = 10;
+    public float maxStamina = 100f;
+
+    public float currentStamina = 100f;
     public int currentHp;
+
     public int damage = 2;
 
-    public bool wasHit;
+    public float staggerDuration = 1f;
+
+    public bool wasHit = false;
+    public bool isAttacking = false;
 
     private FiniteStateMachine FSM;
 
@@ -43,6 +53,7 @@ public class MutantBrain : MonoBehaviour, IDamageable, IWeaponOwner
     private void Awake()
     {
         currentHp = maxHp;
+        patrolPos = transform.position;
 
         FSM = new FiniteStateMachine();
 
@@ -75,11 +86,24 @@ public class MutantBrain : MonoBehaviour, IDamageable, IWeaponOwner
 
     private void SetUpTransitions()
     {
+        // Any -> Dead
+        FSM.AddAnyTransition(
+            deadState,
+            new FuncPredicate(() => currentHp <= 0)
+        );
+
         // Patrol -> Chase
         FSM.AddTransition(
             patrolState,
             chaseState,
             new FuncPredicate(() => HasTarget())
+        );
+
+        // Chase -> Flee
+        FSM.AddTransition(
+            chaseState,
+            fleeState,
+            new FuncPredicate(() => ((float)currentHp / maxHp) * 100f <= 20f)
         );
 
         // Chase -> Attack
@@ -93,7 +117,7 @@ public class MutantBrain : MonoBehaviour, IDamageable, IWeaponOwner
         FSM.AddTransition(
             attackState,
             chaseState,
-            new FuncPredicate(() => !InAttackRange())
+            new FuncPredicate(() => !InAttackRange() && !isAttacking)
         );
 
         // Chase -> Patrol
@@ -103,44 +127,38 @@ public class MutantBrain : MonoBehaviour, IDamageable, IWeaponOwner
             new FuncPredicate(() => !HasTarget())
         );
 
+        // Stagger -> Chase
+        FSM.AddTransition(
+            staggerState,
+            chaseState,
+            new FuncPredicate(() => !wasHit)
+        );
+
         // Any -> Stagger
         FSM.AddAnyTransition(
             staggerState,
             new FuncPredicate(() => wasHit && currentHp > 0)
         );
 
-        // Any -> Dead
-        FSM.AddAnyTransition(
-            deadState,
-            new FuncPredicate(() => currentHp <= 0)
-        );
-
-        // Chase -> Flee
-        FSM.AddTransition(
-            chaseState,
-            fleeState,
-            new FuncPredicate(() => currentHp <= 5)
-        );
-
         // Flee -> Patrol
         FSM.AddTransition(
             fleeState,
             patrolState,
-            new FuncPredicate(() => !HasTarget())
+            new FuncPredicate(() => !InFleeRange())
         );
 
         // Patrol -> Idle
         FSM.AddTransition(
             patrolState,
             idleState,
-            new FuncPredicate(() => stamina <= 0)
+            new FuncPredicate(() => currentStamina <= 0)
         );
 
         // Idle -> Patrol
         FSM.AddTransition(
             idleState,
             patrolState,
-            new FuncPredicate(() => stamina >= 90)
+            new FuncPredicate(() => currentStamina >= 90)
         );
     }
 
@@ -151,7 +169,7 @@ public class MutantBrain : MonoBehaviour, IDamageable, IWeaponOwner
 
     public void SetInvincible(bool invincible)
     {
-        
+
     }
 
     public bool HasTarget()
@@ -174,6 +192,16 @@ public class MutantBrain : MonoBehaviour, IDamageable, IWeaponOwner
             transform.position,
             target.position
         ) <= attackRange;
+    }
+
+    public bool InFleeRange()
+    {
+        if (target == null)
+            return false;
+        return Vector3.Distance(
+            transform.position,
+            target.position
+        ) <= fleeRange;
     }
 
     public void TakeDamage(DamageContext damageContext)
@@ -206,5 +234,22 @@ public class MutantBrain : MonoBehaviour, IDamageable, IWeaponOwner
             HitPosition = other.ClosestPoint(transform.position),
             DamageType = DamageType.Heavy
         });
+    }
+
+    public Transform GetLockOnTransform()
+    {
+        return lockOnPos;
+    }
+
+
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+
+        Gizmos.DrawWireSphere(
+            patrolPos,
+            patrolRange
+        );
     }
 }
