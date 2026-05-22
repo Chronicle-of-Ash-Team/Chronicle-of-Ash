@@ -1915,13 +1915,14 @@ MonoBehaviour:
   currentFlowerTarget: {x: 0, y: 0, z: 0}
   rigidbody: {fileID: 329452196495363588}
   animator: {fileID: 5059744907885804342}
-  moveSpeed: 0.7
+  moveSpeed: 1.1
   pickingDistance: 2
   chooseFlowerRadius: 20
   pickFlowerTime: 1
   restTime: 15
   fallTime: 2
   standUpTime: 20
+  isAlive: 1
 --- !u!1 &4564499595886958301
 GameObject:
   m_ObjectHideFlags: 0

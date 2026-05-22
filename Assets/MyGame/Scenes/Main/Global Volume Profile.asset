@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8193111612191815673
+--- !u!114 &-1130248577506189254
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17,14 +17,14 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   qualityLevel:
-    m_OverrideState: 0
-    m_Value: 3
+    m_OverrideState: 1
+    m_Value: 2
   gridPixelSize:
-    m_OverrideState: 0
-    m_Value: 4
+    m_OverrideState: 1
+    m_Value: 8
   gridSizeZ:
-    m_OverrideState: 0
-    m_Value: 196
+    m_OverrideState: 1
+    m_Value: 164
   maxDistanceVolumetric:
     m_OverrideState: 0
     m_Value: 64
@@ -39,7 +39,7 @@ MonoBehaviour:
     m_Value: 0.05
   fogDensity:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 3.67
   anisotropy:
     m_OverrideState: 0
     m_Value: 0.2
@@ -60,7 +60,7 @@ MonoBehaviour:
     m_Value: 64
   baseHeight:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2.58
   attenuationBoundarySize:
     m_OverrideState: 1
     m_Value: 10
@@ -108,10 +108,10 @@ MonoBehaviour:
     m_Value: 30
   noiseWindSpeed:
     m_OverrideState: 1
-    m_Value: {x: 0, y: 0.2, z: -2}
+    m_Value: {x: 0, y: 0.2, z: -1}
   noiseMap:
     m_OverrideState: 1
-    m_Value: {x: 0.22508039, y: 0.78778136}
+    m_Value: {x: 0.39903846, y: 0.7596154}
   volumeNoise:
     m_OverrideState: 0
     m_Value:
@@ -121,7 +121,7 @@ MonoBehaviour:
       gain: 0.35
       seed: 0
       noiseType: 2
-      noiseQuality: 3
+      noiseQuality: 2
       invert: 0
       userTexture: {fileID: 0}
 --- !u!114 &11400000
@@ -134,7 +134,48 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Global Volume Profile 1
+  m_Name: Global Volume Profile
   m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.VolumeProfile
   components:
-  - {fileID: -8193111612191815673}
+  - {fileID: -1130248577506189254}
+  - {fileID: 896182529420276853}
+--- !u!114 &896182529420276853
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
+  m_Name: Tonemapping
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.Tonemapping
+  active: 1
+  mode:
+    m_OverrideState: 1
+    m_Value: 2
+  neutralHDRRangeReductionMode:
+    m_OverrideState: 0
+    m_Value: 2
+  acesPreset:
+    m_OverrideState: 0
+    m_Value: 3
+  hueShiftAmount:
+    m_OverrideState: 0
+    m_Value: 0
+  detectPaperWhite:
+    m_OverrideState: 0
+    m_Value: 0
+  paperWhite:
+    m_OverrideState: 0
+    m_Value: 300
+  detectBrightnessLimits:
+    m_OverrideState: 0
+    m_Value: 1
+  minNits:
+    m_OverrideState: 0
+    m_Value: 0.005
+  maxNits:
+    m_OverrideState: 0
+    m_Value: 1000
