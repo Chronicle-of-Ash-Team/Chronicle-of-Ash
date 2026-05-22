@@ -59,6 +59,8 @@ public class MutantPatrolState : BaseMutantState
         velocity.y = brain.rigidbody.linearVelocity.y;
 
         brain.rigidbody.linearVelocity = velocity;
+
+        brain.stamina -= Time.deltaTime * 2f;
     }
 
     public override void OnExit()

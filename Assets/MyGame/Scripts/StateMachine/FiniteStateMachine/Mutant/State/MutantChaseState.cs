@@ -24,6 +24,7 @@ public class MutantChaseState : BaseMutantState
 
         if (brain.target == null)
         {
+            Debug.Log("Target is null, cannot chase.");
             return;
         }
 
@@ -37,6 +38,7 @@ public class MutantChaseState : BaseMutantState
 
         if (distance <= brain.attackRange)
         {
+            Debug.Log("Within attack range, stopping movement.");
             StopMovement();
             return;
         }
@@ -56,12 +58,14 @@ public class MutantChaseState : BaseMutantState
 
         // Rigidbody movement
         Vector3 velocity =
-            direction * brain.moveSpeed;
+            direction * brain.runSpeed;
 
         velocity.y =
             brain.rigidbody.linearVelocity.y;
 
         brain.rigidbody.linearVelocity = velocity;
+
+        //brain.stamina -= Time.deltaTime * 2f;
     }
 
     public override void OnExit()

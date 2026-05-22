@@ -1,20 +1,23 @@
 using System;
 using UnityEngine;
 
-public class MutantBrain : MonoBehaviour, IDamageable
+public class MutantBrain : MonoBehaviour, IDamageable, IWeaponOwner
 {
     public Transform target;
     public Animator animator;
     public Rigidbody rigidbody;
+    public MutantAnimatorHandler mutantAnimatorHandler;
 
     public float rotationSpeed = 10f;
     public float detectRange = 8f;
     public float attackRange = 2f;
     public float moveSpeed = 3f;
     public float runSpeed = 4f;
+    public float stamina = 100f;
 
     public int maxHp = 10;
     public int currentHp;
+    public int damage = 2;
 
     public bool wasHit;
 
@@ -116,7 +119,7 @@ public class MutantBrain : MonoBehaviour, IDamageable
         FSM.AddTransition(
             chaseState,
             fleeState,
-            new FuncPredicate(() => currentHp <= 20)
+            new FuncPredicate(() => currentHp <= 5)
         );
 
         // Flee -> Patrol
@@ -124,6 +127,20 @@ public class MutantBrain : MonoBehaviour, IDamageable
             fleeState,
             patrolState,
             new FuncPredicate(() => !HasTarget())
+        );
+
+        // Patrol -> Idle
+        FSM.AddTransition(
+            patrolState,
+            idleState,
+            new FuncPredicate(() => stamina <= 0)
+        );
+
+        // Idle -> Patrol
+        FSM.AddTransition(
+            idleState,
+            patrolState,
+            new FuncPredicate(() => stamina >= 90)
         );
     }
 
@@ -167,5 +184,27 @@ public class MutantBrain : MonoBehaviour, IDamageable
     public void ClearHit()
     {
         wasHit = false;
+    }
+
+    public int GetDamage()
+    {
+        return damage;
+    }
+
+    public Transform GetTransform()
+    {
+        return transform;
+    }
+
+    public void OnWeaponHit(IDamageable target, Collider other, WeaponHitBox hitbox)
+    {
+        target.TakeDamage(new DamageContext
+        {
+            Damage = damage,
+            Attacker = gameObject,
+            HitDirection = other.transform.position - transform.position,
+            HitPosition = other.ClosestPoint(transform.position),
+            DamageType = DamageType.Heavy
+        });
     }
 }

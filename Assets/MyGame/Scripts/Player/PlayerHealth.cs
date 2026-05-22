@@ -32,6 +32,8 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     public void TakeDamage(DamageContext damageContext)
     {
+        Debug.Log("TakeDamage: " + damageContext.Damage);
+
         Vector3 pushDir = damageContext.HitDirection;
         pushDir.y = 0f;
 
