@@ -8,6 +8,7 @@ public class MutantBrain : MonoBehaviour, IDamageable, IWeaponOwner, ILockable
     public MutantAnimatorHandler mutantAnimatorHandler;
     public Transform lockOnPos;
     public Vector3 patrolPos;
+    public Hit_Event hitEvent;
 
     public float patrolRange = 10f;
     public float attackRange = 2f;
@@ -206,8 +207,10 @@ public class MutantBrain : MonoBehaviour, IDamageable, IWeaponOwner, ILockable
 
     public void TakeDamage(DamageContext damageContext)
     {
+        if (currentHp < 0f) return;
         currentHp -= damageContext.Damage;
         wasHit = true;
+        hitEvent.Raise(damageContext);
     }
     public void ClearHit()
     {

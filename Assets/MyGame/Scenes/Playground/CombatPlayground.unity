@@ -167,6 +167,26 @@ MonoBehaviour:
   parryEvent: {fileID: 11400000, guid: 1a46bb07300a78b45b6c060e7a3456bb, type: 2}
   hitVfxPrefab: {fileID: 6709876431192411874, guid: da08b0db4d6ca804fb9c4c9b94909137,
     type: 3}
+  BloodAttach: {fileID: 3136605153214515430, guid: 45eef0a861a8a8946b4c23fb9f4f779a,
+    type: 3}
+  BloodFX:
+  - {fileID: 2656253210798625995, guid: a78e9ef18b366424b84e0c7410d2fe72, type: 3}
+  - {fileID: 5865290276592450837, guid: 42a28376f729c864a81abf66add7a418, type: 3}
+  - {fileID: 764304066602274965, guid: 4a322f29a9e1fa54f90223de8bcf3a28, type: 3}
+  - {fileID: 7935733108997359171, guid: e822d59151d3597428b0b63bf25355e7, type: 3}
+  - {fileID: 4288107571095694937, guid: c3f8938673a07704e93ac52eee18f410, type: 3}
+  - {fileID: 1165703760847671896, guid: bb596cd440832554089a7125852e836f, type: 3}
+  - {fileID: 4152240900433254336, guid: 6d3629f845b40e24fb51d381e84bbc77, type: 3}
+  - {fileID: 6463355840203370170, guid: 70ead61ff20b23b4e97b90d8e8997ecd, type: 3}
+  - {fileID: 5170585893340993107, guid: 7b88f11816abaa34c9e02cbaa8485321, type: 3}
+  - {fileID: 2629016494315086251, guid: 5776aed3bb070e54cb09a11c8a6a5831, type: 3}
+  - {fileID: 3034872428933141512, guid: 52d94bfe44b09ff4b9e9788e9a86a778, type: 3}
+  - {fileID: 2360933683143488451, guid: 730678b8a5330c449ada55bde83402ce, type: 3}
+  - {fileID: 5016170632959171363, guid: c3ed06559a66b724b91c3124e75ddec9, type: 3}
+  - {fileID: 8859926575668995837, guid: 097a30048e9007141899f834041a5ac7, type: 3}
+  - {fileID: 5936082179827903908, guid: cb58ece77d11ef945aecd072f2e46a8d, type: 3}
+  - {fileID: 5494213943435191861, guid: db51fe09adf27d640b4e10018c2d76ba, type: 3}
+  - {fileID: 5371219466416337994, guid: f9e099178c81bee439a79eecec91dacb, type: 3}
   parryVfxPrefab: {fileID: 3876539187855607596, guid: 4ad16ef8ab07b3d419871a84756a0147,
     type: 3}
 --- !u!1001 &14850504
@@ -2342,8 +2362,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504499692}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.04152613, y: 0.93342686, z: -0.11491008, w: -0.33732116}
-  m_LocalPosition: {x: -4.0721827, y: 2.25, z: 0.06694102}
+  m_LocalRotation: {x: -0.059785098, y: 0.8655774, z: -0.10655741, w: -0.48564085}
+  m_LocalPosition: {x: -56.129616, y: 11.93, z: -39.40653}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4030,8 +4050,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813717293}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.04152613, y: 0.93342686, z: -0.11491009, w: -0.33732116}
-  m_LocalPosition: {x: -10.626482, y: 1.3511, z: 2.736911}
+  m_LocalRotation: {x: -0.0597851, y: 0.8655774, z: -0.10655741, w: -0.48564085}
+  m_LocalPosition: {x: -62.683914, y: 11.0311, z: -36.736557}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6732,7 +6752,7 @@ Transform:
   m_GameObject: {fileID: 1298370868}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.4443, y: 1.3011, z: -2.5700297}
+  m_LocalPosition: {x: -65.1443, y: 10.9811, z: -41.30003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10163,7 +10183,7 @@ Transform:
   m_GameObject: {fileID: 1851503328}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.99, y: -0, z: -2.24}
+  m_LocalPosition: {x: -58.69, y: 9.68, z: -40.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10315,6 +10335,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHealth: 10
   currentHealth: 10
+  hitKnockbackForce: 4
+  parryKnockbackForce: 3
+  deathKnockbackForce: 1
+  maxKnockbackVelocity: 10
   isInvincible: 0
 --- !u!114 &1851503340
 MonoBehaviour:

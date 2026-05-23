@@ -1415,6 +1415,7 @@ MonoBehaviour:
   mutantAnimatorHandler: {fileID: 2883886169732284607}
   lockOnPos: {fileID: 9005072480823170506}
   patrolPos: {x: 0, y: 0, z: 0}
+  hitEvent: {fileID: 11400000, guid: a2ca9ad216a0c8d499605b442b9c70b6, type: 2}
   patrolRange: 15
   attackRange: 2.5
   detectRange: 8

@@ -95,7 +95,7 @@ public class PlayerTargetLock : MonoBehaviour
         foreach (Collider collider in colliders)
         {
             var lockable = collider.GetComponentInParent<ILockable>();
-            if (lockable != null)
+            if (lockable != null && lockable.GetIsAlive())
             {
                 float distance = Vector3.Distance(transform.position, collider.transform.position);
 

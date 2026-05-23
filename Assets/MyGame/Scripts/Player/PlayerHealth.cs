@@ -1,10 +1,15 @@
-using System;
+﻿using System;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour, IDamageable
 {
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private int currentHealth;
+    [SerializeField] private float hitKnockbackForce = 8f;
+    [SerializeField] private float parryKnockbackForce = 12f;
+    [SerializeField] private float deathKnockbackForce = 5f;
+
+    [SerializeField] private float maxKnockbackVelocity = 10f;
 
     public bool IsHit { get; private set; }
 
@@ -16,6 +21,11 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     private PlayerAnimation playerAnimation;
     private Rigidbody rb;
     private PlayerEvents playerEvents;
+
+
+    private Vector3 knockbackVelocity;
+    private float knockbackTimer;
+
 
     public event Action OnHit;
     public event Action OnHitEnd;
@@ -30,39 +40,55 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         playerEvents = GetComponent<PlayerEvents>();
     }
 
+    void FixedUpdate()
+    {
+        if (knockbackTimer > 0)
+        {
+            rb.linearVelocity = new Vector3(
+                knockbackVelocity.x,
+                rb.linearVelocity.y,
+                knockbackVelocity.z
+            );
+
+            knockbackTimer -= Time.fixedDeltaTime;
+        }
+    }
+
     public void TakeDamage(DamageContext damageContext)
     {
         Debug.Log("TakeDamage: " + damageContext.Damage);
 
-        Vector3 pushDir = damageContext.HitDirection;
+        Vector3 pushDir = damageContext.HitDirection.normalized;
         pushDir.y = 0f;
 
         if (blockAction.isParrying)
         {
-            //Parry success
             blockAction.ShutdownBlock();
-            rb.AddForce(pushDir * 25f, ForceMode.Impulse);
+
+            ApplyKnockbackVelocity(pushDir * parryKnockbackForce);
+
             int parryNum = UnityEngine.Random.Range(1, 4);
             playerAnimation.PlayThisAnimation("Parry" + parryNum, 0.1f);
+
             playerEvents.Parry_Event.Raise(damageContext);
             return;
         }
+
         if (isInvincible)
         {
             Debug.Log("You just dodge");
             return;
         }
-        rb.AddForce(pushDir * 45f, ForceMode.Impulse);
 
-        if (blockAction.isBlocking)
+        if (!blockAction.isBlocking)
         {
-            Debug.Log("IsBlocking");
-            return;
+            ApplyKnockbackVelocity(pushDir * hitKnockbackForce);
         }
 
-
         currentHealth -= damageContext.Damage;
+
         playerEvents.Hit_Event.Raise(damageContext);
+
         playerEvents.HPChanged_Event.Raise(new HPContext
         {
             CurrentHP = currentHealth,
@@ -72,11 +98,24 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         if (currentHealth <= 0)
         {
             isAlive = false;
+
+            // giảm velocity trước khi chết
+            rb.linearVelocity = Vector3.zero;
+
+            ApplyKnockbackVelocity(pushDir * deathKnockbackForce);
+
             OnDied?.Invoke();
             playerAnimation.PlayThisAnimation("Die", 0f);
             return;
         }
+
         OnHit?.Invoke();
+    }
+
+    public void ApplyKnockbackVelocity(Vector3 dir)
+    {
+        knockbackVelocity = dir;
+        knockbackTimer = 0.15f;
     }
 
     public void EndHit()

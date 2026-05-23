@@ -115,13 +115,15 @@ public class PlayerWeapon : MonoBehaviour, IWeaponOwner
 
     public void OnWeaponHit(IDamageable target, Collider other, WeaponHitBox hitbox)
     {
+        Vector3 hitPoint = other.ClosestPoint(hitbox.transform.position);
+
         target.TakeDamage(new DamageContext
         {
             Attacker = gameObject,
             Damage = currentWeapon.GetWeaponData().damage,
             DamageType = DamageType.Heavy,
-            HitDirection = (other.transform.position - transform.position).normalized,
-            HitPosition = other.ClosestPoint(hitbox.transform.position),
+            HitDirection = (hitPoint - hitbox.transform.position).normalized,
+            HitPosition = hitPoint,
         });
     }
 }

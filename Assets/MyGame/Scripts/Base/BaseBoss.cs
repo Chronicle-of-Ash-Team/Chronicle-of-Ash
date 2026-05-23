@@ -69,7 +69,7 @@ public class BaseBoss : BaseLocomotion, IDamageable, ILockable
 
     public bool GetIsAlive()
     {
-        return isAlive;
+        return currentHealth > 0;
     }
 
     public void SetInvincible(bool invincible)
