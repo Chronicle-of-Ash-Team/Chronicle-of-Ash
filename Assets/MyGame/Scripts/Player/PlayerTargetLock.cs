@@ -52,6 +52,21 @@ public class PlayerTargetLock : MonoBehaviour
             }
         }
         UIEvents.OnTargetLock?.Invoke(currentTarget);
+        HandleCamera();
+    }
+
+    private void HandleCamera()
+    {
+        if (isTargeting)
+        {
+            freelookCinemachineCamera.gameObject.SetActive(false);
+            lockonCinemachineCamera.gameObject.SetActive(true);
+        }
+        else
+        {
+            freelookCinemachineCamera.gameObject.SetActive(true);
+            lockonCinemachineCamera.gameObject.SetActive(false);
+        }
     }
 
     private void HandleLockOn()
