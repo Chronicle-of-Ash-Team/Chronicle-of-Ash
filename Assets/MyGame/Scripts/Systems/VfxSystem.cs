@@ -15,9 +15,17 @@ public class VfxSystem : MonoBehaviour
 
     private void OnEnable()
     {
-        hitEvent.OnEventRaised += SpawnHitVfx;
+        hitEvent.OnEventRaised += OnHitEventRaise;
         parryEvent.OnEventRaised += SpawnParryVfx;
     }
+
+    private void OnHitEventRaise(DamageContext context)
+    {
+        SpawnHitVfx(context);
+        SpawnHitVfx(context);
+        SpawnHitVfx(context);
+    }
+
     private void OnDisable()
     {
         hitEvent.OnEventRaised -= SpawnHitVfx;

@@ -180,7 +180,7 @@ MonoBehaviour:
   AnimationSpeed: 1
   AutomaticGroundHeightDetection: 1
   GroundHeight: 0
-  LightIntensityMultiplier: 0.5
+  LightIntensityMultiplier: 0.3
   DecalLifeTimeSeconds: 30
   DebugAnimationTime: 0.25
 --- !u!1 &7843370407151631037
