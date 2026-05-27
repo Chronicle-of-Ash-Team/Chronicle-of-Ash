@@ -207,7 +207,7 @@ public class MutantBrain : MonoBehaviour, IDamageable, IWeaponOwner, ILockable
 
     public void TakeDamage(DamageContext damageContext)
     {
-        if (currentHp < 0f) return;
+        if (currentHp <= 0f) return;
         currentHp -= damageContext.Damage;
         wasHit = true;
         hitEvent.Raise(damageContext);

@@ -24,7 +24,9 @@ public class HierarchicalStateMachine
     {
         if (!started) Start();
 
-        InternalTick(deltaTime);
+        //InternalTick(deltaTime);
+
+        Sequencer.Tick(deltaTime);
     }
 
     internal void InternalTick(float deltaTime)

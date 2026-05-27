@@ -6,6 +6,9 @@ public class HierarchicalState
     public readonly HierarchicalState Parent;
     public HierarchicalState ActiveChild;
 
+    readonly List<IActivity> activities = new List<IActivity>();
+    public IReadOnlyList<IActivity> Activities => activities;
+
     public HierarchicalState(HierarchicalStateMachine stateMachine, HierarchicalState parentState)
     {
         Machine = stateMachine;
