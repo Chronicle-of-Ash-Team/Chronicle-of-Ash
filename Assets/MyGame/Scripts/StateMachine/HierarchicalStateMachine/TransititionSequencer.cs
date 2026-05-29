@@ -20,13 +20,8 @@ public class TransititionSequencer
 
     public void RequestTransition(HierarchicalState from, HierarchicalState to)
     {
-        //Machine.ChangeState(from, to);
-        if (from == to || to == null) return;
-        if (sequencer != null)
-        {
-            pending = (from, to);
-            return;
-        }
+        if (to == null || from == to) return;
+        if (sequencer != null) { pending = (from, to); return; }
         BeginTransition(from, to);
     }
 
@@ -84,6 +79,11 @@ public class TransititionSequencer
     public readonly bool UseSequential = true;
     void BeginTransition(HierarchicalState from, HierarchicalState to)
     {
+        cancellationTokenSource?.Cancel();
+        cancellationTokenSource?.Dispose();
+
+        cancellationTokenSource =
+            new CancellationTokenSource();
         var lca = Lca(from, to);
         var exitChain = StatesToExit(from, lca);
         var enterChain = StatesToEnter(to, lca);

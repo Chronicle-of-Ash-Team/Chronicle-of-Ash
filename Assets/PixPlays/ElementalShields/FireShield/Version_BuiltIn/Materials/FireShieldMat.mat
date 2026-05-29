@@ -208,7 +208,7 @@ Material:
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - _Color_1: {r: 2, g: 2, b: 2, a: 0}
     - _Color_2: {r: 0, g: 0.36470604, b: 1, a: 0}
     - _Color_Scroll: {r: -0.3, g: -0.2, b: 0, a: 0}
     - _Color_Tex_Remap: {r: 0.35, g: 0.1, b: 0, a: 0}

@@ -14,14 +14,14 @@ public class AnimationEventRelay : MonoBehaviour
 
     public Task WaitEvent(string eventName)
     {
-        var tcs = new TaskCompletionSource();
+        var tcs = new TaskCompletionSource<bool>();
 
         void Handler(string evt)
         {
             if (evt != eventName) return;
 
             EventRaised -= Handler;
-            tcs.TrySetResult();
+            tcs.TrySetResult(true);
         }
 
         EventRaised += Handler;
