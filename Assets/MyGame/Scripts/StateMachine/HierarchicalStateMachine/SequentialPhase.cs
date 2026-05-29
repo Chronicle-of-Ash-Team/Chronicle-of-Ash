@@ -22,7 +22,7 @@ public class SequentialPhase : ISequence
     public bool Update()
     {
         if (IsDone) return true;
-        if (currentTask != null || currentTask.IsCompleted) Next();
+        if (currentTask == null || currentTask.IsCompleted) Next();
         return IsDone;
     }
 
