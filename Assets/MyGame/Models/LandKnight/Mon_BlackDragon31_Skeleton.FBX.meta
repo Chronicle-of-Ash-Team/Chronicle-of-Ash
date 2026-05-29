@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: 7adc4f5892fbf2c4c95036876e119f20
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Mon_BlackDragon31a
+    second: {fileID: 2100000, guid: 57e474a6412c80a4a9b7d189b371b168, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Mon_BlackDragon31b
+    second: {fileID: 2100000, guid: 0d7cae0d35f75284185fcdafd8f6874f, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 1
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Mon_BlackDragon31_Btl_Atk01' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation animation
+      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'spine_01' has translation animation
+      that will be discarded.\n\t'spine_02' has translation animation that will be
+      discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Atk02' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'spine_01' has translation
+      animation that will be discarded.\n\t'spine_02' has translation animation that
+      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Atk03' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'spine_02' has translation
+      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'neck_01' has translation
+      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Atk04' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'spine_01' has translation
+      animation that will be discarded.\n\t'spine_02' has translation animation that
+      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Int01' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'spine_01' has translation
+      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Int02'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
+      has translation animation that will be discarded.\n\t'spine_02' has translation
+      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Int03'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      has translation animation that will be discarded.\n\t'spine_02' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Mon_BlackDragon31_Btl_Run01' has import animation warnings that might lower
+      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
+      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Mon_BlackDragon31_Btl_Skl01' has import animation warnings that might lower
+      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
+      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
+      has translation animation that will be discarded.\n\t'spine_02' has translation
+      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'ball_l' has translation
+      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Skl02' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'spine_01' has translation
+      animation that will be discarded.\n\t'spine_02' has translation animation that
+      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'neck_01' has translation animation that
+      will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Skl03' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation animation
+      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'spine_01' has translation animation
+      that will be discarded.\n\t'spine_02' has translation animation that will be
+      discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Skl04' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'spine_01' has translation
+      animation that will be discarded.\n\t'spine_02' has translation animation that
+      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Skl05' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'spine_01' has translation
+      animation that will be discarded.\n\t'spine_02' has translation animation that
+      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Skl06' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'spine_02' has translation
+      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Skl07'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      has translation animation that will be discarded.\n\t'spine_02' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Mon_BlackDragon31_Btl_Skl08' has import animation warnings that might lower
+      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
+      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
+      has translation animation that will be discarded.\n\t'spine_02' has translation
+      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Std01'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Mon_BlackDragon31_Btl_Std02' has import animation warnings that might lower
+      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
+      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Mon_BlackDragon31_Btl_Walk01' has import animation warnings that might lower
+      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
+      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Mon_BlackDragon31_Dmg_Die01' has import animation warnings that might lower
+      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
+      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
+      has translation animation that will be discarded.\n\t'spine_02' has translation
+      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'neck_01' has translation
+      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_Die02' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'spine_01' has translation
+      animation that will be discarded.\n\t'spine_02' has translation animation that
+      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_Die03' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'spine_01' has translation
+      animation that will be discarded.\n\t'spine_02' has translation animation that
+      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_DieDwn01'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
+      has translation animation that will be discarded.\n\t'spine_02' has translation
+      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_Dwn11'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
+      has translation animation that will be discarded.\n\t'spine_02' has translation
+      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_Dwn21'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Mon_BlackDragon31_Dmg_Hit01' has import animation warnings that might lower
+      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
+      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Mon_BlackDragon31_Dmg_Hit02' has import animation warnings that might lower
+      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
+      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
+      has translation animation that will be discarded.\n\t'spine_02' has translation
+      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_Stu01'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
+      has translation animation that will be discarded.\n\t'spine_02' has translation
+      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_Stu02'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Mon_BlackDragon31_Dmg_Stu03' has import animation warnings that might lower
+      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
+      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'T10_07_11_BD' has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'T10_07_12_2_BD' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'T10_07_SKL_BD' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      has translation animation that will be discarded.\n\t'spine_02' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'T10_08_1_BD' has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'ball_l'
+      has translation animation that will be discarded.\n\nClip 'T10_08_3_BD' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'spine_02' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'ball_l'
+      has translation animation that will be discarded.\n\t'ball_r' has translation
+      animation that will be discarded.\n\nClip 't10_09_bd_cine02' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation animation
+      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
+      rotation animation that will be discarded.\n\t'spine_02' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'ball_l' has
+      translation animation that will be discarded.\n\nClip 't10_09_bd_cine03' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Mon_BlackDragon31_Skeleton(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root
+      parentName: Mon_BlackDragon31_Skeleton(Clone)
+      position: {x: 0.119186476, y: 0.2220814, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: Wing_L07
+      parentName: Root
+      position: {x: -1.8538624, y: 3.9277637, z: 7.8772154}
+      rotation: {x: 0.6713107, y: -0.010965548, z: 0.63798416, w: -0.37709135}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: Wing_R07
+      parentName: Root
+      position: {x: 3.3986685, y: 2.4212015, z: 8.039691}
+      rotation: {x: -0.5504692, y: 0.58934194, z: -0.5785534, w: -0.12221151}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Pelvis
+      parentName: Root
+      position: {x: -0.11918652, y: 0, z: 5.2412825}
+      rotation: {x: 0.7071074, y: -0.0000011920929, z: -0.70710623, w: -0.0000010430813}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000005}
+    - name: Thigh_L
+      parentName: Pelvis
+      position: {x: -0, y: 0.000000793314, z: 0.4553967}
+      rotation: {x: 0.03670342, y: 0.99356717, z: 0.08859642, w: 0.060231455}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: calf_l
+      parentName: Thigh_L
+      position: {x: -2.1535642, y: 0, z: 0.00000019378662}
+      rotation: {x: -0.0000011622906, y: -0.000000029802322, z: 0.025551498, w: 0.99967355}
+      scale: {x: 1.0000004, y: 1.0000005, z: 0.9999998}
+    - name: Foot_L
+      parentName: calf_l
+      position: {x: -2.5633252, y: 0.000000072669984, z: 0.00000009689331}
+      rotation: {x: -0.0062644416, y: 0.06367792, z: -0.05618096, w: 0.9963682}
+      scale: {x: 0.9999997, y: 0.99999994, z: 0.99999994}
+    - name: ball_l
+      parentName: Foot_L
+      position: {x: -0.64573735, y: 0.780397, z: -0.00000038757324}
+      rotation: {x: 0.0036156867, y: 0.0036157696, z: -0.7070976, w: 0.70709753}
+      scale: {x: 1, y: 0.99999994, z: 1.0000002}
+    - name: spine_01
+      parentName: Pelvis
+      position: {x: -0.6160073, y: 0.12042659, z: -0.0052256742}
+      rotation: {x: 0.00003906978, y: 0.0000008350902, z: 0.00039824558, w: -1}
+      scale: {x: 1.0000004, y: 1, z: 1.0000002}
+    - name: spine_02
+      parentName: spine_01
+      position: {x: -1.1173589, y: -0.0010727543, z: 0.000029613018}
+      rotation: {x: 0.00000006322079, y: -0.000000029781287, z: 0.000000105292955,
+        w: 1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000004}
+    - name: clavicle_l
+      parentName: spine_02
+      position: {x: -1.2197465, y: -0.31991738, z: 0.225422}
+      rotation: {x: 0.69695497, y: 0.005865691, z: -0.71707255, w: -0.0051460364}
+      scale: {x: 0.9999998, y: 0.9999996, z: 1}
+    - name: UpperArm_L
+      parentName: clavicle_l
+      position: {x: -0.73956865, y: 0.00000014533997, z: 0}
+      rotation: {x: 0.098752305, y: -0.0017358136, z: 0.006610241, w: 0.99508864}
+      scale: {x: 0.9999997, y: 0.99999994, z: 1.0000001}
+    - name: lowerarm_l
+      parentName: UpperArm_L
+      position: {x: -1.5000557, y: 0, z: 0}
+      rotation: {x: -0.0026248824, y: 0.013661189, z: 0.031885434, w: 0.9993948}
+      scale: {x: 0.9999996, y: 0.99999994, z: 0.9999998}
+    - name: Hand_L
+      parentName: lowerarm_l
+      position: {x: -1.458714, y: 0, z: 0}
+      rotation: {x: 0.6993741, y: 0.102443874, z: 0.102362245, w: -0.6999309}
+      scale: {x: 1.0000002, y: 1, z: 1.0000004}
+    - name: index_01_l
+      parentName: Hand_L
+      position: {x: -0.54782623, y: -0.09445838, z: -0.1472288}
+      rotation: {x: -0.048293777, y: 0.08872094, z: 0.044495177, w: 0.9938896}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000005}
+    - name: index_02_l
+      parentName: index_01_l
+      position: {x: -0.34357592, y: 0, z: 0.00000014533997}
+      rotation: {x: -0.0000008083876, y: -0.00000027939663, z: -0.1588649, w: 0.98730034}
+      scale: {x: 1.0000004, y: 1, z: 1.0000005}
+    - name: thumb_01_l
+      parentName: Hand_L
+      position: {x: -0.17805308, y: 0.077217184, z: -0.209054}
+      rotation: {x: -0.6375696, y: 0.111138254, z: -0.2386408, w: -0.72401935}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000004}
+    - name: thumb_02_l
+      parentName: thumb_01_l
+      position: {x: -0.33404472, y: 0, z: 0.000000048446655}
+      rotation: {x: -0.00000047683687, y: 0.00000026822073, z: -0.0131069645, w: 0.99991417}
+      scale: {x: 1.0000007, y: 1.0000002, z: 1.0000004}
+    - name: middle_01_l
+      parentName: Hand_L
+      position: {x: -0.5104599, y: -0.11586328, z: 0.13563804}
+      rotation: {x: -0.27169737, y: 0.10218371, z: 0.072168216, w: 0.95421743}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000006}
+    - name: middle_02_l
+      parentName: middle_01_l
+      position: {x: -0.3537412, y: -0.00000019378662, z: 0.000000048446655}
+      rotation: {x: -0.15225829, y: 0.03215046, z: -0.16461289, w: 0.97400534}
+      scale: {x: 1, y: 0.99999994, z: 1.0000002}
+    - name: Shoulder_L
+      parentName: clavicle_l
+      position: {x: -0.26507932, y: 0.0455385, z: -0.02733244}
+      rotation: {x: 0.68850005, y: 0.1618287, z: -0.15106818, w: 0.6906212}
+      scale: {x: 1.0000002, y: 0.9999997, z: 1.0000001}
+    - name: clavicle_r
+      parentName: spine_02
+      position: {x: -1.2197456, y: -0.31991607, z: -0.22542374}
+      rotation: {x: -0.6969554, y: -0.005810817, z: -0.71707284, w: -0.0050929617}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.99999994}
+    - name: Shoulder_R
+      parentName: clavicle_r
+      position: {x: -0.2650925, y: 0.045539856, z: 0.027335541}
+      rotation: {x: 0.68850017, y: 0.16182773, z: 0.15106887, w: -0.6906212}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: UpperArm_R
+      parentName: clavicle_r
+      position: {x: -0.7395688, y: -0.00000009689331, z: 0}
+      rotation: {x: 0.098758526, y: -0.001736543, z: -0.006601686, w: -0.9950881}
+      scale: {x: 1.0000001, y: 1, z: 0.9999997}
+    - name: lowerarm_r
+      parentName: UpperArm_R
+      position: {x: -1.5000569, y: 0.00000019378662, z: 0}
+      rotation: {x: -0.0026251508, y: 0.013661476, z: -0.03188513, w: -0.9993948}
+      scale: {x: 0.9999998, y: 0.99999994, z: 1.0000004}
+    - name: Hand_R
+      parentName: lowerarm_r
+      position: {x: -1.4587148, y: 0.00000019378662, z: 0.00000019378662}
+      rotation: {x: 0.69937414, y: 0.10244335, z: -0.10236216, w: 0.6999308}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000001}
+    - name: thumb_01_r
+      parentName: Hand_R
+      position: {x: -0.1780527, y: 0.07721699, z: 0.20905386}
+      rotation: {x: 0.63756824, y: -0.11113451, z: -0.23864415, w: -0.72401994}
+      scale: {x: 1, y: 1.0000002, z: 1.0000006}
+    - name: thumb_02_r
+      parentName: thumb_01_r
+      position: {x: -0.33404472, y: -0.00000038757324, z: 0}
+      rotation: {x: -0.000000059604645, y: 0.000000014901161, z: -0.013107598, w: 0.99991417}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000001}
+    - name: index_01_r
+      parentName: Hand_R
+      position: {x: -0.5478259, y: -0.09445838, z: 0.14722858}
+      rotation: {x: 0.0482938, y: -0.08872113, z: 0.044497084, w: 0.9938896}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000001}
+    - name: index_02_r
+      parentName: index_01_r
+      position: {x: -0.34357554, y: -0.00000029067994, z: -0.00000009689331}
+      rotation: {x: -0.00000010803338, y: -0.00000032782543, z: -0.15886429, w: 0.98730046}
+      scale: {x: 0.9999998, y: 1.0000001, z: 0.9999998}
+    - name: middle_01_r
+      parentName: Hand_R
+      position: {x: -0.51045954, y: -0.11586347, z: -0.13563786}
+      rotation: {x: 0.27169666, y: -0.10218384, z: 0.07216946, w: 0.9542175}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: middle_02_r
+      parentName: middle_01_r
+      position: {x: -0.3537408, y: 0, z: -0.00000009689331}
+      rotation: {x: 0.15225875, y: -0.032150693, z: -0.16461349, w: 0.9740051}
+      scale: {x: 0.9999998, y: 1.0000004, z: 0.9999998}
+    - name: neck_01
+      parentName: spine_02
+      position: {x: -1.4679514, y: -0.33979303, z: 0.000081741615}
+      rotation: {x: 0.000036441637, y: 0.0000054472066, z: -0.13901205, w: 0.99029076}
+      scale: {x: 0.9999998, y: 1, z: 1}
+    - name: head
+      parentName: neck_01
+      position: {x: -0.5108471, y: 0.00000038757324, z: 0}
+      rotation: {x: -0.000000029802322, y: -0.00000035762787, z: -0.1394062, w: -0.9902353}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.99999946}
+    - name: Wing_L01
+      parentName: spine_02
+      position: {x: -1.1062775, y: -0.811129, z: 0.38095847}
+      rotation: {x: -0.569158, y: -0.57708853, z: 0.38828442, w: -0.43847823}
+      scale: {x: 0.9999998, y: 0.9999998, z: 1}
+    - name: Wing_L02
+      parentName: Wing_L01
+      position: {x: -2.3758078, y: 0, z: -0.00000038757324}
+      rotation: {x: -0.02190184, y: 0.029417355, z: -0.71318555, w: -0.70001525}
+      scale: {x: 1.0000001, y: 1, z: 1.0000004}
+    - name: Wing_R01
+      parentName: spine_02
+      position: {x: -1.1062759, y: -0.8111281, z: -0.3809503}
+      rotation: {x: -0.56912524, y: -0.5770594, z: -0.38832772, w: 0.43852085}
+      scale: {x: 1, y: 1.0000004, z: 1.0000005}
+    - name: Wing_R02
+      parentName: Wing_R01
+      position: {x: -2.3758104, y: -0.0000007751465, z: 0}
+      rotation: {x: 0.021900676, y: -0.029417504, z: -0.7131852, w: -0.70001566}
+      scale: {x: 1.0000007, y: 1.0000007, z: 0.99999994}
+    - name: Thigh_R
+      parentName: Pelvis
+      position: {x: -0.0000011627197, y: -0.00000042996405, z: -0.4553968}
+      rotation: {x: 0.036703758, y: 0.99356717, z: -0.088597864, w: -0.060229853}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999997}
+    - name: calf_r
+      parentName: Thigh_R
+      position: {x: -2.153565, y: -0.000000048446655, z: -0.00000009689331}
+      rotation: {x: 0.000000014901163, y: 0.000000014901163, z: 0.025545003, w: 0.99967366}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000002}
+    - name: Foot_R
+      parentName: calf_r
+      position: {x: -2.5633268, y: 0.00000003027916, z: 0.00000019378662}
+      rotation: {x: 0.0011711165, y: -0.06339094, z: -0.05650291, w: 0.9963873}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: ball_r
+      parentName: Foot_R
+      position: {x: -0.64573747, y: 0.7803971, z: 0.00000009689331}
+      rotation: {x: -0.0000008250352, y: 0.000000040978183, z: -0.7071065, w: 0.70710707}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1}
+    - name: Wing_L03
+      parentName: Root
+      position: {x: -0.027780814, y: 0.8335799, z: 7.62305}
+      rotation: {x: 0.57779056, y: 0.4099083, z: 0.5710859, w: -0.41472173}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000004}
+    - name: Wing_R03
+      parentName: Root
+      position: {x: 0.28087485, y: 0.7204502, z: 7.638408}
+      rotation: {x: 0.5710874, y: -0.41471928, z: 0.5777926, w: 0.4099058}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000004}
+    - name: Wing_L11
+      parentName: Root
+      position: {x: -1.6253818, y: 3.1660032, z: 9.366081}
+      rotation: {x: 0.6821539, y: -0.21466118, z: -0.0008915141, w: -0.6989892}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Wing_L09
+      parentName: Root
+      position: {x: -1.7634679, y: 3.5709577, z: 8.585428}
+      rotation: {x: 0.70653653, y: -0.082240164, z: 0.13362838, w: -0.6900625}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: Wing_L04
+      parentName: Root
+      position: {x: -1.0180773, y: 2.7588997, z: 6.67841}
+      rotation: {x: 0.6451022, y: 0.306148, z: 0.47716564, w: -0.51227885}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1}
+    - name: Wing_L05
+      parentName: Root
+      position: {x: -1.4643124, y: 3.4433653, z: 7.0196257}
+      rotation: {x: 0.68378663, y: 0.17804852, z: 0.3737874, w: -0.6008474}
+      scale: {x: 1.0000004, y: 1, z: 1}
+    - name: Wing_R11
+      parentName: Root
+      position: {x: 2.8980782, y: 1.5763714, z: 9.412461}
+      rotation: {x: -0.00089144695, y: -0.6989894, z: 0.6821537, w: -0.21466105}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+    - name: Wing_R09
+      parentName: Root
+      position: {x: 3.179052, y: 2.0152645, z: 8.690873}
+      rotation: {x: 0.13362841, y: -0.6900625, z: 0.70653653, w: -0.08224015}
+      scale: {x: 1, y: 1.0000004, z: 0.9999997}
+    - name: Wing_R04
+      parentName: Root
+      position: {x: 2.0263634, y: 2.0799608, z: 6.8152833}
+      rotation: {x: 0.47716573, y: -0.51227874, z: 0.6451021, w: 0.306148}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1}
+    - name: Wing_R05
+      parentName: Root
+      position: {x: 2.7727447, y: 2.3753974, z: 7.186628}
+      rotation: {x: 0.37378561, y: -0.6008487, z: 0.683787, w: 0.17804682}
+      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+    - name: Wing_L08
+      parentName: Root
+      position: {x: -1.8920971, y: 3.8019214, z: 8.186368}
+      rotation: {x: 0.7085572, y: 0.008003383, z: 0.22091171, w: -0.67013484}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: Wing_R08
+      parentName: Root
+      position: {x: 3.384846, y: 2.2318664, z: 8.316876}
+      rotation: {x: 0.2209112, y: -0.6701351, z: 0.7085572, w: 0.008004241}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.9999998}
+    - name: Wing_L10
+      parentName: Root
+      position: {x: -1.786166, y: 3.4519644, z: 9.05283}
+      rotation: {x: 0.69612205, y: -0.15648809, z: 0.05918361, w: -0.69815683}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000004}
+    - name: Wing_L06
+      parentName: Root
+      position: {x: -1.8236294, y: 3.8326223, z: 7.592838}
+      rotation: {x: 0.7014892, y: 0.08316775, z: 0.29097453, w: -0.6452363}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: Wing_R10
+      parentName: Root
+      position: {x: 3.1638196, y: 1.8063643, z: 9.125906}
+      rotation: {x: 0.05918358, y: -0.69815695, z: 0.69612193, w: -0.15648796}
+      scale: {x: 1.0000002, y: 1.0000006, z: 1}
+    - name: Wing_R06
+      parentName: Root
+      position: {x: 3.3094902, y: 2.4139233, z: 7.7519436}
+      rotation: {x: 0.29097456, y: -0.6452364, z: 0.70148915, w: 0.08316783}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Mon_BlackDragon31
+      parentName: Mon_BlackDragon31_Skeleton(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
