@@ -1,16 +1,6 @@
-using UnityEngine;
-
-public class LK_DefensiveState : MonoBehaviour
+public class LK_DefensiveState : LK_BaseState
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public LK_DefensiveState(HierarchicalStateMachine machine, HierarchicalState parent, LandKnightBrain brain, LandKnightContext context) : base(machine, parent, brain, context)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -154,6 +154,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WindBulletProjectile
       objectReference: {fileID: 0}
+    - target: {fileID: 6354686006975832417, guid: 8ba61049d6d48464d81e1c7030773377,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -183,6 +188,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WindbulletHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3362559094653938668, guid: 6d9be190363175c47a89407642a9a0b9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3717283756818870863, guid: 6d9be190363175c47a89407642a9a0b9,
         type: 3}
@@ -263,6 +273,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WindbulletCast
+      objectReference: {fileID: 0}
+    - target: {fileID: 432350906011875738, guid: 6b9e9392ea32bab40baef03bfb83c757,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7332462641210323792, guid: 6b9e9392ea32bab40baef03bfb83c757,
         type: 3}

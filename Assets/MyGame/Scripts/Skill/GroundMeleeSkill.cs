@@ -8,12 +8,13 @@ public class GroundMeleeSkill : MonoBehaviour
     [SerializeField] private float moveTime = 0.1f;
     [SerializeField] private float stayTime = 0.3f; // thời gian đứng
 
-    [Header("Damage")]
-    [SerializeField] private int damage = 10;
+
+    private int damage = 10;
 
     private float timer;
     private bool isMoving;
     private bool isStaying;
+    private GameObject owner;
 
     private void OnEnable()
     {
@@ -26,6 +27,12 @@ public class GroundMeleeSkill : MonoBehaviour
         timer = 0f;
         isMoving = true;
         isStaying = false;
+    }
+
+    public void Init(GameObject owner, int damage)
+    {
+        this.owner = owner;
+        this.damage = damage;
     }
 
     private void Update()
@@ -68,6 +75,10 @@ public class GroundMeleeSkill : MonoBehaviour
 
         if (damageable != null)
         {
+            if (damageable == owner.GetComponent<IDamageable>())
+            {
+                return;
+            }
             damageable.TakeDamage(new DamageContext
             {
                 Damage = damage,

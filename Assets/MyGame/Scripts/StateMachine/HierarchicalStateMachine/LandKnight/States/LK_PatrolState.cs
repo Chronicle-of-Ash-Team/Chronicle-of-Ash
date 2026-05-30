@@ -36,4 +36,18 @@ public class LK_PatrolState : LK_BaseState
     {
         return moveToPointState;
     }
+
+    protected override HierarchicalState GetTransition()
+    {
+        if (Brain.IsPlayerInRange(
+            Context.detectionRange))
+        {
+            var root =
+                Parent as LK_RootState;
+
+            return root.combatState;
+        }
+
+        return null;
+    }
 }

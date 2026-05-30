@@ -27,238 +27,7 @@ ModelImporter:
     removeConstantScaleCurves: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Mon_BlackDragon31_Btl_Atk01' has import animation
-      warnings that might lower retargeting quality:\nNote: Activate translation
-      DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation animation
-      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
-      rotation animation that will be discarded.\n\t'spine_01' has translation animation
-      that will be discarded.\n\t'spine_02' has translation animation that will be
-      discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
-      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Atk02' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
-      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'spine_01' has translation
-      animation that will be discarded.\n\t'spine_02' has translation animation that
-      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
-      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Atk03' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
-      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'spine_02' has translation
-      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'neck_01' has translation
-      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Atk04' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
-      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'spine_01' has translation
-      animation that will be discarded.\n\t'spine_02' has translation animation that
-      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
-      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Int01' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
-      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'spine_01' has translation
-      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Int02'
-      has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
-      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
-      has translation animation that will be discarded.\n\t'spine_02' has translation
-      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Int03'
-      has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
-      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      has translation animation that will be discarded.\n\t'spine_02' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Mon_BlackDragon31_Btl_Run01' has import animation warnings that might lower
-      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
-      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Mon_BlackDragon31_Btl_Skl01' has import animation warnings that might lower
-      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
-      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
-      has translation animation that will be discarded.\n\t'spine_02' has translation
-      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'ball_l' has translation
-      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Skl02' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
-      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'spine_01' has translation
-      animation that will be discarded.\n\t'spine_02' has translation animation that
-      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
-      animation that will be discarded.\n\t'neck_01' has translation animation that
-      will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Skl03' has import animation
-      warnings that might lower retargeting quality:\nNote: Activate translation
-      DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation animation
-      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
-      rotation animation that will be discarded.\n\t'spine_01' has translation animation
-      that will be discarded.\n\t'spine_02' has translation animation that will be
-      discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
-      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Skl04' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
-      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'spine_01' has translation
-      animation that will be discarded.\n\t'spine_02' has translation animation that
-      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
-      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Skl05' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
-      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'spine_01' has translation
-      animation that will be discarded.\n\t'spine_02' has translation animation that
-      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
-      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Skl06' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
-      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'spine_02' has translation
-      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Skl07'
-      has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
-      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      has translation animation that will be discarded.\n\t'spine_02' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Mon_BlackDragon31_Btl_Skl08' has import animation warnings that might lower
-      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
-      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
-      has translation animation that will be discarded.\n\t'spine_02' has translation
-      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Btl_Std01'
-      has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
-      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Mon_BlackDragon31_Btl_Std02' has import animation warnings that might lower
-      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
-      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Mon_BlackDragon31_Btl_Walk01' has import animation warnings that might lower
-      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
-      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Mon_BlackDragon31_Dmg_Die01' has import animation warnings that might lower
-      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
-      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
-      has translation animation that will be discarded.\n\t'spine_02' has translation
-      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'neck_01' has translation
-      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_Die02' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
-      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'spine_01' has translation
-      animation that will be discarded.\n\t'spine_02' has translation animation that
-      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
-      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_Die03' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
-      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'spine_01' has translation
-      animation that will be discarded.\n\t'spine_02' has translation animation that
-      will be discarded.\n\t'spine_02' is inbetween humanoid transforms and has rotation
-      animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_DieDwn01'
-      has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
-      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
-      has translation animation that will be discarded.\n\t'spine_02' has translation
-      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_Dwn11'
-      has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
-      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
-      has translation animation that will be discarded.\n\t'spine_02' has translation
-      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_Dwn21'
-      has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
-      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Mon_BlackDragon31_Dmg_Hit01' has import animation warnings that might lower
-      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
-      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Mon_BlackDragon31_Dmg_Hit02' has import animation warnings that might lower
-      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
-      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
-      has translation animation that will be discarded.\n\t'spine_02' has translation
-      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_Stu01'
-      has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
-      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_01'
-      has translation animation that will be discarded.\n\t'spine_02' has translation
-      animation that will be discarded.\n\t'spine_02' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\nClip 'Mon_BlackDragon31_Dmg_Stu02'
-      has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
-      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Mon_BlackDragon31_Dmg_Stu03' has import animation warnings that might lower
-      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
-      quality.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'T10_07_11_BD' has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
-      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'T10_07_12_2_BD' has import animation warnings that might lower retargeting
-      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
-      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'T10_07_SKL_BD' has import animation warnings that might lower retargeting
-      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
-      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      has translation animation that will be discarded.\n\t'spine_02' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'T10_08_1_BD' has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'ball_l'
-      has translation animation that will be discarded.\n\nClip 'T10_08_3_BD' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation
-      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\t'spine_02' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'ball_l'
-      has translation animation that will be discarded.\n\t'ball_r' has translation
-      animation that will be discarded.\n\nClip 't10_09_bd_cine02' has import animation
-      warnings that might lower retargeting quality:\nNote: Activate translation
-      DOF on avatar to improve retargeting quality.\n\t'Pelvis' has translation animation
-      that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has
-      rotation animation that will be discarded.\n\t'spine_02' is inbetween humanoid
-      transforms and has rotation animation that will be discarded.\n\t'ball_l' has
-      translation animation that will be discarded.\n\nClip 't10_09_bd_cine03' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Pelvis' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'spine_02'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -556,11 +325,46 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.9416341
+        functionName: RaiseEvent
+        data: SkillEnd
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5418993
+        functionName: RaiseEvent
+        data: HitboxOn
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5837989
+        functionName: RaiseEvent
+        data: HitboxOff
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6187151
+        functionName: RaiseEvent
+        data: HitboxOn
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.63826835
+        functionName: RaiseEvent
+        data: HitboxOff
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 691.8
     - serializedVersion: 16
       name: Mon_BlackDragon31_Btl_Skl03
       takeName: Mon_BlackDragon31_Btl_Skl03
@@ -585,11 +389,46 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.996109
+        functionName: RaiseEvent
+        data: SkillEnd
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6005585
+        functionName: RaiseEvent
+        data: HitboxOn
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6354748
+        functionName: RaiseEvent
+        data: HitboxOff
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6717876
+        functionName: RaiseEvent
+        data: HitboxOn
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.7108939
+        functionName: RaiseEvent
+        data: HitboxOff
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 810
     - serializedVersion: 16
       name: Mon_BlackDragon31_Btl_Skl04
       takeName: Mon_BlackDragon31_Btl_Skl04
@@ -643,11 +482,25 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.9571982
+        functionName: RaiseEvent
+        data: SkillEnd
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6969278
+        functionName: RaiseEvent
+        data: Spawn
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1036.8
     - serializedVersion: 16
       name: Mon_BlackDragon31_Btl_Skl06
       takeName: Mon_BlackDragon31_Btl_Skl06
@@ -701,11 +554,25 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.9610892
+        functionName: RaiseEvent
+        data: SkillEnd
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5013966
+        functionName: RaiseEvent
+        data: Spawn
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1341
     - serializedVersion: 16
       name: Mon_BlackDragon31_Btl_Skl08
       takeName: Mon_BlackDragon31_Btl_Skl08

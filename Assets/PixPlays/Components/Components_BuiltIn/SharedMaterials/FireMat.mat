@@ -194,7 +194,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color_1: {r: 9.849155, g: 3.8283873, b: 1.2543737, a: 0}
-    - _Color_2: {r: 4.594794, g: 0.0540564, b: 0, a: 0}
+    - _Color_2: {r: 2.6042306, g: 0.040904142, b: 0, a: 0}
     - _Color_Scroll: {r: 0, g: 0, b: 0, a: 0}
     - _Color_Tex_Remap: {r: 0, g: 1, b: 0, a: 0}
     - _Disolve_Remap: {r: 0, g: 1, b: 0, a: 0}

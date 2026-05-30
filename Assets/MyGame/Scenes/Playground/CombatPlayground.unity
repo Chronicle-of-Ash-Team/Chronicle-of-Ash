@@ -1161,6 +1161,45 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 185570536}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &197458695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6037358044493553944, guid: 7adc4f5892fbf2c4c95036876e119f20,
+    type: 3}
+  m_PrefabInstance: {fileID: 825242554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &197458697
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197458695}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.198648, y: 4.1496086, z: 2.0379004}
+  m_Center: {x: -5.599326, y: 1.5748031, z: 0.51889783}
+--- !u!114 &197458698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197458695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4031fbb6e4cff614eaaf1bc62221b1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponHitBox
 --- !u!1001 &204180006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2236,8 +2275,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504499692}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09778018, y: -0.7358807, z: 0.10883818, w: 0.661115}
-  m_LocalPosition: {x: 3.7758338, y: 2.27, z: -0.3853037}
+  m_LocalRotation: {x: 0.016184902, y: 0.9831675, z: -0.14541233, w: 0.10942998}
+  m_LocalPosition: {x: 5.48469, y: 2.27, z: -11.740694}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3294,6 +3333,7 @@ GameObject:
   - component: {fileID: 732419085}
   - component: {fileID: 732419084}
   - component: {fileID: 732419086}
+  - component: {fileID: 732419087}
   m_Layer: 0
   m_Name: LandKnight
   m_TagString: Untagged
@@ -3318,6 +3358,14 @@ MonoBehaviour:
     animationEventRelay: {fileID: 825242558}
     maxHealth: 100
     currentHealth: 0
+    combatDistance: 6
+    damage: 2
+    projectileSkill: {fileID: 2310510464200564396, guid: b2b32c9961fdf4d4496e6350913064a4,
+      type: 3}
+    projectileDamage: 5
+    aoeSkill: {fileID: 4294061353464209907, guid: efcbf5d0ce8fd3e40922deddef894cd3,
+      type: 3}
+    aoeDamage: 4
     posture: 0
     maxPosture: 10
     postureRecoverRate: 2
@@ -3333,8 +3381,14 @@ MonoBehaviour:
     staminaDrainRate: 1
     staminaRecoverRate: 5
     maxPatrolStamina: 100
+    target: {fileID: 1851503329}
+    detectionRange: 10
+    loseAggroRange: 12
   rigidbody: {fileID: 732419086}
   lockOnTransform: {fileID: 670869750}
+  weaponHitBoxes:
+  - {fileID: 197458698}
+  - {fileID: 823980176}
 --- !u!4 &732419085
 Transform:
   m_ObjectHideFlags: 0
@@ -3379,6 +3433,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &732419087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732419083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64150b40ade13e744a9f677041ffe6ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LK_FXEvent
+  Hit_Event: {fileID: 11400000, guid: a2ca9ad216a0c8d499605b442b9c70b6, type: 2}
 --- !u!1 &765784357
 GameObject:
   m_ObjectHideFlags: 0
@@ -4051,13 +4118,52 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813717293}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.097780205, y: -0.7358807, z: 0.10883816, w: 0.661115}
-  m_LocalPosition: {x: 3.7758338, y: 2.27, z: -0.385304}
+  m_LocalRotation: {x: 0.016184906, y: 0.9831675, z: -0.14541237, w: 0.10943}
+  m_LocalPosition: {x: 5.48469, y: 2.27, z: -11.740694}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 400696117}
   m_LocalEulerAnglesHint: {x: 14.036, y: 11.049, z: 0.1}
+--- !u!1 &823980173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1274622240897714689, guid: 7adc4f5892fbf2c4c95036876e119f20,
+    type: 3}
+  m_PrefabInstance: {fileID: 825242554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &823980175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823980173}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.19865, y: 4.149609, z: 2.0379}
+  m_Center: {x: -5.599326, y: 1.574803, z: -0.5188978}
+--- !u!114 &823980176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823980173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4031fbb6e4cff614eaaf1bc62221b1f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponHitBox
 --- !u!1001 &825242554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4157,6 +4263,22 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 825242559}
+    - targetCorrespondingSourceObject: {fileID: 1274622240897714689, guid: 7adc4f5892fbf2c4c95036876e119f20,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 823980175}
+    - targetCorrespondingSourceObject: {fileID: 1274622240897714689, guid: 7adc4f5892fbf2c4c95036876e119f20,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 823980176}
+    - targetCorrespondingSourceObject: {fileID: 6037358044493553944, guid: 7adc4f5892fbf2c4c95036876e119f20,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 197458697}
+    - targetCorrespondingSourceObject: {fileID: 6037358044493553944, guid: 7adc4f5892fbf2c4c95036876e119f20,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 197458698}
   m_SourcePrefab: {fileID: 100100000, guid: 7adc4f5892fbf2c4c95036876e119f20, type: 3}
 --- !u!4 &825242555 stripped
 Transform:
@@ -6922,7 +7044,7 @@ Transform:
   m_GameObject: {fileID: 1298370868}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.41, y: 2.44, z: -3.8700001}
+  m_LocalPosition: {x: 6.13, y: 2.44, z: -17.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10353,7 +10475,7 @@ Transform:
   m_GameObject: {fileID: 1851503328}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.31, y: 0.02, z: -0.65}
+  m_LocalPosition: {x: 6.03, y: 0.02, z: -14.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10503,7 +10625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b635fe523dc404a4f81077c023ce0c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxHealth: 10
+  maxHealth: 40
   currentHealth: 10
   hitKnockbackForce: 4
   parryKnockbackForce: 3
@@ -20529,10 +20651,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2122154
+  m_Radius: 0.31742173
   m_Height: 1.6941185
   m_Direction: 1
-  m_Center: {x: 0, y: 0.84715223, z: 0}
+  m_Center: {x: 0.1, y: 0.84715223, z: 0.1}
 --- !u!4 &6179932083698007503
 Transform:
   m_ObjectHideFlags: 0

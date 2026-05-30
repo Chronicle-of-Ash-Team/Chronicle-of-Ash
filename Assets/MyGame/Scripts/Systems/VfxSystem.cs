@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class VfxSystem : MonoBehaviour
 {
@@ -34,6 +34,7 @@ public class VfxSystem : MonoBehaviour
 
     private void SpawnParryVfx(DamageContext context)
     {
+        context.HitPosition.y += 0.4f;
         ObjectPoolManager.Instance.Spawn(parryVfxPrefab, context.HitPosition, Quaternion.LookRotation(context.HitDirection));
     }
 
