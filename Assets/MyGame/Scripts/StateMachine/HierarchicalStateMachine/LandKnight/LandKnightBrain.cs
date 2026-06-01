@@ -205,6 +205,8 @@ public class LandKnightContext
     [Header("Movement")]
     public Vector3 moveDirection;
     public float moveSpeed = 3f;
+    public float runSpeed = 5f;
+    public float flySpeed = 6f;
     public float rotationSpeed = 3.5f;
 
     [Header("Patrol")]

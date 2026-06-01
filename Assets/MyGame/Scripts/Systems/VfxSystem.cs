@@ -24,6 +24,7 @@ public class VfxSystem : MonoBehaviour
         SpawnHitVfx(context);
         SpawnHitVfx(context);
         SpawnHitVfx(context);
+        SpawnHitVfx(context);
     }
 
     private void OnDisable()

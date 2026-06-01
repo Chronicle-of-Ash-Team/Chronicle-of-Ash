@@ -34,7 +34,7 @@ public class LK_SkillState : LK_BaseState
 
         Context.animator.CrossFade(
             skill.AnimationName,
-            0.05f);
+            0.2f);
 
         Context.animationEventRelay.EventRaised +=
             OnAnimationEvent;

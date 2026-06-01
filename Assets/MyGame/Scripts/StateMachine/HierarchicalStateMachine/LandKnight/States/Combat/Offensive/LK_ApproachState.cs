@@ -2,6 +2,11 @@
 
 public class LK_ApproachState : LK_BaseState
 {
+    private bool flyStarted;
+    private bool usingFly;
+
+    private Vector3 flyDestination;
+
     public LK_ApproachState(
         HierarchicalStateMachine machine,
         HierarchicalState parent,
@@ -13,9 +18,7 @@ public class LK_ApproachState : LK_BaseState
 
     protected override void OnEnter()
     {
-        Context.animator.CrossFade(
-            "Walk",
-            0.2f);
+        flyStarted = false;
 
         var offensive =
             Parent as LK_OffensiveState;
@@ -23,7 +26,51 @@ public class LK_ApproachState : LK_BaseState
         SkillData skill =
             offensive.CurrentSkill;
 
-        Debug.Log("Enter Approach State with skill: " + (skill != null ? skill.AnimationName : "None"));
+        if (skill == null || Context.target == null)
+            return;
+
+        float distance =
+            Vector3.Distance(
+                Brain.transform.position,
+                Context.target.position);
+
+        usingFly =
+            distance < skill.MinRange;
+
+        if (usingFly)
+        {
+            Context.animator.CrossFade(
+                "Fly",
+                0.1f);
+
+            Context.animationEventRelay.EventRaised +=
+                OnAnimationEvent;
+
+            Vector3 dir =
+                (Brain.transform.position -
+                 Context.target.position).normalized;
+
+            flyDestination =
+                Context.target.position +
+                dir * ((skill.MinRange + skill.MaxRange) * 0.5f);
+
+            flyDestination.y =
+                Brain.transform.position.y;
+        }
+        else
+        {
+            Context.animator.CrossFade(
+                "Walk",
+                0.1f);
+        }
+    }
+
+    private void OnAnimationEvent(string evt)
+    {
+        if (evt == "FlyStart")
+        {
+            flyStarted = true;
+        }
     }
 
     protected override void OnUpdate(float deltaTime)
@@ -37,8 +84,33 @@ public class LK_ApproachState : LK_BaseState
         if (skill == null ||
             Context.target == null)
         {
-            Context.moveDirection =
-                Vector3.zero;
+            Context.moveDirection = Vector3.zero;
+            return;
+        }
+
+        if (usingFly)
+        {
+            if (!flyStarted)
+                return;
+
+            Vector3 toDest =
+                flyDestination -
+                Brain.transform.position;
+
+            toDest.y = 0f;
+
+            if (toDest.magnitude <= 0.2f)
+            {
+                Context.moveDirection =
+                    Vector3.zero;
+
+                return;
+            }
+
+            Brain.rigidbody.linearVelocity =
+                toDest.normalized *
+                Context.flySpeed;
+
             return;
         }
 
@@ -51,29 +123,32 @@ public class LK_ApproachState : LK_BaseState
         float distance =
             toTarget.magnitude;
 
-        Vector3 dir =
-            toTarget.normalized;
-
-        // Quá xa -> tiến vào
         if (distance > skill.MaxRange)
         {
-            Context.moveDirection = dir;
+            Context.moveDirection =
+                toTarget.normalized;
+            //Brain.rigidbody.linearVelocity =
+            //    toTarget.normalized *
+            //    Context.runSpeed;
         }
-        // Quá gần -> lùi ra
-        else if (distance < skill.MinRange)
-        {
-            Context.moveDirection = -dir;
-        }
-        // Đúng vị trí
         else
         {
-            Context.moveDirection = Vector3.zero;
+            Context.moveDirection =
+                Vector3.zero;
+            //Brain.rigidbody.linearVelocity =
+            //    Vector3.zero;
         }
     }
 
     protected override void OnExit()
     {
+        Context.animationEventRelay.EventRaised -=
+            OnAnimationEvent;
+
         Context.moveDirection =
+            Vector3.zero;
+
+        Brain.rigidbody.linearVelocity =
             Vector3.zero;
     }
 

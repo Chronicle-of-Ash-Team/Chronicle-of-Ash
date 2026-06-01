@@ -63,12 +63,12 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
         if (blockAction.isParrying)
         {
-            blockAction.ShutdownBlock();
+            blockAction.OnFinish();
 
             ApplyKnockbackVelocity(pushDir * parryKnockbackForce);
 
             int parryNum = UnityEngine.Random.Range(1, 4);
-            playerAnimation.PlayThisAnimation("Parry" + parryNum, 0.1f);
+            playerAnimation.PlayThisAnimation("Parry" + parryNum, 0f);
 
             playerEvents.Parry_Event.Raise(damageContext);
             return;

@@ -30,8 +30,8 @@ public class LK_OffensiveState : LK_BaseState
         new SkillData
         {
             AnimationName = "SkillProjectile",
-            MinRange = 5f,
-            MaxRange = 10f,
+            MinRange = 8f,
+            MaxRange = 11f,
             SkillType = SkillType.Projectile
         },
         new SkillData
