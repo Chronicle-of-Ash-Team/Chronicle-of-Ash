@@ -39,6 +39,8 @@ public class LK_ApproachState : LK_BaseState
 
         if (usingFly)
         {
+            Context.currentSpeed = Context.flySpeed;
+
             Context.animator.CrossFade(
                 "Fly",
                 0.1f);
@@ -59,8 +61,10 @@ public class LK_ApproachState : LK_BaseState
         }
         else
         {
+            Context.currentSpeed = Context.runSpeed;
+
             Context.animator.CrossFade(
-                "Walk",
+                "Run",
                 0.1f);
         }
     }
@@ -150,6 +154,8 @@ public class LK_ApproachState : LK_BaseState
 
         Brain.rigidbody.linearVelocity =
             Vector3.zero;
+
+        Context.currentSpeed = Context.moveSpeed;
     }
 
     protected override HierarchicalState GetTransition()

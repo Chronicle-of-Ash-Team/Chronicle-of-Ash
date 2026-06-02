@@ -32,6 +32,12 @@ public class LK_PatrolState : LK_BaseState
                 context);
     }
 
+    protected override void OnEnter()
+    {
+        base.OnEnter();
+        Context.currentSpeed = Context.moveSpeed;
+    }
+
     protected override HierarchicalState GetInitialState()
     {
         return moveToPointState;

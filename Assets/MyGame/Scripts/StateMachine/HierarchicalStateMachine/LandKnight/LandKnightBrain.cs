@@ -49,14 +49,14 @@ public class LandKnightBrain : MonoBehaviour, IDamageable, ILockable, IWeaponOwn
     void ApplyMovement(float dt)
     {
         Vector3 targetVelocity =
-            context.moveDirection * context.moveSpeed;
+            context.moveDirection * context.currentSpeed;
 
         targetVelocity.y = rigidbody.linearVelocity.y;
 
         rigidbody.linearVelocity = Vector3.MoveTowards(
             rigidbody.linearVelocity,
             targetVelocity,
-            20f * dt);
+            context.currentSpeed * dt);
 
         RotateTowardsMoveDirection(dt);
     }
@@ -108,6 +108,8 @@ public class LandKnightBrain : MonoBehaviour, IDamageable, ILockable, IWeaponOwn
 
     public void TakeDamage(DamageContext damageContext)
     {
+        if (!GetIsAlive()) return;
+
         OnHitEvent?.Invoke(new OnHit { DamageContext = damageContext });
 
         context.currentHealth -= damageContext.Damage;
@@ -222,5 +224,6 @@ public class LandKnightContext
     public float loseAggroRange = 12f;
 
     [NonSerialized]
+    public float currentSpeed;
     public Vector3 currentPatrolPoint;
 }

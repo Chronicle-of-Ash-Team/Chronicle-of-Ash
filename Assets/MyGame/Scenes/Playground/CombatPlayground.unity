@@ -3373,8 +3373,8 @@ MonoBehaviour:
     staggerDirection: {x: 0, y: 0, z: 0}
     staggerForce: 40
     moveDirection: {x: 0, y: 0, z: 0}
-    moveSpeed: 10
-    runSpeed: 11
+    moveSpeed: 20
+    runSpeed: 80
     flySpeed: 14
     rotationSpeed: 3.5
     patrolCenter: {x: 0, y: 0, z: 0}
@@ -3386,6 +3386,7 @@ MonoBehaviour:
     target: {fileID: 1851503329}
     detectionRange: 10
     loseAggroRange: 12
+    currentPatrolPoint: {x: 0, y: 0, z: 0}
   rigidbody: {fileID: 732419086}
   lockOnTransform: {fileID: 670869750}
   weaponHitBoxes:
