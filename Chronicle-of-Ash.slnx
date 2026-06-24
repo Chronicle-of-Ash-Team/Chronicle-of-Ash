@@ -1,4 +1,8 @@
 ﻿<Solution>
-  <Project Path="Assembly-CSharp-Editor.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="OccaSoftware.Buto.Editor.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="OccaSoftware.Buto.Runtime.csproj" />
+  <Project Path="OccaSoftware.Buto.Shaders.csproj" />
+  <Project Path="OccaSoftware.Buto.Demo.csproj" />
 </Solution>
